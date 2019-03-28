@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_receiver"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/profile_image_receiver"
+        android:background="@drawable/message_receive_background"
+        android:padding="10dp"
+        android:text="Tuan Dat"
+        android:textColor="@color/color_black"
+        android:textSize="20dp" />
+
+    //don't care
+    <TextView
+        android:id="@+id/text_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_message"
+        android:layout_toRightOf="@id/profile_image_receiver"
+        android:paddingLeft="30dp"
+        android:text="Seen"
+        android:visibility="invisible"
+        android:textSize="10dp" />
+    <ImageView
+        android:id="@+id/chat_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

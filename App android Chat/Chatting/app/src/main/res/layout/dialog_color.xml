@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    tools:context=".DialogColorActivity">
+
+    <ImageView
+        android:id="@+id/image_color_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/colordialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+    </ImageView>
+
+    <View
+        android:id="@+id/color_view"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/image_color_dialog"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="InvalidId">
+    </View>
+    <Button
+        android:id="@+id/b_ok_change_color"
+        android:layout_below="@id/color_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Ok"
+        android:background="@drawable/button_background_green"/>
+</RelativeLayout>

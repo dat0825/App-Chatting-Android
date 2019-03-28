@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "120986371881",
+    "firebase_url": "https://chatting-bfd1b.firebaseio.com",
+    "project_id": "chatting-bfd1b",
+    "storage_bucket": "chatting-bfd1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120986371881:android:9c1c4001e51e123f",
+        "android_client_info": {
+          "package_name": "com.example.datvtd.chatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120986371881-g27gfnvhfomh37lbe1kg5l6q9t1g7h61.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.datvtd.chatting",
+            "certificate_hash": "e3596d82b229724c06ee880c296c5d9060381225"
+          }
+        },
+        {
+          "client_id": "120986371881-jk8ik6cvrg5c2kl0kummohrt3darodk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDByNR1QqO0iF9D-V3ADDcQlZGSpmjq0W8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120986371881-jk8ik6cvrg5c2kl0kummohrt3darodk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

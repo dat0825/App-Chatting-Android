@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header_creat_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="Creat a new account"
+            android:textSize="30dp"
+            android:textColor="@color/color_black"/>
+
+        <EditText
+            android:id="@+id/txt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_creat_account"
+            android:paddingTop="30dp"
+            android:hint="Username"
+            android:textSize="25dp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_user"
+            android:hint="Email"
+            android:paddingTop="30dp"
+            android:textColorLink="@color/colorAccent"
+            android:textSize="25dp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_email"
+            android:hint="Password"
+            android:paddingTop="30dp"
+            android:password="true"
+            android:textSize="25dp"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/b_Regiser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_password"
+            android:paddingHorizontal="20dp"
+            android:text="Register"
+            android:textSize="20dp"
+            android:textColor="@color/color_black"
+            android:background="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header_creat_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign in"
+            android:textSize="40dp"
+            android:textColor="@color/color_black"/>
+
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/header_creat_account"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Email"
+            android:textSize="25dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:background="@drawable/edit_text_background"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"/>
+
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/txt_email"
+            android:hint="Password"
+            android:layout_centerHorizontal="true"
+            android:password="true"
+            android:textSize="25dp"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:inputType="text"
+            android:background="@drawable/edit_text_background"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/b_Login"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_password"
+            android:paddingHorizontal="20dp"
+            android:text="Login"
+            android:textSize="20dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/color_black"
+            android:background="@drawable/button_background"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/b_register"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/b_Login"
+            android:paddingHorizontal="20dp"
+            android:text="REGISTER"
+            android:textSize="20dp"
+            android:textColor="@color/color_black"
+            android:background="@drawable/button_background"
+            android:layout_centerHorizontal="true"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/b_Login_facebook"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b_register"
+            android:paddingHorizontal="20dp"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/text_forgot_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password ?"
+            android:textSize="20dp"
+            android:textColor="@color/color_black"
+            android:layout_below="@id/b_Login_facebook"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
