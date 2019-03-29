@@ -76,7 +76,9 @@ public class MessageActivity extends AppCompatActivity {
         this.nameGroup = intent.getStringExtra("nameGroup");
         this.adminGroup = intent.getStringExtra("adminGroup");
         this.checkGroup = intent.getStringExtra("checkGroup");
-        this.color = new UserAdapter().color;
+        if (new UserAdapter().color != null) {
+            this.color = new UserAdapter().color;
+        }
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         this.storageReference = FirebaseStorage.getInstance().getReference("chatImage");
 
@@ -258,6 +260,7 @@ public class MessageActivity extends AppCompatActivity {
     }
 
     public void sendMessage(final String sender, final String receiver, String message) {
+        this.checkSendImage = "false";
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
 
         HashMap<String, Object> hashMap = new HashMap<>();
@@ -299,7 +302,7 @@ public class MessageActivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     User user = dataSnapshot.getValue(User.class);
                     if (notify) {
-                        sendNotification(user.getId(), nameCurrentUser, msg);
+                        sendNotification(user.getId(), nameCurrentUser, msg, true);
                     }
                     notify = false;
                 }
@@ -315,36 +318,19 @@ public class MessageActivity extends AppCompatActivity {
         if (checkGroup.equals("true")) {
             //notification
             final String msg = message;
-            reference = FirebaseDatabase.getInstance().getReference("ChatGroup").child(idGroup);
-            final DatabaseReference finalReference = reference;
+            reference = FirebaseDatabase.getInstance().getReference("ChatGroup").child(idGroup).child("members");
             reference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    GroupChat groupChat = dataSnapshot.getValue(GroupChat.class);
-                    if (!groupChat.getAdmin().equals(firebaseUser.getUid())) {
-                        sendNotification(groupChat.getAdmin(), nameCurrentUser, msg);
-                    }
-
-                    DatabaseReference reference1 = finalReference.child("members");
-                    reference1.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                                User user = snapshot.getValue(User.class);
-                                if (!user.getId().equals(firebaseUser.getUid())) {
-                                    if (notify) {
-                                        sendNotification(user.getId(), nameCurrentUser, msg);
-                                    }
-                                    notify = false;
-                                }
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        User user = snapshot.getValue(User.class);
+                        if (!firebaseUser.getUid().equals(user.getId())) {
+                            if (notify) {
+                                sendNotification(user.getId(), nameCurrentUser, msg, true);
                             }
+                            notify = false;
                         }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-                    });
+                    }
                 }
 
                 @Override
@@ -356,6 +342,7 @@ public class MessageActivity extends AppCompatActivity {
     }
 
     public void sendImage(final String sender, final String receiver, String message) {
+        this.checkSendImage = "true";
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
 
         HashMap<String, Object> hashMap = new HashMap<>();
@@ -372,6 +359,7 @@ public class MessageActivity extends AppCompatActivity {
         reference.child("Chats").push().setValue(hashMap);
 
         if (checkGroup.equals("false")) {
+            notify = true;
             final DatabaseReference chatRef = FirebaseDatabase.getInstance().getReference("Chatlist")
                     .child(sender).child(receiver);
 
@@ -390,7 +378,7 @@ public class MessageActivity extends AppCompatActivity {
             });
 
             //notification
-            final String msg = message;
+            final String msg = message; // đây là link của ảnh gửi đi
 
             reference = FirebaseDatabase.getInstance().getReference("Users").child(receiver);
             reference.addValueEventListener(new ValueEventListener() {
@@ -398,7 +386,7 @@ public class MessageActivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     User user = dataSnapshot.getValue(User.class);
                     if (notify) {
-                        sendNotification(user.getId(), nameCurrentUser, msg);
+                        sendNotification(user.getId(), nameCurrentUser, msg, false);
                     }
                     notify = false;
                 }
@@ -512,7 +500,7 @@ public class MessageActivity extends AppCompatActivity {
         status("offline");
     }
 
-    public void sendNotification(final String receiver, final String username, final String message) {
+    public void sendNotification(final String receiver, final String username, final String message, final boolean sendText) {
         DatabaseReference tokens = FirebaseDatabase.getInstance().getReference("Tokens");
         Query query = tokens.orderByKey().equalTo(receiver);
         query.addValueEventListener(new ValueEventListener() {
@@ -527,7 +515,19 @@ public class MessageActivity extends AppCompatActivity {
                         title = "New Message " + nameGroup;
                     }
 
-                    Data data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + message, title, receiver);
+//                    if (sendText) {
+//                        Data data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + message, title, receiver);
+//                    } else {
+//                        Data data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + "Send a Image", title, receiver, message);
+//                    }
+
+                    Data data = new Data();
+
+                    if (checkSendImage.equals("false")) {
+                        data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + message, title, receiver);
+                    } else {
+                        data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + "Send an image", title, receiver);
+                    }
 
                     Sender sender = new Sender(data, token.getToken());
                     apiService.sendNotification(sender)
@@ -702,6 +702,7 @@ public class MessageActivity extends AppCompatActivity {
     private String checkGroup = "";
     private String adminGroup = "";
     private String checkChangeAvatar = "false";
+    private String checkSendImage = "false";
     private String color = "";
     private ImageView profileImage;
     private ImageView iconInforGroup;
@@ -717,7 +718,7 @@ public class MessageActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ValueEventListener seenListener;
     private APIService apiService;
-    private boolean notify = false;
+    private boolean notify = true;
     private Uri imageUri;
     private StorageReference storageReference;
     private UploadTask uploadTask;

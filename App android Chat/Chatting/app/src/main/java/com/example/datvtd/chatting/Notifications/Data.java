@@ -1,8 +1,12 @@
 package com.example.datvtd.chatting.Notifications;
 
 public class Data {
-    String user, body, title, sented;
-    int icon;
+    public String user;
+    public String body;
+    public String title;
+    public String sented;
+    public String url;
+    public int icon;
 
     public Data() {
     }
@@ -53,5 +57,13 @@ public class Data {
 
     public void setIcon(int icon) {
         this.icon = icon;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

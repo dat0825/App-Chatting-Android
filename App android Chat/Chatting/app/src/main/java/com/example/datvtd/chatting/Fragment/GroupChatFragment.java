@@ -113,7 +113,7 @@ public class GroupChatFragment extends Fragment {
                                 mGroupChats.add(groupChat);
                             }
                             Log.d("afterread", String.valueOf(mGroupChats.size()));
-                            mUserAdapter = new UserAdapter(getContext(), mGroupChats, false, true);
+                            mUserAdapter = new UserAdapter(getContext(), mGroupChats, true, true);
                             recyclerView.setAdapter(mUserAdapter);
                         }
 

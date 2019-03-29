@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml",
+            "outputFile": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml",
             "map": [
                 {
                     "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e795524a59c94f67f9b8ae26296d8411/res/values-b+sr+Latn/values-b+sr+Latn.xml",

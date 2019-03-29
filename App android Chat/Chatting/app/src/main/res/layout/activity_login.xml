@@ -99,7 +99,8 @@
             android:textColor="@color/color_black"
             android:layout_below="@id/b_Login_facebook"
             android:layout_marginTop="10dp"
-            android:layout_alignParentRight="true" />
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="150dp"/>
 
     </RelativeLayout>
 

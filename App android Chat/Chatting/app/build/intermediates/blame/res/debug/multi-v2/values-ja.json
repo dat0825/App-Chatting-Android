@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
+            "outputFile": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
             "map": [
                 {
                     "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.1.aar/bef3d2753dd7656f1d73aa3635052938/res/values-ja/values.xml",

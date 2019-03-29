@@ -2,11 +2,14 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <device id="pixel" />
+        <device id="Nexus 6" />
+      </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="sadj1" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="CMakeSettings">
@@ -15,7 +18,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6fa6e84-677c-492f-a2db-518d63a37596" name="Default" comment="" />
+    <list default="true" id="06978afd-e3f8-4a25-acc7-198de68992d8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,122 +40,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InfoGroupActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/InfoGroupActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-435">
-              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-              <folding>
-                <element signature="e#2324#2473#0" expanded="true" />
-                <element signature="e#2472#2473#0" expanded="true" />
-                <element signature="e#2520#2827#0" expanded="true" />
-                <element signature="e#2826#2827#0" expanded="true" />
-                <element signature="e#2876#3152#0" expanded="true" />
-                <element signature="e#3151#3152#0" expanded="true" />
-                <element signature="method#showMember#0;class#InfoGroupActivity#0" />
-                <element signature="class#3382:4804" />
-                <element signature="method#onDataChange#0;class#3382:4804" />
-                <element signature="class#3881:4614" />
-                <element signature="method#onDataChange#0;class#3881:4614" />
-                <element signature="method#onCancelled#0;class#3881:4614" />
-                <element signature="method#onCancelled#0;class#3382:4804" />
-                <element signature="method#setupSwipe#0;class#InfoGroupActivity#0" />
-                <element signature="class#5070:5520" />
-                <element signature="method#onDeleteButtonClicked#0;class#5070:5520" />
-                <element signature="method#onPromoteButtonClicked#0;class#5070:5520" />
-                <element signature="method#removeUserGroup#0;class#InfoGroupActivity#0" />
-                <element signature="method#changeAdmin#0;class#InfoGroupActivity#0" />
-                <element signature="method#updateColor#0;class#InfoGroupActivity#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DialogColorActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/DialogColorActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="69" column="170" selection-start-line="69" selection-start-column="170" selection-end-line="69" selection-end-column="170" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MessageActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="281" column="37" selection-start-line="281" selection-start-column="25" selection-end-line="281" selection-end-column="37" />
+            <state relative-caret-position="802">
+              <caret line="380" column="38" selection-start-line="380" selection-start-column="31" selection-end-line="380" selection-end-column="38" />
               <folding>
-                <element signature="class#4521:4891" />
-                <element signature="method#onDataChange#0;class#4521:4891" />
-                <element signature="method#onCancelled#0;class#4521:4891" />
-                <element signature="e#6688#8286#0" />
-                <element signature="class#6917:7712" />
-                <element signature="method#onDataChange#0;class#6917:7712" />
-                <element signature="method#onCancelled#0;class#6917:7712" />
-                <element signature="e#8292#9954#0" />
-                <element signature="class#8529:9389" />
-                <element signature="method#onDataChange#0;class#8529:9389" />
-                <element signature="method#onCancelled#0;class#8529:9389" />
-                <element signature="e#14062#16132#0" />
-                <element signature="class#14957:15378" />
-                <element signature="method#onDataChange#0;class#14957:15378" />
-                <element signature="method#onCancelled#0;class#14957:15378" />
-                <element signature="class#15592:16114" />
-                <element signature="method#onDataChange#0;class#15592:16114" />
-                <element signature="method#onCancelled#0;class#15592:16114" />
-                <element signature="e#16138#17505#0" />
-                <element signature="class#16403:17497" />
-                <element signature="method#onDataChange#0;class#16403:17497" />
-                <element signature="method#onCancelled#0;class#16403:17497" />
-                <element signature="e#17511#18450#0" />
-                <element signature="class#17701:18442" />
-                <element signature="method#onDataChange#0;class#17701:18442" />
-                <element signature="method#onCancelled#0;class#17701:18442" />
-                <element signature="e#18456#19403#0" />
-                <element signature="class#18652:19395" />
-                <element signature="method#onDataChange#0;class#18652:19395" />
-                <element signature="method#onCancelled#0;class#18652:19395" />
-                <element signature="e#19409#19795#0" />
-                <element signature="e#19801#19898#0" />
-                <element signature="e#19904#20000#0" />
-                <element signature="e#20006#20101#0" />
-                <element signature="e#20107#22128#0" />
-                <element signature="class#20397:22120" />
-                <element signature="method#onDataChange#0;class#20397:22120" />
-                <element signature="class#21211:21962" />
-                <element signature="method#onResponse#0;class#21211:21962" />
-                <element signature="method#onFailure#0;class#21211:21962" />
-                <element signature="method#onCancelled#0;class#20397:22120" />
-                <element signature="e#22134#22346#0" />
-                <element signature="e#22352#22630#0" />
-                <element signature="e#22636#24844#0" />
-                <element signature="e#24850#25705#0" />
-                <element signature="e#25521#25611#0" />
-                <element signature="e#25711#27868#0" />
+                <element signature="class#4648:5018" />
+                <element signature="method#onDataChange#0;class#4648:5018" />
+                <element signature="method#onCancelled#0;class#4648:5018" />
+                <element signature="e#6480#6629#0" expanded="true" />
+                <element signature="e#6628#6629#0" expanded="true" />
+                <element signature="e#6702#6847#0" expanded="true" />
+                <element signature="e#6846#6847#0" expanded="true" />
+                <element signature="class#7090:7885" />
+                <element signature="method#onDataChange#0;class#7090:7885" />
+                <element signature="method#onCancelled#0;class#7090:7885" />
+                <element signature="class#8702:9562" />
+                <element signature="method#onDataChange#0;class#8702:9562" />
+                <element signature="method#onCancelled#0;class#8702:9562" />
+                <element signature="e#10133#13367#0" />
+                <element signature="class#11030:11519" />
+                <element signature="method#onDataChange#0;class#11030:11519" />
+                <element signature="method#onCancelled#0;class#11030:11519" />
+                <element signature="class#11732:12260" />
+                <element signature="method#onDataChange#0;class#11732:12260" />
+                <element signature="method#onCancelled#0;class#11732:12260" />
+                <element signature="class#12587:13349" />
+                <element signature="method#onDataChange#0;class#12587:13349" />
+                <element signature="method#onCancelled#0;class#12587:13349" />
+                <element signature="e#15456#16823#0" />
+                <element signature="class#15721:16815" />
+                <element signature="method#onDataChange#0;class#15721:16815" />
+                <element signature="method#onCancelled#0;class#15721:16815" />
+                <element signature="e#16829#17768#0" />
+                <element signature="class#17019:17760" />
+                <element signature="method#onDataChange#0;class#17019:17760" />
+                <element signature="method#onCancelled#0;class#17019:17760" />
+                <element signature="e#17774#18721#0" />
+                <element signature="class#17970:18713" />
+                <element signature="method#onDataChange#0;class#17970:18713" />
+                <element signature="method#onCancelled#0;class#17970:18713" />
+                <element signature="e#18727#19113#0" />
+                <element signature="e#19119#19216#0" />
+                <element signature="e#19222#19318#0" />
+                <element signature="e#19324#19419#0" />
+                <element signature="e#21860#22072#0" />
+                <element signature="e#22078#22356#0" />
+                <element signature="e#22362#24570#0" />
+                <element signature="e#24576#25431#0" />
+                <element signature="e#25247#25337#0" />
+                <element signature="e#25437#27594#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Adapter/UserAdapter.java">
+      <file leaf-file-name="MyFirebaseMessaging.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="324" column="74" selection-start-line="324" selection-start-column="74" selection-end-line="324" selection-end-column="74" />
-              <folding>
-                <element signature="method#UserAdapter#0;class#UserAdapter#0" />
-                <element signature="method#UserAdapter#1;class#UserAdapter#0" />
-                <element signature="method#UserAdapter#2;class#UserAdapter#0" />
-                <element signature="method#UserAdapter#3;class#UserAdapter#0" />
-                <element signature="method#onCreateViewHolder#0;class#UserAdapter#0" />
-                <element signature="method#getItemCount#0;class#UserAdapter#0" />
-                <element signature="class#ViewHolder#0;class#UserAdapter#0" />
-                <element signature="method#ViewHolder#0;class#ViewHolder#0;class#UserAdapter#0" />
-                <element signature="method#showLastMessage#0;class#UserAdapter#0" />
-                <element signature="method#showLastMessageGroupChat#0;class#UserAdapter#0" />
-                <element signature="method#removeUserGroup#0;class#UserAdapter#0" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="68" column="20" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -161,8 +109,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;Chatl</find>
-      <find>checkGroup</find>
+      <find>MyFire</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -2444,20 +2391,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/DialogConfirmActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_send.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_add_person.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_info_blue_20dp.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Model/Chatlist.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_send_image_15dp.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_info_group.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/InfoGroupActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_chat_image_receive.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_search_black_24dp.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Adapter/UserAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/GroupChatFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Data.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/DialogColorActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java" />
       </list>
     </option>
   </component>
@@ -2472,8 +2415,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2497,7 +2440,7 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="chatting" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Adapter" type="462c0819:PsiDirectoryNode" />
+              <item name="Fragment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Chatting" type="1abcf292:AndroidViewProjectNode" />
@@ -2513,29 +2456,18 @@
               <item name="chatting" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="Notifications" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Chatting" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="Chatting" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="device.picker.selection" value="Pixel_2_XL_API_25" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2654,11 +2586,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a6fa6e84-677c-492f-a2db-518d63a37596" name="Default" comment="" />
-      <created>1553648345536</created>
+      <changelist id="06978afd-e3f8-4a25-acc7-198de68992d8" name="Default" comment="" />
+      <created>1553820998904</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1553648345536</updated>
+      <updated>1553820998904</updated>
     </task>
     <servers />
   </component>
@@ -2672,18 +2604,16 @@
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50033355" side_tool="true" weight="0.228" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.29019347" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50033355" side_tool="true" weight="0.56133336" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.49966645" visible="true" weight="0.42666668" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="7" sideWeight="0.49966645" visible="true" weight="0.42266667" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17745164" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32933334" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18412274" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.22" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -2691,11 +2621,13 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.32955304" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2707,371 +2639,311 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/InfoGroupActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <element signature="e#2324#2473#0" expanded="true" />
-            <element signature="e#2472#2473#0" expanded="true" />
-            <element signature="e#2520#2827#0" expanded="true" />
-            <element signature="e#2826#2827#0" expanded="true" />
-            <element signature="e#2876#3152#0" expanded="true" />
-            <element signature="e#3151#3152#0" expanded="true" />
-            <element signature="e#5704#5993#0" expanded="true" />
-            <element signature="e#5992#5993#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/DialogColorActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
-          <folding>
-            <element signature="e#2016#2974#0" expanded="true" />
-            <element signature="e#2973#2974#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+        <state relative-caret-position="8325">
+          <caret line="555" selection-start-line="555" selection-end-line="555" />
           <folding>
-            <element signature="class#4521:4891" />
-            <element signature="method#onDataChange#0;class#4521:4891" />
-            <element signature="method#onCancelled#0;class#4521:4891" />
-            <element signature="e#6688#8286#0" />
-            <element signature="class#6917:7712" />
-            <element signature="method#onDataChange#0;class#6917:7712" />
-            <element signature="method#onCancelled#0;class#6917:7712" />
-            <element signature="e#8292#9954#0" />
-            <element signature="class#8529:9389" />
-            <element signature="method#onDataChange#0;class#8529:9389" />
-            <element signature="method#onCancelled#0;class#8529:9389" />
-            <element signature="e#14062#16132#0" />
-            <element signature="class#14957:15378" />
-            <element signature="method#onDataChange#0;class#14957:15378" />
-            <element signature="method#onCancelled#0;class#14957:15378" />
-            <element signature="class#15592:16114" />
-            <element signature="method#onDataChange#0;class#15592:16114" />
-            <element signature="method#onCancelled#0;class#15592:16114" />
-            <element signature="e#16138#17505#0" />
-            <element signature="class#16403:17497" />
-            <element signature="method#onDataChange#0;class#16403:17497" />
-            <element signature="method#onCancelled#0;class#16403:17497" />
-            <element signature="e#17511#18450#0" />
-            <element signature="class#17701:18442" />
-            <element signature="method#onDataChange#0;class#17701:18442" />
-            <element signature="method#onCancelled#0;class#17701:18442" />
-            <element signature="e#18456#19403#0" />
-            <element signature="class#18652:19395" />
-            <element signature="method#onDataChange#0;class#18652:19395" />
-            <element signature="method#onCancelled#0;class#18652:19395" />
-            <element signature="e#19409#19795#0" />
-            <element signature="e#19801#19898#0" />
-            <element signature="e#19904#20000#0" />
-            <element signature="e#20006#20101#0" />
-            <element signature="e#20107#22128#0" />
-            <element signature="class#20397:22120" />
-            <element signature="method#onDataChange#0;class#20397:22120" />
-            <element signature="class#21211:21962" />
-            <element signature="method#onResponse#0;class#21211:21962" />
-            <element signature="method#onFailure#0;class#21211:21962" />
-            <element signature="method#onCancelled#0;class#20397:22120" />
-            <element signature="e#22134#22346#0" />
-            <element signature="e#22352#22630#0" />
-            <element signature="e#22636#24844#0" />
-            <element signature="e#24850#25705#0" />
-            <element signature="e#25521#25611#0" />
-            <element signature="e#25711#27868#0" />
+            <element signature="class#4648:5018" />
+            <element signature="method#onDataChange#0;class#4648:5018" />
+            <element signature="method#onCancelled#0;class#4648:5018" />
+            <element signature="e#6480#6629#0" expanded="true" />
+            <element signature="e#6628#6629#0" expanded="true" />
+            <element signature="e#6702#6847#0" expanded="true" />
+            <element signature="e#6846#6847#0" expanded="true" />
+            <element signature="class#7090:7885" />
+            <element signature="method#onDataChange#0;class#7090:7885" />
+            <element signature="method#onCancelled#0;class#7090:7885" />
+            <element signature="class#8702:9562" />
+            <element signature="method#onDataChange#0;class#8702:9562" />
+            <element signature="method#onCancelled#0;class#8702:9562" />
+            <element signature="e#10133#13367#0" />
+            <element signature="class#11030:11519" />
+            <element signature="method#onDataChange#0;class#11030:11519" />
+            <element signature="method#onCancelled#0;class#11030:11519" />
+            <element signature="class#11732:12260" />
+            <element signature="method#onDataChange#0;class#11732:12260" />
+            <element signature="method#onCancelled#0;class#11732:12260" />
+            <element signature="class#12587:13349" />
+            <element signature="method#onDataChange#0;class#12587:13349" />
+            <element signature="method#onCancelled#0;class#12587:13349" />
+            <element signature="e#15456#16823#0" />
+            <element signature="class#15721:16815" />
+            <element signature="method#onDataChange#0;class#15721:16815" />
+            <element signature="method#onCancelled#0;class#15721:16815" />
+            <element signature="e#16829#17768#0" />
+            <element signature="class#17019:17760" />
+            <element signature="method#onDataChange#0;class#17019:17760" />
+            <element signature="method#onCancelled#0;class#17019:17760" />
+            <element signature="e#17774#18721#0" />
+            <element signature="class#17970:18713" />
+            <element signature="method#onDataChange#0;class#17970:18713" />
+            <element signature="method#onCancelled#0;class#17970:18713" />
+            <element signature="e#18727#19113#0" />
+            <element signature="e#19119#19216#0" />
+            <element signature="e#19222#19318#0" />
+            <element signature="e#19324#19419#0" />
+            <element signature="e#21860#22072#0" />
+            <element signature="e#22078#22356#0" />
+            <element signature="e#22362#24570#0" />
+            <element signature="e#24576#25431#0" />
+            <element signature="e#25247#25337#0" />
+            <element signature="e#25437#27594#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/InfoGroupActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/DialogColorActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/InfoGroupActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="50" lean-forward="true" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/DialogColorActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/InfoGroupActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/DialogColorActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding>
-            <element signature="e#2580#2605#0" expanded="true" />
-            <element signature="e#2807#2825#0" expanded="true" />
-            <element signature="e#3232#3266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/DialogConfirmActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="64" column="80" selection-start-line="64" selection-start-column="80" selection-end-line="64" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Adapter/UserGroupAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_add_person.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_back.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_info_blue_20dp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Model/Chatlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_info_blue_20dp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_send_image_15dp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_send.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Model/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_info_group.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Adapter/UserAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="324" column="74" selection-start-line="324" selection-start-column="74" selection-end-line="324" selection-end-column="74" />
+        <state relative-caret-position="2595">
+          <caret line="173" column="16" selection-start-line="173" selection-start-column="16" selection-end-line="173" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/UserGroupActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/GroupChatFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="107" column="113" selection-start-line="107" selection-start-column="113" selection-end-line="107" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_chat_image_receive.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_chat_receive.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_search_black_24dp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="845">
+          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/ProfileFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="205" column="42" selection-start-line="205" selection-start-column="42" selection-end-line="205" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.1.aar/bef3d2753dd7656f1d73aa3635052938/jars/classes.jar!/com/google/firebase/messaging/RemoteMessage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.1.aar/c298ea7d2693c84b83411d9ed35d93cf/jars/classes.jar!/com/google/firebase/database/DatabaseReference.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/GroupChatFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="102" column="36" lean-forward="true" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/UserGroupActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Adapter/UserAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="173" column="16" selection-start-line="173" selection-start-column="16" selection-end-line="173" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/APIService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.1.aar/bef3d2753dd7656f1d73aa3635052938/jars/classes.jar!/com/google/firebase/messaging/FirebaseMessagingService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-313">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="method#UserAdapter#0;class#UserAdapter#0" />
-            <element signature="method#UserAdapter#1;class#UserAdapter#0" />
-            <element signature="method#UserAdapter#2;class#UserAdapter#0" />
-            <element signature="method#UserAdapter#3;class#UserAdapter#0" />
-            <element signature="method#onCreateViewHolder#0;class#UserAdapter#0" />
-            <element signature="method#getItemCount#0;class#UserAdapter#0" />
-            <element signature="class#ViewHolder#0;class#UserAdapter#0" />
-            <element signature="method#ViewHolder#0;class#ViewHolder#0;class#UserAdapter#0" />
-            <element signature="method#showLastMessage#0;class#UserAdapter#0" />
-            <element signature="method#showLastMessageGroupChat#0;class#UserAdapter#0" />
-            <element signature="method#removeUserGroup#0;class#UserAdapter#0" />
+            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/DialogColorActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="69" column="170" selection-start-line="69" selection-start-column="170" selection-end-line="69" selection-end-column="170" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/InfoGroupActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-          <folding>
-            <element signature="e#2324#2473#0" expanded="true" />
-            <element signature="e#2472#2473#0" expanded="true" />
-            <element signature="e#2520#2827#0" expanded="true" />
-            <element signature="e#2826#2827#0" expanded="true" />
-            <element signature="e#2876#3152#0" expanded="true" />
-            <element signature="e#3151#3152#0" expanded="true" />
-            <element signature="method#showMember#0;class#InfoGroupActivity#0" />
-            <element signature="class#3382:4804" />
-            <element signature="method#onDataChange#0;class#3382:4804" />
-            <element signature="class#3881:4614" />
-            <element signature="method#onDataChange#0;class#3881:4614" />
-            <element signature="method#onCancelled#0;class#3881:4614" />
-            <element signature="method#onCancelled#0;class#3382:4804" />
-            <element signature="method#setupSwipe#0;class#InfoGroupActivity#0" />
-            <element signature="class#5070:5520" />
-            <element signature="method#onDeleteButtonClicked#0;class#5070:5520" />
-            <element signature="method#onPromoteButtonClicked#0;class#5070:5520" />
-            <element signature="method#removeUserGroup#0;class#InfoGroupActivity#0" />
-            <element signature="method#changeAdmin#0;class#InfoGroupActivity#0" />
-            <element signature="method#updateColor#0;class#InfoGroupActivity#0" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="281" column="37" selection-start-line="281" selection-start-column="25" selection-end-line="281" selection-end-column="37" />
+        <state relative-caret-position="802">
+          <caret line="380" column="38" selection-start-line="380" selection-start-column="31" selection-end-line="380" selection-end-column="38" />
           <folding>
-            <element signature="class#4521:4891" />
-            <element signature="method#onDataChange#0;class#4521:4891" />
-            <element signature="method#onCancelled#0;class#4521:4891" />
-            <element signature="e#6688#8286#0" />
-            <element signature="class#6917:7712" />
-            <element signature="method#onDataChange#0;class#6917:7712" />
-            <element signature="method#onCancelled#0;class#6917:7712" />
-            <element signature="e#8292#9954#0" />
-            <element signature="class#8529:9389" />
-            <element signature="method#onDataChange#0;class#8529:9389" />
-            <element signature="method#onCancelled#0;class#8529:9389" />
-            <element signature="e#14062#16132#0" />
-            <element signature="class#14957:15378" />
-            <element signature="method#onDataChange#0;class#14957:15378" />
-            <element signature="method#onCancelled#0;class#14957:15378" />
-            <element signature="class#15592:16114" />
-            <element signature="method#onDataChange#0;class#15592:16114" />
-            <element signature="method#onCancelled#0;class#15592:16114" />
-            <element signature="e#16138#17505#0" />
-            <element signature="class#16403:17497" />
-            <element signature="method#onDataChange#0;class#16403:17497" />
-            <element signature="method#onCancelled#0;class#16403:17497" />
-            <element signature="e#17511#18450#0" />
-            <element signature="class#17701:18442" />
-            <element signature="method#onDataChange#0;class#17701:18442" />
-            <element signature="method#onCancelled#0;class#17701:18442" />
-            <element signature="e#18456#19403#0" />
-            <element signature="class#18652:19395" />
-            <element signature="method#onDataChange#0;class#18652:19395" />
-            <element signature="method#onCancelled#0;class#18652:19395" />
-            <element signature="e#19409#19795#0" />
-            <element signature="e#19801#19898#0" />
-            <element signature="e#19904#20000#0" />
-            <element signature="e#20006#20101#0" />
-            <element signature="e#20107#22128#0" />
-            <element signature="class#20397:22120" />
-            <element signature="method#onDataChange#0;class#20397:22120" />
-            <element signature="class#21211:21962" />
-            <element signature="method#onResponse#0;class#21211:21962" />
-            <element signature="method#onFailure#0;class#21211:21962" />
-            <element signature="method#onCancelled#0;class#20397:22120" />
-            <element signature="e#22134#22346#0" />
-            <element signature="e#22352#22630#0" />
-            <element signature="e#22636#24844#0" />
-            <element signature="e#24850#25705#0" />
-            <element signature="e#25521#25611#0" />
-            <element signature="e#25711#27868#0" />
+            <element signature="class#4648:5018" />
+            <element signature="method#onDataChange#0;class#4648:5018" />
+            <element signature="method#onCancelled#0;class#4648:5018" />
+            <element signature="e#6480#6629#0" expanded="true" />
+            <element signature="e#6628#6629#0" expanded="true" />
+            <element signature="e#6702#6847#0" expanded="true" />
+            <element signature="e#6846#6847#0" expanded="true" />
+            <element signature="class#7090:7885" />
+            <element signature="method#onDataChange#0;class#7090:7885" />
+            <element signature="method#onCancelled#0;class#7090:7885" />
+            <element signature="class#8702:9562" />
+            <element signature="method#onDataChange#0;class#8702:9562" />
+            <element signature="method#onCancelled#0;class#8702:9562" />
+            <element signature="e#10133#13367#0" />
+            <element signature="class#11030:11519" />
+            <element signature="method#onDataChange#0;class#11030:11519" />
+            <element signature="method#onCancelled#0;class#11030:11519" />
+            <element signature="class#11732:12260" />
+            <element signature="method#onDataChange#0;class#11732:12260" />
+            <element signature="method#onCancelled#0;class#11732:12260" />
+            <element signature="class#12587:13349" />
+            <element signature="method#onDataChange#0;class#12587:13349" />
+            <element signature="method#onCancelled#0;class#12587:13349" />
+            <element signature="e#15456#16823#0" />
+            <element signature="class#15721:16815" />
+            <element signature="method#onDataChange#0;class#15721:16815" />
+            <element signature="method#onCancelled#0;class#15721:16815" />
+            <element signature="e#16829#17768#0" />
+            <element signature="class#17019:17760" />
+            <element signature="method#onDataChange#0;class#17019:17760" />
+            <element signature="method#onCancelled#0;class#17019:17760" />
+            <element signature="e#17774#18721#0" />
+            <element signature="class#17970:18713" />
+            <element signature="method#onDataChange#0;class#17970:18713" />
+            <element signature="method#onCancelled#0;class#17970:18713" />
+            <element signature="e#18727#19113#0" />
+            <element signature="e#19119#19216#0" />
+            <element signature="e#19222#19318#0" />
+            <element signature="e#19324#19419#0" />
+            <element signature="e#21860#22072#0" />
+            <element signature="e#22078#22356#0" />
+            <element signature="e#22362#24570#0" />
+            <element signature="e#24576#25431#0" />
+            <element signature="e#25247#25337#0" />
+            <element signature="e#25437#27594#0" />
           </folding>
         </state>
       </provider>

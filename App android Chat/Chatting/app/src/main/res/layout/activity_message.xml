@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,9 +15,9 @@
             android:id="@+id/profile_image"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@mipmap/ic_launcher"
+            android:layout_toRightOf="@id/b_back"
             android:padding="10dp"
-            android:layout_toRightOf="@id/b_back"/>
+            android:src="@mipmap/ic_launcher" />
 
         <TextView
             android:id="@+id/text_username"
@@ -30,31 +29,32 @@
             android:text="username"
             android:textColor="@color/color_black"
             android:textSize="30dp" />
+
         <ImageView
             android:id="@+id/icon_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_info_blue_20dp"
-            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="10dp" />
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_info_blue_20dp" />
+
         <ImageView
             android:id="@+id/b_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_back"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_back" />
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/layout_header"
-        android:layout_above="@id/layout_bottom">
-    </android.support.v7.widget.RecyclerView>
+        android:layout_above="@id/layout_bottom"
+        android:layout_below="@id/layout_header"></android.support.v7.widget.RecyclerView>
 
     <RelativeLayout
         android:id="@+id/layout_bottom"
@@ -69,23 +69,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:background="@color/color_white"
             android:layout_toLeftOf="@id/b_send"
-            android:hint="Type a message"/>
+            android:layout_toRightOf="@id/b_send_image"
+            android:background="@color/color_white"
+            android:hint="Type a message" />
+
         <ImageView
+            android:id="@+id/b_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/b_send"
-            android:src="@drawable/ic_send"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send" />
         <ImageView
             android:id="@+id/b_send_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_send_image_15dp"
-            android:layout_toLeftOf="@id/b_send"
             android:layout_centerVertical="true"/>
-
     </RelativeLayout>
 </RelativeLayout>

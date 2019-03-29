@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/values/values.xml",
@@ -40,20 +40,22 @@
                     }
                 },
                 {
-                    "source": "/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/build/generated/res/google-services/debug/values/values.xml",
+                    "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,308,390,494,597,717,815",
-                        "endColumns": "143,108,81,103,102,119,97,74",
-                        "endOffsets": "194,303,385,489,592,712,810,885"
+                        "startLines": "3,10,17",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "54,372,760",
+                        "endLines": "8,16,21",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "366,755,1028"
                     },
                     "to": {
-                        "startLines": "2419,2425,2426,2427,2428,2429,2430,2439",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "151422,152085,152194,152276,152380,152483,152603,153802",
-                        "endColumns": "143,108,81,103,102,119,97,74",
-                        "endOffsets": "151561,152189,152271,152375,152478,152598,152696,153872"
+                        "startLines": "2451,3880,4394",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "154720,247355,282782",
+                        "endLines": "2456,3886,4398",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "155032,247738,283050"
                     }
                 },
                 {
@@ -241,22 +243,20 @@
                     }
                 },
                 {
-                    "source": "/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/src/main/res/values/styles.xml",
+                    "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/generated/res/google-services/debug/values/values.xml",
                     "from": {
-                        "startLines": "3,10,17",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "54,372,760",
-                        "endLines": "8,16,21",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "366,755,1028"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,308,390,494,597,717,815",
+                        "endColumns": "143,108,81,103,102,119,97,74",
+                        "endOffsets": "194,303,385,489,592,712,810,885"
                     },
                     "to": {
-                        "startLines": "2451,3880,4394",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "154720,247355,282782",
-                        "endLines": "2456,3886,4398",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "155032,247738,283050"
+                        "startLines": "2419,2425,2426,2427,2428,2429,2430,2439",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "151422,152085,152194,152276,152380,152483,152603,153802",
+                        "endColumns": "143,108,81,103,102,119,97,74",
+                        "endOffsets": "151561,152189,152271,152375,152478,152598,152696,153872"
                     }
                 },
                 {
@@ -276,6 +276,23 @@
                         "endLines": "207,208,209,2029,2035,2119,2129,2130,2131,2378,2379,2380,2381,2382,2383,2384,2385,2386,2387,2388,2389,2390,2391,2392,2393,2394,2395,2396,2397,2398,2399,2400,4843,4848,4856",
                         "endColumns": "76,83,91,35,90,69,81,82,80,136,114,117,94,64,67,57,71,71,96,90,73,73,112,100,62,64,164,76,81,124,85,123,12,12,12",
                         "endOffsets": "10976,11060,11152,124600,124940,130610,131329,131412,131493,147084,147199,147317,147412,147477,147545,147603,147675,147747,147844,147935,148009,148083,148196,148297,148360,148425,148590,148667,148749,148874,148960,149084,312346,312670,313048"
+                    }
+                },
+                {
+                    "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "4,2,3,5,8,7,6",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "153,55,102,199,337,291,245",
+                        "endColumns": "45,46,50,45,44,45,45",
+                        "endOffsets": "194,97,148,240,377,332,286"
+                    },
+                    "to": {
+                        "startLines": "192,193,194,195,196,197,198",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "9973,10019,10066,10117,10163,10208,10254",
+                        "endColumns": "45,46,50,45,44,45,45",
+                        "endOffsets": "10014,10061,10112,10158,10203,10249,10295"
                     }
                 },
                 {
@@ -313,24 +330,7 @@
                     }
                 },
                 {
-                    "source": "/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "4,2,3,5,8,7,6",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "153,55,102,199,337,291,245",
-                        "endColumns": "45,46,50,45,44,45,45",
-                        "endOffsets": "194,97,148,240,377,332,286"
-                    },
-                    "to": {
-                        "startLines": "192,193,194,195,196,197,198",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "9973,10019,10066,10117,10163,10208,10254",
-                        "endColumns": "45,46,50,45,44,45,45",
-                        "endOffsets": "10014,10061,10112,10158,10203,10249,10295"
-                    }
-                },
-                {
-                    "source": "/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/src/main/res/values/strings.xml",
+                    "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "1,5,6,4",
                         "startColumns": "4,4,4,4",

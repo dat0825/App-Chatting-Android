@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
+            "outputFile": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
             "map": [
                 {
                     "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/values-id/values-id.xml",

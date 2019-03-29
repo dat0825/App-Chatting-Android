@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml",
+            "outputFile": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml",
             "map": [
                 {
                     "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/777a169a50244de2db633e523522cf43/res/values-el/values.xml",

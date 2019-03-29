@@ -1,11 +1,11 @@
 #Internal package file, do not edit.
-#Thu Mar 28 16:47:58 ICT 2019
-1.base=/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/build/intermediates/transforms/dexMerger/debug/0
+#Fri Mar 29 11:45:25 ICT 2019
+1.base=/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/transforms/dexMerger/debug/0
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
 count=2
 1.set=DEX
 0.path=classes.dex
 0.set=DEX
-0.base=/home/datvtd/Desktop/Update 20-03-2019/App android Chat/Chatting/app/build/intermediates/transforms/dexMerger/debug/1
+0.base=/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/transforms/dexMerger/debug/1
 1.path=classes.dex
