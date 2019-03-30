@@ -9,10 +9,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationManagerCompat;
 import android.util.Log;
 
 import com.example.datvtd.chatting.Adapter.UserAdapter;
@@ -33,10 +31,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
-
-import static com.example.datvtd.chatting.R.layout.abc_action_bar_title_item;
-import static com.example.datvtd.chatting.R.layout.item_user;
 
 public class MyFirebaseMessaging extends FirebaseMessagingService {
 
@@ -64,14 +58,11 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         this.title = remoteMessage.getData().get("title");
         this.body = remoteMessage.getData().get("body");
 
-        this.url = body.split(": ",2);
-
-        Log.d("sadj1",url[1]);
-
+        updateColor();
+        getUrlAvatar();
 
 //        RemoteMessage.Notification notification = remoteMessage.getNotification();
 //        int j = Integer.parseInt(user.replaceAll("[\\D]",""));
-        updateColor();
         Intent intent = new Intent(this, MessageActivity.class);
 //        Bundle bundle = new Bundle();
 //        bundle.putString("ID",user);
@@ -83,17 +74,24 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
 //        PendingIntent pendingIntent = PendingIntent.getActivity(this,j,intent,PendingIntent.FLAG_ONE_SHOT);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(), intent, PendingIntent.FLAG_ONE_SHOT);
 
-        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+        Bitmap largeIcon = null;
 
-//        URL url = new URL(this.url);
-//        Bitmap picture = BitmapFactory.decodeStream((InputStream) url.getContent());
+        if (this.urlAvatarSender.equals("default")) {
+            largeIcon = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+        } else {
+            URL urlImage = new URL(this.urlAvatarSender);
+            largeIcon = BitmapFactory.decodeStream((InputStream) urlImage.getContent());
+        }
+
+//        URL sound = new URL(this.sound);
+//        Bitmap picture = BitmapFactory.decodeStream((InputStream) sound.getContent());
 
 //        Bitmap picture = BitmapFactory.decodeStream(new URL)
 
         Uri defaultSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         Notification notification = new NotificationCompat.Builder(this)
-                .setSmallIcon(R.mipmap.ic_launcher_round)
-//                .setLargeIcon(picture)
+                .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
+                .setLargeIcon(largeIcon)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setContentTitle(title)
                 .setContentText(body)
@@ -116,14 +114,35 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
     }
 
     public void updateColor() {
-        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Chatlist")
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference("Chatlist")
                 .child(firebaseUser.getUid()).child(user).child("color");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                color = dataSnapshot.getValue().toString();
-                new UserAdapter().color = color;
+                if (dataSnapshot.getValue() != null) {
+                    color = dataSnapshot.getValue().toString();
+                    new UserAdapter().color = color;
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    public void getUrlAvatar() {
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference("Users")
+                .child(user).child("imageURL");
+        // phải dùng biến "user" để lấy id của người gửi. nếu dùng firebaseuser.getUid thì sẽ ra id của người nhận.
+        // Lớp này xử lý trên máy của người nhận.
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                urlAvatarSender = dataSnapshot.getValue().toString();
             }
 
             @Override
@@ -139,5 +158,8 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
     private String body;
     private String sented;
     private String[] url;
+    private String urlAvatarSender = "";
     private String color = "";
+    private FirebaseUser firebaseUser;
+    private DatabaseReference reference;
 }

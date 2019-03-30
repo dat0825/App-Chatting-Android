@@ -5,7 +5,7 @@ public class Data {
     public String body;
     public String title;
     public String sented;
-    public String url;
+    public String sound;
     public int icon;
 
     public Data() {
@@ -16,6 +16,15 @@ public class Data {
         this.body = body;
         this.title = title;
         this.sented = sented;
+        this.icon = icon;
+    }
+
+    public Data(String user, int icon, String body, String title, String sented, String sound) {
+        this.user = user;
+        this.body = body;
+        this.title = title;
+        this.sented = sented;
+        this.sound = sound;
         this.icon = icon;
     }
 
@@ -59,11 +68,11 @@ public class Data {
         this.icon = icon;
     }
 
-    public String getUrl() {
-        return url;
+    public String getSound() {
+        return sound;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setSound(String sound) {
+        this.sound = sound;
     }
 }

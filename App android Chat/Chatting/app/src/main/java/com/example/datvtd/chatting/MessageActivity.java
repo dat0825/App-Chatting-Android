@@ -500,7 +500,8 @@ public class MessageActivity extends AppCompatActivity {
         status("offline");
     }
 
-    public void sendNotification(final String receiver, final String username, final String message, final boolean sendText) {
+    public void sendNotification(final String receiver, final String username, final String message,boolean sendText) {
+
         DatabaseReference tokens = FirebaseDatabase.getInstance().getReference("Tokens");
         Query query = tokens.orderByKey().equalTo(receiver);
         query.addValueEventListener(new ValueEventListener() {
@@ -520,13 +521,12 @@ public class MessageActivity extends AppCompatActivity {
 //                    } else {
 //                        Data data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + "Send a Image", title, receiver, message);
 //                    }
-
                     Data data = new Data();
 
                     if (checkSendImage.equals("false")) {
-                        data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + message, title, receiver);
+                         data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + message, title, receiver);
                     } else {
-                        data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + "Send an image", title, receiver);
+                         data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + "Send an image", title, receiver);
                     }
 
                     Sender sender = new Sender(data, token.getToken());
