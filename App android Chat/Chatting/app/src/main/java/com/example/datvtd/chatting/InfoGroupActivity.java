@@ -46,7 +46,6 @@ public class InfoGroupActivity extends AppCompatActivity {
         this.layoutManager = new LinearLayoutManager(this);
         this.recyclerView.setLayoutManager(layoutManager);
         this.mUsers = new ArrayList<>();
-        this.mUsers.clear();
         this.intent = getIntent();
         this.idGroup = new MessageActivity().bundle.getString("idGroup");
         this.color = new UserAdapter().color;
@@ -92,39 +91,37 @@ public class InfoGroupActivity extends AppCompatActivity {
     }
 
     public void showMember() {
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("ChatGroup")
+        final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("ChatGroup")
                 .child(idGroup).child("members");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                mUsers.clear();
+            public void onDataChange(@NonNull final DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     User user = snapshot.getValue(User.class);
                     DatabaseReference reference = FirebaseDatabase.getInstance()
                             .getReference("Users").child(user.getId());
+                    countUser++; // nó thực hiện xong cái hàm onDataChange phía trên trước rồi mới đến hàm onDataChange thứ 2
                     reference.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshotMembers) {
-                            User userMember = dataSnapshotMembers.getValue(User.class);
-                            mUsers.add(userMember);
-
-                            //set recyclerView trong ham onDataChange
-                            mUserAdapter = new UserAdapter(getApplicationContext(), mUsers, true, "true");
-                            recyclerView.setAdapter(mUserAdapter);
+                            if (countUser > mUsers.size()) {   // fix lỗi lặp lại user trong phần infoGroup
+                                User userMember = dataSnapshotMembers.getValue(User.class);
+                                mUsers.add(userMember);
+                                //set recyclerView trong ham onDataChange
+                                mUserAdapter = new UserAdapter(getApplicationContext(), mUsers, true, "true");
+                                recyclerView.setAdapter(mUserAdapter);
+                            }
                         }
 
                         @Override
                         public void onCancelled(@NonNull DatabaseError databaseError) {
-
                         }
                     });
                 }
-                mUsers.clear();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
             }
         });
     }
@@ -190,6 +187,7 @@ public class InfoGroupActivity extends AppCompatActivity {
     private Button changeColorButton;
     private String idGroup;
     private String color;
+    private int countUser = 0;
     private FirebaseUser firebaseUser;
     private SwipeController swipeController = null;
 }

@@ -9,7 +9,10 @@
     <RelativeLayout
         android:id="@+id/layout_header"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:background="@drawable/shadow"
+        android:backgroundTint="@color/color_white">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"

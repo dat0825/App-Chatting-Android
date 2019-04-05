@@ -1,5 +1,6 @@
 package com.example.datvtd.chatting;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -12,6 +13,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -49,8 +51,10 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.zip.Inflater;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -58,6 +62,7 @@ import retrofit2.Response;
 
 public class MessageActivity extends AppCompatActivity {
     public static Bundle bundle;
+    public int MAX_SIZE = 10000;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -76,8 +81,13 @@ public class MessageActivity extends AppCompatActivity {
         this.nameGroup = intent.getStringExtra("nameGroup");
         this.adminGroup = intent.getStringExtra("adminGroup");
         this.checkGroup = intent.getStringExtra("checkGroup");
-        if (new UserAdapter().color != null) {
-            this.color = new UserAdapter().color;
+        this.color = intent.getStringExtra("color");
+        this.mChat = new ArrayList<>();
+
+        if (this.color == null) {
+            if (new UserAdapter().color != null) {
+                this.color = new UserAdapter().color;
+            }
         }
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         this.storageReference = FirebaseStorage.getInstance().getReference("chatImage");
@@ -98,6 +108,8 @@ public class MessageActivity extends AppCompatActivity {
         bundle.putString("adminGroup", this.adminGroup);
         bundle.putString("idGroup", this.idGroup);
         bundle.putString("checkGroup", this.checkGroup);
+
+        allowSeenMessage = true;
 
         //set notification
         this.apiService = Client.getClient("https://fcm.googleapis.com/").create(APIService.class);
@@ -201,8 +213,11 @@ public class MessageActivity extends AppCompatActivity {
             }
         });
 
-        //set text seen message
-        seenMessage(idReceiver);
+        //set seen message
+        if (allowSeenMessage) {
+            seenMessage(idReceiver);
+        }
+
 
         //send message
         this.sendButton.setOnClickListener(new View.OnClickListener() {
@@ -243,7 +258,9 @@ public class MessageActivity extends AppCompatActivity {
         });
 
         //set seen mess
-        seenMessageGroup(idGroup);
+        if (allowSeenMessage) {
+            seenMessageGroup(idGroup);
+        }
 
         //send message
         this.sendButton.setOnClickListener(new View.OnClickListener() {
@@ -328,9 +345,9 @@ public class MessageActivity extends AppCompatActivity {
                             if (notify) {
                                 sendNotification(user.getId(), nameCurrentUser, msg, true);
                             }
-                            notify = false;
                         }
                     }
+                    notify = false;
                 }
 
                 @Override
@@ -397,28 +414,75 @@ public class MessageActivity extends AppCompatActivity {
                 }
             });
         }
+
+        //set notification for group type image
+        if (checkGroup.equals("true")) {
+            final String msg = message;
+            reference = FirebaseDatabase.getInstance().getReference("ChatGroup").child(idGroup).child("members");
+            reference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        User user = snapshot.getValue(User.class);
+                        if (!firebaseUser.getUid().equals(user.getId())) {
+                            if (notify) {
+                                sendNotification(user.getId(), nameCurrentUser, msg, true);
+                            }
+                        }
+                    }
+                    notify = false;
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+        }
     }
 
     public void readMessage(final String idSender, final String idReceiver, final String imageURL) {
-        this.mChat = new ArrayList<>();
-        this.reference = FirebaseDatabase.getInstance().getReference("Chats");
-        this.reference.addValueEventListener(new ValueEventListener() {
+        this.reference = (DatabaseReference) FirebaseDatabase.getInstance().getReference("Chats");
+        Query query = reference.limitToLast(MAX_SIZE);
+
+        query.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 mChat.clear();
+                long i = System.currentTimeMillis();
+                long j = 0;
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Chat chat = snapshot.getValue(Chat.class);
                     if ((chat.getReceiver().equals(idSender) && chat.getSender().equals(idReceiver)) && checkGroup.equals("false")
                             || (chat.getReceiver().equals(idReceiver) && chat.getSender().equals(idSender) && checkGroup.equals("false"))) {
-                        mChat.add(chat);
+
+                        //set limit size chat
+                        if (mChat.size() < MAX_SIZE) {
+                            mChat.add(chat);
+                        } else {
+                            mChat.remove(0);
+                            mChat.add(chat);
+                        }
                     }
                     if (chat.getReceiver().equals(idReceiver) && checkGroup.equals("true")) {
-                        mChat.add(chat);
+                        //set limit size chat
+                        if (mChat.size() < MAX_SIZE) {
+                            mChat.add(chat);
+                        } else {
+                            mChat.remove(0);
+                            mChat.add(chat);
+                        }
                     }
-
-                    messageAdapter = new MessageAdapter(MessageActivity.this, mChat, imageURL);
-                    recyclerView.setAdapter(messageAdapter);
+                    j = System.currentTimeMillis();
                 }
+                Log.d("REWR@#!#", String.valueOf(j - i) + "---" + String.valueOf(mChat.size()));
+
+                if (checkGroup.equals("false")) {
+                    messageAdapter = new MessageAdapter(MessageActivity.this, mChat, imageURL, false);
+                } else {
+                    messageAdapter = new MessageAdapter(MessageActivity.this, mChat, imageURL, true);
+                }
+                recyclerView.setAdapter(messageAdapter);
             }
 
             @Override
@@ -430,16 +494,20 @@ public class MessageActivity extends AppCompatActivity {
 
     public void seenMessage(final String userID) {
         this.reference = FirebaseDatabase.getInstance().getReference("Chats");
-        this.seenListener = reference.addValueEventListener(new ValueEventListener() {
+        reference.addValueEventListener(new ValueEventListener() {
+            @SuppressLint("ResourceType")
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    Chat chat = snapshot.getValue(Chat.class);
-                    if (chat.getReceiver().equals(firebaseUser.getUid()) && chat.getSender().equals(userID)) {
-                        HashMap<String, Object> hashMap = new HashMap<>();
-                        hashMap.put("isseen", true);
-                        snapshot.getRef().updateChildren(hashMap);
+                if (allowSeenMessage) {
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        Chat chat = snapshot.getValue(Chat.class);
+                        if (chat.getReceiver().equals(firebaseUser.getUid()) && chat.getSender().equals(userID)) {
+                            HashMap<String, Object> hashMap = new HashMap<>();
+                            hashMap.put("isseen", true);
+                            snapshot.getRef().updateChildren(hashMap);
+                        }
                     }
+                    allowSeenMessage = false;
                 }
             }
 
@@ -452,16 +520,19 @@ public class MessageActivity extends AppCompatActivity {
 
     public void seenMessageGroup(final String idGroup) {
         this.reference = FirebaseDatabase.getInstance().getReference("Chats");
-        this.seenListener = reference.addValueEventListener(new ValueEventListener() {
+        reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    Chat chat = snapshot.getValue(Chat.class);
-                    if (chat.getReceiver().equals(idGroup) && !chat.getSender().equals(firebaseUser.getUid())) {
-                        HashMap<String, Object> hashMap = new HashMap<>();
-                        hashMap.put("isseen", true);
-                        snapshot.getRef().updateChildren(hashMap);
+                if (allowSeenMessage) {
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        Chat chat = snapshot.getValue(Chat.class);
+                        if (chat.getReceiver().equals(idGroup) && !chat.getSender().equals(firebaseUser.getUid())) {
+                            HashMap<String, Object> hashMap = new HashMap<>();
+                            hashMap.put("isseen", true);
+                            snapshot.getRef().updateChildren(hashMap);
+                        }
                     }
+                    allowSeenMessage = false;
                 }
             }
 
@@ -500,8 +571,8 @@ public class MessageActivity extends AppCompatActivity {
         status("offline");
     }
 
-    public void sendNotification(final String receiver, final String username, final String message,boolean sendText) {
-
+    public void sendNotification(final String receiver, final String username, final String message, boolean sendText) {
+        Log.d("SAD@!#", "AS@");
         DatabaseReference tokens = FirebaseDatabase.getInstance().getReference("Tokens");
         Query query = tokens.orderByKey().equalTo(receiver);
         query.addValueEventListener(new ValueEventListener() {
@@ -516,17 +587,20 @@ public class MessageActivity extends AppCompatActivity {
                         title = "New Message " + nameGroup;
                     }
 
-//                    if (sendText) {
-//                        Data data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + message, title, receiver);
-//                    } else {
-//                        Data data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + "Send a Image", title, receiver, message);
-//                    }
-                    Data data = new Data();
+                    Data data;
 
                     if (checkSendImage.equals("false")) {
-                         data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + message, title, receiver);
+                        if (checkGroup.equals("true")) {
+                            data = new Data(firebaseUser.getUid(), idGroup, username + ": " + message, title, receiver);
+                        } else {
+                            data = new Data(firebaseUser.getUid(), "noneGroup", username + ": " + message, title, receiver);
+                        }
                     } else {
-                         data = new Data(firebaseUser.getUid(), R.mipmap.ic_launcher, username + ": " + "Send an image", title, receiver);
+                        if (checkGroup.equals("true")) {
+                            data = new Data(firebaseUser.getUid(), idGroup, username + ": " + "Send an image", title, receiver);
+                        } else {
+                            data = new Data(firebaseUser.getUid(), "noneGroup", username + ": " + "Send an image", title, receiver);
+                        }
                     }
 
                     Sender sender = new Sender(data, token.getToken());
@@ -534,6 +608,7 @@ public class MessageActivity extends AppCompatActivity {
                             .enqueue(new Callback<MyResponse>() {
                                 @Override
                                 public void onResponse(Call<MyResponse> call, Response<MyResponse> response) {
+                                    Log.d("SAD@!#!@", String.valueOf(response.code()) + " - " + String.valueOf(response.body().success));
                                     if (response.code() == 200) {
                                         if (response.body().success != 1) {
                                             Toast.makeText(MessageActivity.this, "Failed", Toast.LENGTH_LONG).show();
@@ -704,6 +779,7 @@ public class MessageActivity extends AppCompatActivity {
     private String checkChangeAvatar = "false";
     private String checkSendImage = "false";
     private String color = "";
+    private boolean allowSeenMessage = false;
     private ImageView profileImage;
     private ImageView iconInforGroup;
     private ImageView backButton;

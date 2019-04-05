@@ -140,21 +140,24 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             }
 
             //message-click item to chat
-            holder.itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(mContext, MessageActivity.class);
-                    intent.putExtra("ID", user.getId());
-                    intent.putExtra("checkGroup", "false");
-                    if (typeInfo.equals("true")) {
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    } else {
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            if (firebaseUser != null
+                    && !user.getId().equals(firebaseUser.getUid())) {
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(mContext, MessageActivity.class);
+                        intent.putExtra("ID", user.getId());
+                        intent.putExtra("checkGroup", "false");
+                        if (typeInfo.equals("true")) {
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        } else {
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        }
+                        getColor(user.getId());
+                        mContext.startActivity(intent);
                     }
-                    getColor(user.getId());
-                    mContext.startActivity(intent);
-                }
-            });
+                });
+            }
         }
 
         if (isGroup == true) {
@@ -257,7 +260,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                             lastMessage.setTypeface(null, Typeface.BOLD);
                             lastMessage.setTextColor(Color.BLACK);
                         } else {
-                            if (chat.getSender().equals(firebaseUser.getUid()) && chat.getReceiver().equals(userID)
+                            if (chat.getSender().equals(firebaseUser.getUid())
+                                    && chat.getReceiver().equals(userID)
                                     || chat.isIsseen() == true) {
                                 lastMessage.setTypeface(null, Typeface.NORMAL);
                                 lastMessage.setTextColor(Color.GRAY);
@@ -291,12 +295,18 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                             UserAdapter.this.lastMessage = chat.getMessage();
                             lastMessage.setText(UserAdapter.this.lastMessage);
                         }
-                        if (!chat.getSender().equals(firebaseUser.getUid()) && chat.isIsseen() == false) {
+                        if (!chat.getSender().equals(firebaseUser.getUid())
+                                && chat.getReceiver().equals(userID)
+                                && chat.isIsseen() == false) {
                             lastMessage.setTypeface(null, Typeface.BOLD);
                             lastMessage.setTextColor(Color.BLACK);
                         } else {
-                            lastMessage.setTypeface(null, Typeface.NORMAL);
-                            lastMessage.setTextColor(Color.GRAY);
+                            if (!chat.getSender().equals(firebaseUser.getUid())
+                                    && chat.getReceiver().equals(userID)
+                                    || chat.isIsseen() == true) {
+                                lastMessage.setTypeface(null, Typeface.NORMAL);
+                                lastMessage.setTextColor(Color.GRAY);
+                            }
                         }
                     }
                 }

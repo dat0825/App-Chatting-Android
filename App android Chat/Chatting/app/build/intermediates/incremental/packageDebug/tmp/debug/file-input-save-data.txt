@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Mar 29 11:45:25 ICT 2019
+#Wed Apr 03 11:12:49 ICT 2019
 1.base=/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/transforms/dexMerger/debug/0
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY

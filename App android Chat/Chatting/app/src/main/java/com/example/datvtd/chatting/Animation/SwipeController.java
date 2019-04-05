@@ -58,7 +58,6 @@ public class SwipeController extends Callback {
     @Override
     public void onChildDraw(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder,
                             float dX, float dY, int actionState, boolean isCurrentlyActive) {
-
         user = InfoGroupActivity.mUsers.get(viewHolder.getAdapterPosition());
         adminGroup = MessageActivity.bundle.getString("adminGroup");
 

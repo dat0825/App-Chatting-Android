@@ -5,27 +5,17 @@ public class Data {
     public String body;
     public String title;
     public String sented;
-    public String sound;
-    public int icon;
+    public String typeNotification;
 
     public Data() {
     }
 
-    public Data(String user, int icon, String body, String title, String sented) {
+    public Data(String user, String typeNotification, String body, String title, String sented) {
         this.user = user;
         this.body = body;
         this.title = title;
         this.sented = sented;
-        this.icon = icon;
-    }
-
-    public Data(String user, int icon, String body, String title, String sented, String sound) {
-        this.user = user;
-        this.body = body;
-        this.title = title;
-        this.sented = sented;
-        this.sound = sound;
-        this.icon = icon;
+        this.typeNotification = typeNotification;
     }
 
     public String getUser() {
@@ -60,19 +50,11 @@ public class Data {
         this.sented = sented;
     }
 
-    public int getIcon() {
-        return icon;
+    public String getIcon() {
+        return typeNotification;
     }
 
-    public void setIcon(int icon) {
-        this.icon = icon;
-    }
-
-    public String getSound() {
-        return sound;
-    }
-
-    public void setSound(String sound) {
-        this.sound = sound;
+    public void setIcon(String typeNotification) {
+        this.typeNotification = typeNotification;
     }
 }

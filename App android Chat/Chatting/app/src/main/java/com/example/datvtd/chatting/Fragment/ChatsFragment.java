@@ -75,13 +75,14 @@ public class ChatsFragment extends Fragment {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     User user = snapshot.getValue(User.class);
                     for (Chatlist chatlist : userList) {
-                        if (user.getId().equals(chatlist.getId())) {
+                        if (user.getId() != null
+                                && user.getId().equals(chatlist.getId())) {
                             mUsers.add(user);
                         }
                     }
-                    userAdapter = new UserAdapter(getContext(), mUsers, true);
-                    recyclerView.setAdapter(userAdapter);
                 }
+                userAdapter = new UserAdapter(getContext(), mUsers, true);
+                recyclerView.setAdapter(userAdapter);
             }
 
             @Override

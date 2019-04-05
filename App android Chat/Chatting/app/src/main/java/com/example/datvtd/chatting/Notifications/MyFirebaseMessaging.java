@@ -15,6 +15,7 @@ import android.util.Log;
 
 import com.example.datvtd.chatting.Adapter.UserAdapter;
 import com.example.datvtd.chatting.MessageActivity;
+import com.example.datvtd.chatting.Model.GroupChat;
 import com.example.datvtd.chatting.Model.User;
 import com.example.datvtd.chatting.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -39,9 +40,8 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         super.onMessageReceived(remoteMessage);
         this.sented = remoteMessage.getData().get("sented");
 
-        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-
-//        if( firebaseUser != null && sented.equals(firebaseUser.getUid())){
+        // phải dùng biến "user" để lấy id của người gửi. nếu dùng firebaseuser.getUid thì sẽ ra id của người nhận.
+        // Vì Lớp này xử lý trên máy của người nhận.
         try {
             sendNotification(remoteMessage);
         } catch (MalformedURLException e) {
@@ -49,44 +49,44 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-//        }
     }
 
     public void sendNotification(RemoteMessage remoteMessage) throws IOException {
         this.user = remoteMessage.getData().get("user");
-        this.icon = remoteMessage.getData().get("icon");
+        this.typeNotification = remoteMessage.getData().get("typeNotification");
         this.title = remoteMessage.getData().get("title");
         this.body = remoteMessage.getData().get("body");
 
         updateColor();
         getUrlAvatar();
 
-//        RemoteMessage.Notification notification = remoteMessage.getNotification();
-//        int j = Integer.parseInt(user.replaceAll("[\\D]",""));
-        Intent intent = new Intent(this, MessageActivity.class);
-//        Bundle bundle = new Bundle();
-//        bundle.putString("ID",user);
-//        intent.putExtras(bundle);
-        intent.putExtra("ID", user);
-        intent.putExtra("checkGroup", "false");
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent = new Intent(this, MessageActivity.class);
+        if (this.typeNotification != null) {
+            if (typeNotification.equals("noneGroup")) {
+                intent.putExtra("ID", user);
+                intent.putExtra("checkGroup", "false");
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            } else {
+                intent.putExtra("idGroup", idGroup);
+                intent.putExtra("nameGroup", nameGroup);
+                intent.putExtra("adminGroup", adminGroup);
+                intent.putExtra("color", color);
+                intent.putExtra("checkGroup", "true");
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                getInfoGroup(typeNotification);
+            }
+        }
 
-//        PendingIntent pendingIntent = PendingIntent.getActivity(this,j,intent,PendingIntent.FLAG_ONE_SHOT);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(), intent, PendingIntent.FLAG_ONE_SHOT);
 
-        Bitmap largeIcon = null;
+        Bitmap largeIcon;
 
         if (this.urlAvatarSender.equals("default")) {
-            largeIcon = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+            largeIcon = BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher);
         } else {
             URL urlImage = new URL(this.urlAvatarSender);
             largeIcon = BitmapFactory.decodeStream((InputStream) urlImage.getContent());
         }
-
-//        URL sound = new URL(this.sound);
-//        Bitmap picture = BitmapFactory.decodeStream((InputStream) sound.getContent());
-
-//        Bitmap picture = BitmapFactory.decodeStream(new URL)
 
         Uri defaultSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         Notification notification = new NotificationCompat.Builder(this)
@@ -134,11 +134,8 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
     }
 
     public void getUrlAvatar() {
-        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users")
                 .child(user).child("imageURL");
-        // phải dùng biến "user" để lấy id của người gửi. nếu dùng firebaseuser.getUid thì sẽ ra id của người nhận.
-        // Lớp này xử lý trên máy của người nhận.
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -152,14 +149,44 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         });
     }
 
+    public void getInfoGroup(final String idGroupChat) {
+        DatabaseReference reference = FirebaseDatabase.getInstance()
+                .getReference("ChatGroup").child(idGroupChat);
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                GroupChat groupChat = dataSnapshot.getValue(GroupChat.class);
+                idGroup = groupChat.getIdGroup();
+                nameGroup = groupChat.getNameGroup();
+                adminGroup = groupChat.getAdmin();
+                color = groupChat.getColor();
+                intent.putExtra("idGroup", idGroup);
+                intent.putExtra("nameGroup", nameGroup);
+                intent.putExtra("adminGroup", adminGroup);
+                intent.putExtra("color", color);
+                intent.putExtra("checkGroup", "true");
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
     private String user;
-    private String icon;
+    private String typeNotification;  // nếu là thông báo từ group thì giá trị này là id của group
     private String title;
     private String body;
     private String sented;
     private String[] url;
     private String urlAvatarSender = "";
+    private String idGroup = "";
+    private String nameGroup = "";
+    private String adminGroup = "";
     private String color = "";
     private FirebaseUser firebaseUser;
     private DatabaseReference reference;
+    private Intent intent;
 }

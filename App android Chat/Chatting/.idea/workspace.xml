@@ -2,14 +2,11 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config>
-        <device id="pixel" />
-        <device id="Nexus 6" />
-      </config>
+      <config />
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="CMakeSettings">
@@ -18,7 +15,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06978afd-e3f8-4a25-acc7-198de68992d8" name="Default" comment="" />
+    <list default="true" id="36ef1e65-15a1-4427-9f9f-423078fcdeeb" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,69 +40,21 @@
       <file leaf-file-name="MessageActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="526" column="94" selection-start-line="526" selection-start-column="86" selection-end-line="526" selection-end-column="94" />
-              <folding>
-                <element signature="class#4648:5018" />
-                <element signature="method#onDataChange#0;class#4648:5018" />
-                <element signature="method#onCancelled#0;class#4648:5018" />
-                <element signature="e#6861#8459#0" />
-                <element signature="class#7090:7885" />
-                <element signature="method#onDataChange#0;class#7090:7885" />
-                <element signature="method#onCancelled#0;class#7090:7885" />
-                <element signature="e#8465#10127#0" />
-                <element signature="class#8702:9562" />
-                <element signature="method#onDataChange#0;class#8702:9562" />
-                <element signature="method#onCancelled#0;class#8702:9562" />
-                <element signature="e#10133#13406#0" />
-                <element signature="class#11069:11558" />
-                <element signature="method#onDataChange#0;class#11069:11558" />
-                <element signature="method#onCancelled#0;class#11069:11558" />
-                <element signature="class#11771:12299" />
-                <element signature="method#onDataChange#0;class#11771:12299" />
-                <element signature="method#onCancelled#0;class#11771:12299" />
-                <element signature="class#12626:13388" />
-                <element signature="method#onDataChange#0;class#12626:13388" />
-                <element signature="method#onCancelled#0;class#12626:13388" />
-                <element signature="class#14372:14793" />
-                <element signature="method#onDataChange#0;class#14372:14793" />
-                <element signature="method#onCancelled#0;class#14372:14793" />
-                <element signature="class#15037:15566" />
-                <element signature="method#onDataChange#0;class#15037:15566" />
-                <element signature="method#onCancelled#0;class#15037:15566" />
-                <element signature="e#15590#16957#0" />
-                <element signature="class#15855:16949" />
-                <element signature="method#onDataChange#0;class#15855:16949" />
-                <element signature="method#onCancelled#0;class#15855:16949" />
-                <element signature="e#16963#17902#0" />
-                <element signature="class#17153:17894" />
-                <element signature="method#onDataChange#0;class#17153:17894" />
-                <element signature="method#onCancelled#0;class#17153:17894" />
-                <element signature="e#17908#18855#0" />
-                <element signature="class#18104:18847" />
-                <element signature="method#onDataChange#0;class#18104:18847" />
-                <element signature="method#onCancelled#0;class#18104:18847" />
-                <element signature="e#18861#19247#0" />
-                <element signature="e#19253#19350#0" />
-                <element signature="e#19356#19452#0" />
-                <element signature="e#19458#19553#0" />
-                <element signature="e#22286#22498#0" />
-                <element signature="e#22504#22782#0" />
-                <element signature="e#22788#24996#0" />
-                <element signature="e#25002#25857#0" />
-                <element signature="e#25673#25763#0" />
-                <element signature="e#25863#28020#0" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyFirebaseMessaging.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
+      <file leaf-file-name="activity_message.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="119" column="66" lean-forward="true" selection-start-line="119" selection-start-column="66" selection-end-line="119" selection-end-column="66" />
+            <state relative-caret-position="-420">
+              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
@@ -117,18 +66,6 @@
         <option value="resourceFile" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>MyFire</find>
-      <find>msg</find>
-      <find>MessageType</find>
-      <find>messageType</find>
-      <find>user1</find>
-      <find>title</find>
-      <find>sented</find>
-      <find>bundle</find>
-    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -2409,18 +2346,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_chat_image_receive.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_search_black_24dp.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Adapter/UserAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/GroupChatFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Sender.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Data.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/small_icon.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/shadow.xml" />
       </list>
     </option>
   </component>
@@ -2435,32 +2363,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="Chatting" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="Chatting" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="Chatting" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="chatting" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Chatting" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="chatting" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Notifications" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Chatting" type="1abcf292:AndroidViewProjectNode" />
@@ -2473,16 +2381,25 @@
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
+            <path>
+              <item name="Chatting" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="checkGro&#9;PSI&#9;JAVA://java.awt.CheckboxGroup" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="device.picker.selection" value="Nexus_6_API_23" />
+    <property name="device.picker.selection" value="May_2_-_Pixel_2_XL_API_28" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
@@ -2603,40 +2520,40 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="06978afd-e3f8-4a25-acc7-198de68992d8" name="Default" comment="" />
-      <created>1553820998904</created>
+      <changelist id="36ef1e65-15a1-4427-9f9f-423078fcdeeb" name="Default" comment="" />
+      <created>1554436346881</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1553820998904</updated>
+      <updated>1554436346881</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-4" width="1545" height="904" extended-state="6" />
+    <frame x="54" y="-11" width="1547" height="912" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50033355" side_tool="true" weight="0.56133336" />
-      <window_info anchor="right" id="Preview" order="7" weight="0.32955304" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Preview" order="3" visible="true" weight="0.32955304" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.49966645" visible="true" weight="0.396" />
+      <window_info anchor="bottom" id="Logcat" order="7" visible="true" weight="0.32933334" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18412274" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.22" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32933334" />
-      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20213476" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32933334" />
+      <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Device File Explorer" order="8" side_tool="true" weight="0.32955304" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -2644,378 +2561,69 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2925">
-          <caret line="195" column="13" selection-start-line="195" selection-start-column="13" selection-end-line="195" selection-end-column="13" />
-          <folding>
-            <element signature="class#4648:5018" />
-            <element signature="method#onDataChange#0;class#4648:5018" />
-            <element signature="method#onCancelled#0;class#4648:5018" />
-            <element signature="e#6861#8459#0" />
-            <element signature="class#7090:7885" />
-            <element signature="method#onDataChange#0;class#7090:7885" />
-            <element signature="method#onCancelled#0;class#7090:7885" />
-            <element signature="e#8465#10127#0" />
-            <element signature="class#8702:9562" />
-            <element signature="method#onDataChange#0;class#8702:9562" />
-            <element signature="method#onCancelled#0;class#8702:9562" />
-            <element signature="e#10133#13406#0" />
-            <element signature="class#11069:11558" />
-            <element signature="method#onDataChange#0;class#11069:11558" />
-            <element signature="method#onCancelled#0;class#11069:11558" />
-            <element signature="class#11771:12299" />
-            <element signature="method#onDataChange#0;class#11771:12299" />
-            <element signature="method#onCancelled#0;class#11771:12299" />
-            <element signature="class#12626:13388" />
-            <element signature="method#onDataChange#0;class#12626:13388" />
-            <element signature="method#onCancelled#0;class#12626:13388" />
-            <element signature="class#14372:14793" />
-            <element signature="method#onDataChange#0;class#14372:14793" />
-            <element signature="method#onCancelled#0;class#14372:14793" />
-            <element signature="class#15037:15566" />
-            <element signature="method#onDataChange#0;class#15037:15566" />
-            <element signature="method#onCancelled#0;class#15037:15566" />
-            <element signature="e#15590#16957#0" />
-            <element signature="class#15855:16949" />
-            <element signature="method#onDataChange#0;class#15855:16949" />
-            <element signature="method#onCancelled#0;class#15855:16949" />
-            <element signature="e#16963#17902#0" />
-            <element signature="class#17153:17894" />
-            <element signature="method#onDataChange#0;class#17153:17894" />
-            <element signature="method#onCancelled#0;class#17153:17894" />
-            <element signature="e#17908#18855#0" />
-            <element signature="class#18104:18847" />
-            <element signature="method#onDataChange#0;class#18104:18847" />
-            <element signature="method#onCancelled#0;class#18104:18847" />
-            <element signature="e#18861#19247#0" />
-            <element signature="e#19253#19350#0" />
-            <element signature="e#19356#19452#0" />
-            <element signature="e#19458#19553#0" />
-            <element signature="e#22286#22498#0" />
-            <element signature="e#22504#22782#0" />
-            <element signature="e#22788#24996#0" />
-            <element signature="e#25002#25857#0" />
-            <element signature="e#25673#25763#0" />
-            <element signature="e#25863#28020#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="94" column="36" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2925">
-          <caret line="195" column="13" lean-forward="true" selection-start-line="195" selection-start-column="13" selection-end-line="195" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="94" column="36" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8325">
-          <caret line="555" selection-start-line="555" selection-end-line="555" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Adapter/UserAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2595">
-          <caret line="173" column="16" selection-start-line="173" selection-start-column="16" selection-end-line="173" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/UserGroupActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/GroupChatFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="113" selection-start-line="107" selection-start-column="113" selection-end-line="107" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_chat_image_receive.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_chat_receive.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_search_black_24dp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="845">
-          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="9090">
+          <caret line="606" column="18" selection-start-line="606" selection-start-column="18" selection-end-line="606" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+        <state relative-caret-position="180">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/ProfileFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="205" column="42" selection-start-line="205" selection-start-column="42" selection-end-line="205" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.1.aar/c298ea7d2693c84b83411d9ed35d93cf/jars/classes.jar!/com/google/firebase/database/DatabaseReference.class">
+    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/awt/CheckboxGroup.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/GroupChatFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="102" column="36" lean-forward="true" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/UserGroupActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Adapter/UserAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="173" column="16" selection-start-line="173" selection-start-column="16" selection-end-line="173" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/APIService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.1.aar/bef3d2753dd7656f1d73aa3635052938/jars/classes.jar!/com/google/firebase/messaging/RemoteMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="108" column="48" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Sender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.1.aar/bef3d2753dd7656f1d73aa3635052938/jars/classes.jar!/com/google/firebase/messaging/FirebaseMessagingService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/jars/classes.jar!/android/support/v7/app/AppCompatActivity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="526" column="94" selection-start-line="526" selection-start-column="86" selection-end-line="526" selection-end-column="94" />
-          <folding>
-            <element signature="class#4648:5018" />
-            <element signature="method#onDataChange#0;class#4648:5018" />
-            <element signature="method#onCancelled#0;class#4648:5018" />
-            <element signature="e#6861#8459#0" />
-            <element signature="class#7090:7885" />
-            <element signature="method#onDataChange#0;class#7090:7885" />
-            <element signature="method#onCancelled#0;class#7090:7885" />
-            <element signature="e#8465#10127#0" />
-            <element signature="class#8702:9562" />
-            <element signature="method#onDataChange#0;class#8702:9562" />
-            <element signature="method#onCancelled#0;class#8702:9562" />
-            <element signature="e#10133#13406#0" />
-            <element signature="class#11069:11558" />
-            <element signature="method#onDataChange#0;class#11069:11558" />
-            <element signature="method#onCancelled#0;class#11069:11558" />
-            <element signature="class#11771:12299" />
-            <element signature="method#onDataChange#0;class#11771:12299" />
-            <element signature="method#onCancelled#0;class#11771:12299" />
-            <element signature="class#12626:13388" />
-            <element signature="method#onDataChange#0;class#12626:13388" />
-            <element signature="method#onCancelled#0;class#12626:13388" />
-            <element signature="class#14372:14793" />
-            <element signature="method#onDataChange#0;class#14372:14793" />
-            <element signature="method#onCancelled#0;class#14372:14793" />
-            <element signature="class#15037:15566" />
-            <element signature="method#onDataChange#0;class#15037:15566" />
-            <element signature="method#onCancelled#0;class#15037:15566" />
-            <element signature="e#15590#16957#0" />
-            <element signature="class#15855:16949" />
-            <element signature="method#onDataChange#0;class#15855:16949" />
-            <element signature="method#onCancelled#0;class#15855:16949" />
-            <element signature="e#16963#17902#0" />
-            <element signature="class#17153:17894" />
-            <element signature="method#onDataChange#0;class#17153:17894" />
-            <element signature="method#onCancelled#0;class#17153:17894" />
-            <element signature="e#17908#18855#0" />
-            <element signature="class#18104:18847" />
-            <element signature="method#onDataChange#0;class#18104:18847" />
-            <element signature="method#onCancelled#0;class#18104:18847" />
-            <element signature="e#18861#19247#0" />
-            <element signature="e#19253#19350#0" />
-            <element signature="e#19356#19452#0" />
-            <element signature="e#19458#19553#0" />
-            <element signature="e#22286#22498#0" />
-            <element signature="e#22504#22782#0" />
-            <element signature="e#22788#24996#0" />
-            <element signature="e#25002#25857#0" />
-            <element signature="e#25673#25763#0" />
-            <element signature="e#25863#28020#0" />
-          </folding>
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/message_send_background.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="165">
+          <caret line="11" column="8" lean-forward="true" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/small_icon.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/shadow.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="119" column="66" lean-forward="true" selection-start-line="119" selection-start-column="66" selection-end-line="119" selection-end-column="66" />
+        <state relative-caret-position="-420">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>

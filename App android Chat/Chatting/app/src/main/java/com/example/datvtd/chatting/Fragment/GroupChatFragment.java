@@ -35,6 +35,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class GroupChatFragment extends Fragment {
@@ -54,7 +55,7 @@ public class GroupChatFragment extends Fragment {
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         updateToken(FirebaseInstanceId.getInstance().getToken());
 
-        if(this.checkSearch == 0){ // để ngăn groupchat fragment lặp lại 2 hoặc nhiều lần
+        if (this.checkSearch == 0) { // để ngăn groupchat fragment lặp lại 2 hoặc nhiều lần
             readGroup();
             checkSearch++;
         }
@@ -70,9 +71,9 @@ public class GroupChatFragment extends Fragment {
                     searchGroup(s.toString());
                 }
 
-                if(s.toString().equals("")){
+                if (s.toString().equals("")) {
                     checkSearch++;
-                    if(checkSearch > 1){
+                    if (checkSearch > 1) {
                         readGroup();
                     }
                 }
@@ -86,6 +87,18 @@ public class GroupChatFragment extends Fragment {
         this.creatGroupImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+                HashMap<String, Object> hashMap = new HashMap<>();
+                for(int i=0;i<=1000000;i++){
+                    hashMap.put("sender", "H4EJ39XcVNYMXXR4fGvfhqi1nn82");
+                    hashMap.put("receiver", "qQQvtcie8rYEi66APtDDTfKvQuC3");
+                    hashMap.put("message", "hcihsa aedj");
+                    hashMap.put("isseen", false);
+                    hashMap.put("typeImage", false);
+                    hashMap.put("isGroup", true);
+                    reference.child("Chats").push().setValue(hashMap);
+                }
+
                 Intent intent = new Intent(getContext(), UserGroupActivity.class);
                 startActivity(intent);
             }
@@ -148,7 +161,6 @@ public class GroupChatFragment extends Fragment {
                         mGroupChats.add(groupChat);
                     }
                 }
-                Log.d("aftersearch", String.valueOf(mGroupChats.size()));
                 mUserAdapter = new UserAdapter(getContext(), mGroupChats, false, true);
                 recyclerView.setAdapter(mUserAdapter);
             }
@@ -173,5 +185,5 @@ public class GroupChatFragment extends Fragment {
     private DatabaseReference reference;
     private List<GroupChat> mGroupChats;
     private UserAdapter mUserAdapter;
-    private int checkSearch=0;
+    private int checkSearch = 0;
 }

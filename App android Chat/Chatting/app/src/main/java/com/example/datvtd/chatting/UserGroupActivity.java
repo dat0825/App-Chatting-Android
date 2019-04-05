@@ -228,6 +228,7 @@ public class UserGroupActivity extends AppCompatActivity {
 
         Intent intent = new Intent(UserGroupActivity.this,InfoGroupActivity.class);
         intent.putExtra("idGroup",idGroupAddPerson);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
         finish();
     }

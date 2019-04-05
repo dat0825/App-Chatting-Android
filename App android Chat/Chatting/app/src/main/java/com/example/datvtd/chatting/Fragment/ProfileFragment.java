@@ -65,7 +65,8 @@ public class ProfileFragment extends Fragment {
 
                 if (isAdded()) {
 //                add ảnh vào profileImage
-                    if (user.getImageURL().equals("default")) {
+                    if (user.getImageURL() != null
+                    &&user.getImageURL().equals("default")) {
                         profileImage.setImageResource(R.mipmap.ic_launcher_round);
                     } else {
                         Glide.with(ProfileFragment.this).load(user.getImageURL()).into(profileImage);

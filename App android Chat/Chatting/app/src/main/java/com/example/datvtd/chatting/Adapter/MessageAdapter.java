@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,17 +16,26 @@ import com.example.datvtd.chatting.Model.Chat;
 import com.example.datvtd.chatting.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHolder> {
 
-    public MessageAdapter(Context mContext, List<Chat> mChat, String imageURL) {
+    public MessageAdapter(Context mContext, List<Chat> mChat, String imageURL, boolean checkGroup) {
         this.mContext = mContext;
         this.mChat = mChat;
         this.imageURL = imageURL;
+        this.checkGroup = checkGroup;
     }
 
     @NonNull
@@ -71,11 +81,34 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
             holder.seenTextView.setVisibility(View.GONE);
         }
 
-        //set icon cua nguoi nhan trong layout chat
-        if (imageURL.equals("default")) {
-            holder.profileImageReceiver.setImageResource(R.mipmap.ic_launcher_round);
+        if (checkGroup) {
+            final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users")
+                    .child(chat.getSender()).child("imageURL");
+            reference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    imageURL = dataSnapshot.getValue().toString();
+
+                    //set ava nguoi gui trong goup chat
+                    if (imageURL.equals("default")) {
+                        holder.profileImageReceiver.setImageResource(R.mipmap.ic_launcher_round);
+                    } else {
+                        Glide.with(mContext).load(imageURL).into(holder.profileImageReceiver);
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
         } else {
-            Glide.with(this.mContext).load(this.imageURL).into(holder.profileImageReceiver);
+            //set icon cua nguoi nhan trong chat giua 2 nguoi
+            if (imageURL.equals("default")) {
+                holder.profileImageReceiver.setImageResource(R.mipmap.ic_launcher_round);
+            } else {
+                Glide.with(this.mContext).load(this.imageURL).into(holder.profileImageReceiver);
+            }
         }
 
         holder.chatImageView.setOnClickListener(new View.OnClickListener() {
@@ -137,6 +170,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     private Context mContext;
     private List<Chat> mChat;
     private String imageURL;
+    private Boolean checkGroup;
     private FirebaseUser firebaseUser;
     private static final int TYPE_MESSAGE_SEND = 0;
     private static final int TYPE_MESSAGE_RECEIVE = 1;
