@@ -1179,6 +1179,9 @@ drawable ic_remove_red_20dp
 drawable ic_search_black_24dp
 drawable ic_send
 drawable ic_send_image_15dp
+drawable ic_user_in_tab
+drawable icon_chat_in_tab
+drawable icon_group_chat_in_tab
 drawable message_receive_background
 drawable message_send_background
 drawable met_ic_clear
@@ -1452,6 +1455,7 @@ id text_input_password_toggle
 id text_last_message
 id text_member
 id text_message
+id text_name_fragment
 id text_name_group
 id text_search_group
 id text_search_user

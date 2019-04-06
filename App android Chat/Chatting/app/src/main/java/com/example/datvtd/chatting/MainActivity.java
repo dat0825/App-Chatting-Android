@@ -1,6 +1,6 @@
 package com.example.datvtd.chatting;
 
-import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -9,21 +9,28 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.util.Log;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.datvtd.chatting.Fragment.ChatsFragment;
 import com.example.datvtd.chatting.Fragment.GroupChatFragment;
 import com.example.datvtd.chatting.Fragment.ProfileFragment;
 import com.example.datvtd.chatting.Fragment.UsersFragment;
-import com.facebook.login.LoginManager;
+import com.example.datvtd.chatting.Model.User;
+import com.example.datvtd.chatting.Notifications.Data;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,16 +38,41 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        com.bubble.android.CustomClass.CustomViewPager customViewPager;
+        this.profileImage = findViewById(R.id.profile_image);
+        this.nameFragment = findViewById(R.id.text_name_fragment);
         this.tabLayout = findViewById(R.id.tab_layout);
         this.viewPager = findViewById(R.id.view_pager);
+        this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        setHeader();
+
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.icon_chat_in_tab));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.icon_group_chat_in_tab));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_user_in_tab));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_user_in_tab));
+
 
         ViewpagerAdpater viewpagerAdpater = new ViewpagerAdpater(getSupportFragmentManager());
-        viewpagerAdpater.addFragment(new ChatsFragment(), "Chats");
-        viewpagerAdpater.addFragment(new GroupChatFragment(), "Group Chat");
-        viewpagerAdpater.addFragment(new UsersFragment(), "Users");
-        viewpagerAdpater.addFragment(new ProfileFragment(), "Profile");
-        this.viewPager.setAdapter(viewpagerAdpater);
-        this.tabLayout.setupWithViewPager(viewPager);
+        //có thể tùy biên hàm addFragment ở phía dươi.( set không title...)
+        viewpagerAdpater.addFragment(new ChatsFragment(),"1");
+        viewpagerAdpater.addFragment(new GroupChatFragment(),"2");
+        viewpagerAdpater.addFragment(new UsersFragment(),"3");
+        viewpagerAdpater.addFragment(new ProfileFragment(),"4");
+
+
+        // 2 dòng dưới dùng để set cho các tab mà có dùng title.
+        //Muốn set title cho các layout thì cần phải active thêm hàm  public CharSequence getPageTitle(int position) ở dưới.
+//        this.viewPager.setAdapter(viewpagerAdpater);
+//        this.tabLayout.setupWithViewPager(viewPager);
+
+        // Dùng để set cho các tab dùng icon
+        viewPager.setAdapter(viewpagerAdpater);
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.setOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(viewPager));
+
+        viewPager.setOffscreenPageLimit(0);
+
     }
 
     //set trang thai online hay offline
@@ -55,6 +87,30 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void setHeader() {
+        this.reference = FirebaseDatabase.getInstance().
+                getReference("Users").child(firebaseUser.getUid());
+        this.reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                User user = dataSnapshot.getValue(User.class);
+
+//                add ảnh vào profileImage
+                if (user.getImageURL() != null
+                        && user.getImageURL().equals("default")) {
+                    profileImage.setImageResource(R.mipmap.ic_launcher_round);
+                } else {
+                    Glide.with(MainActivity.this).load(user.getImageURL()).into(profileImage);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -67,16 +123,12 @@ public class MainActivity extends AppCompatActivity {
         status("offline");
     }
 
-//    @Override
-//    public void onStop() {
-//        super.onStop();
-//        status("offline");
-//    }
-
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private FirebaseUser firebaseUser;
     private DatabaseReference reference;
+    private CircleImageView profileImage;
+    public TextView nameFragment;
 }
 
 class ViewpagerAdpater extends FragmentPagerAdapter {
@@ -102,9 +154,9 @@ class ViewpagerAdpater extends FragmentPagerAdapter {
         titles.add(title);
     }
 
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return titles.get(position);
-    }
+//    @Nullable
+//    @Override
+//    public CharSequence getPageTitle(int position) {
+//        return titles.get(position);
+//    }
 }

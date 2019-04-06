@@ -1,15 +1,21 @@
 package com.example.datvtd.chatting.Fragment;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.datvtd.chatting.Adapter.UserAdapter;
+import com.example.datvtd.chatting.MainActivity;
 import com.example.datvtd.chatting.Model.Chatlist;
 import com.example.datvtd.chatting.Model.User;
 import com.example.datvtd.chatting.Notifications.Token;
@@ -37,6 +43,11 @@ public class ChatsFragment extends Fragment {
         this.recyclerView.setHasFixedSize(true);
         this.recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        // call textView from another class
+//        TextView nameFragment = ((Activity) getContext()).findViewById(R.id.text_name_fragment);
+        Log.d("SAD!@#!@#","1");
+//        nameFragment.setText("1");
 
         userChat();
         updateToken(FirebaseInstanceId.getInstance().getToken());

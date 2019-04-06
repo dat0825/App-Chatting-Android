@@ -442,8 +442,8 @@ public final class R {
         public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f070057;
         public static final int abc_textfield_search_default_mtrl_alpha = 0x7f070058;
         public static final int abc_textfield_search_material = 0x7f070059;
-        public static final int met_ic_clear = 0x7f0700a3;
-        public static final int notification_template_icon_bg = 0x7f0700af;
+        public static final int met_ic_clear = 0x7f0700a6;
+        public static final int notification_template_icon_bg = 0x7f0700b2;
     }
     public static final class id {
         private id() {}
@@ -531,14 +531,14 @@ public final class R {
         public static final int text = 0x7f0800f0;
         public static final int text2 = 0x7f0800f1;
         public static final int textSpacerNoButtons = 0x7f0800f2;
-        public static final int time = 0x7f080105;
-        public static final int title = 0x7f080106;
-        public static final int title_template = 0x7f080108;
-        public static final int topPanel = 0x7f08010a;
-        public static final int up = 0x7f080117;
-        public static final int useLogo = 0x7f080118;
-        public static final int withText = 0x7f08011d;
-        public static final int wrap_content = 0x7f08011f;
+        public static final int time = 0x7f080106;
+        public static final int title = 0x7f080107;
+        public static final int title_template = 0x7f080109;
+        public static final int topPanel = 0x7f08010b;
+        public static final int up = 0x7f080118;
+        public static final int useLogo = 0x7f080119;
+        public static final int withText = 0x7f08011e;
+        public static final int wrap_content = 0x7f080120;
     }
     public static final class integer {
         private integer() {}

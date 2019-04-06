@@ -417,6 +417,7 @@ public class MessageActivity extends AppCompatActivity {
 
         //set notification for group type image
         if (checkGroup.equals("true")) {
+            Log.d("ASD!@#21312","ASD!@#");
             final String msg = message;
             reference = FirebaseDatabase.getInstance().getReference("ChatGroup").child(idGroup).child("members");
             reference.addValueEventListener(new ValueEventListener() {
@@ -611,7 +612,7 @@ public class MessageActivity extends AppCompatActivity {
                                     Log.d("SAD@!#!@", String.valueOf(response.code()) + " - " + String.valueOf(response.body().success));
                                     if (response.code() == 200) {
                                         if (response.body().success != 1) {
-                                            Toast.makeText(MessageActivity.this, "Failed", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(MessageActivity.this, "Failed", Toast.LENGTH_SHORT).show();
                                         }
                                     }
                                 }

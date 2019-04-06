@@ -1,5 +1,6 @@
 package com.example.datvtd.chatting.Fragment;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -7,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,6 +56,9 @@ public class ProfileFragment extends Fragment {
         this.storageReference = FirebaseStorage.getInstance().getReference("profileImage");
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         this.progressDialog = new ProgressDialog(getContext());
+//        TextView nameFragment = ((Activity) getContext()).findViewById(R.id.text_name_fragment);
+        Log.d("SAD!@#!@#","4");
+//        nameFragment.setText("4");
         this.reference = FirebaseDatabase.getInstance().
                 getReference("Users").child(firebaseUser.getUid());
 

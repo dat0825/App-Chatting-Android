@@ -1,39 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/xxx"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity"
-    android:id="@+id/xxx">
+    tools:context=".MainActivity">
 
-
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tab_layout"
+    <RelativeLayout
+        android:id="@+id/layout_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        app:tabSelectedTextColor="@color/color_white"
-        app:tabIndicatorColor="@color/color_white"
-        app:tabTextColor="@color/color_white"/>
+        android:background="@drawable/shadow"
+        android:backgroundTint="@color/color_white"
+        android:elevation="6dp">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/view_pager"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/text_name_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_toRightOf="@id/profile_image"
+            android:text="username"
+            android:textColor="@color/color_black"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_below="@id/tab_layout" />
+        android:layout_below="@id/layout_header">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow"
+            android:backgroundTint="@color/color_white"
+            android:elevation="6dp"
+            app:tabIndicatorColor="@color/color_black"
+            app:tabSelectedTextColor="@color/color_white"
+            app:tabTextColor="@color/color_white" />
+    </RelativeLayout>
 
     <!--<ImageView-->
-        <!--android:id="@+id/b_creat_group"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:src="@drawable/ic_add_box_black_24dp"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:padding="10dp" />-->
+    <!--android:id="@+id/b_creat_group"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ic_add_box_black_24dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:padding="10dp" />-->
 
 </RelativeLayout>
 

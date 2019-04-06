@@ -1204,6 +1204,10 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_icon_chat_in_tab.xml.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/drawable/icon_chat_in_tab.xml"
+    },
+    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e795524a59c94f67f9b8ae26296d8411/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     },
@@ -1560,6 +1564,10 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-xhdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_ic_user_in_tab.xml.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/drawable/ic_user_in_tab.xml"
+    },
+    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
@@ -1774,6 +1782,10 @@
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_mtrl_chip_close_icon_tint.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/color/mtrl_chip_close_icon_tint.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_icon_group_chat_in_tab.xml.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/drawable/icon_group_chat_in_tab.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_like_background.xml.flat",

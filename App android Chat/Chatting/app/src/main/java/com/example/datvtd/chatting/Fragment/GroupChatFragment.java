@@ -1,5 +1,6 @@
 package com.example.datvtd.chatting.Fragment;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -16,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.datvtd.chatting.Adapter.UserAdapter;
 import com.example.datvtd.chatting.Animation.SwipeController;
@@ -51,8 +53,12 @@ public class GroupChatFragment extends Fragment {
         this.recyclerView = view.findViewById(R.id.recycler_view);
         this.recyclerView.setHasFixedSize(true);
         this.recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        // call textView from another class
+//        TextView nameFragment = ((Activity) getContext()).findViewById(R.id.text_name_fragment);
+        Log.d("SAD!@#!@#","2");
+//        nameFragment.setText("2");
+
         updateToken(FirebaseInstanceId.getInstance().getToken());
 
         if (this.checkSearch == 0) { // để ngăn groupchat fragment lặp lại 2 hoặc nhiều lần
@@ -87,18 +93,6 @@ public class GroupChatFragment extends Fragment {
         this.creatGroupImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-                HashMap<String, Object> hashMap = new HashMap<>();
-                for(int i=0;i<=1000000;i++){
-                    hashMap.put("sender", "H4EJ39XcVNYMXXR4fGvfhqi1nn82");
-                    hashMap.put("receiver", "qQQvtcie8rYEi66APtDDTfKvQuC3");
-                    hashMap.put("message", "hcihsa aedj");
-                    hashMap.put("isseen", false);
-                    hashMap.put("typeImage", false);
-                    hashMap.put("isGroup", true);
-                    reference.child("Chats").push().setValue(hashMap);
-                }
-
                 Intent intent = new Intent(getContext(), UserGroupActivity.class);
                 startActivity(intent);
             }
