@@ -1547,6 +1547,7 @@ layout activity_info_group
 layout activity_login
 layout activity_main
 layout activity_message
+layout activity_profile
 layout activity_register
 layout activity_reset_pass
 layout activity_show_chat_image
@@ -1574,7 +1575,6 @@ layout dialog_color
 layout dialog_confirm
 layout fragment_chats
 layout fragment_group_chat
-layout fragment_profile
 layout fragment_users
 layout item_chat_image_receive
 layout item_chat_image_send

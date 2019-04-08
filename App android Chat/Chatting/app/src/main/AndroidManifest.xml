@@ -32,6 +32,7 @@
             android:name=".ResetPassActivity"
             android:parentActivityName=".LoginActivity" />
         <activity android:name=".Adapter.ChatImageActivity" />
+        <activity android:name=".ProfileActivity"/>
         <activity
             android:name=".UserGroupActivity"
             android:theme="@style/Theme.MyDialog" />

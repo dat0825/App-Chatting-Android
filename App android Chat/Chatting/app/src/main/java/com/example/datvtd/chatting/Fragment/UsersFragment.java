@@ -1,7 +1,5 @@
 package com.example.datvtd.chatting.Fragment;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,17 +8,16 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.datvtd.chatting.Adapter.UserAdapter;
-import com.example.datvtd.chatting.MainActivity;
 import com.example.datvtd.chatting.Model.User;
+import com.example.datvtd.chatting.ProfileActivity;
 import com.example.datvtd.chatting.R;
 import com.example.datvtd.chatting.UserGroupActivity;
 import com.google.firebase.auth.FirebaseAuth;
@@ -35,6 +32,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class UsersFragment extends Fragment {
 
     @Override
@@ -45,14 +44,11 @@ public class UsersFragment extends Fragment {
         this.mUsers = new ArrayList<>();
         this.createGroupImage = view.findViewById(R.id.b_create_group);
         this.searchUserEditText = view.findViewById(R.id.text_search_user);
+        this.profileImage = view.findViewById(R.id.profile_image);
         this.recyclerView = view.findViewById(R.id.recycler_view);
         this.recyclerView.setHasFixedSize(true);
         this.recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
-        // call textView from another class
-//        TextView nameFragment = ((Activity)getContext()).findViewById(R.id.text_name_fragment);
-        Log.d("SAD!@#!@#","3");
-//        nameFragment.setText("3");
+        setImageProfile();
 
         this.createGroupImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +74,14 @@ public class UsersFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable s) {
+            }
+        });
+
+        profileImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), ProfileActivity.class);
+                startActivity(intent);
             }
         });
         return view;
@@ -143,10 +147,34 @@ public class UsersFragment extends Fragment {
         });
     }
 
+    public void setImageProfile() {
+        reference = FirebaseDatabase.getInstance().getReference("Users")
+                .child(firebaseUser.getUid());
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                User user = dataSnapshot.getValue(User.class);
+                if (user.getImageURL().equals("default")) {
+                    profileImage.setImageResource(R.mipmap.ic_launcher_round);
+                } else {
+                    Glide.with(UsersFragment.this).load(user.getImageURL()).into(profileImage);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
     private RecyclerView recyclerView;
     private UserAdapter userAdapter;
     private List<User> mUsers;
     private EditText searchUserEditText;
     private ImageView createGroupImage;
-    private FirebaseUser firebaseUser;
+    private CircleImageView profileImage;
+    private DatabaseReference reference;
+    private FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 }

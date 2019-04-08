@@ -9,36 +9,8 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:id="@+id/layout_header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/shadow"
-        android:backgroundTint="@color/color_white"
-        android:elevation="6dp">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:padding="10dp"
-            android:src="@mipmap/ic_launcher" />
-
-        <TextView
-            android:id="@+id/text_name_fragment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@id/profile_image"
-            android:layout_toRightOf="@id/profile_image"
-            android:text="username"
-            android:textColor="@color/color_black"
-            android:textSize="30dp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layout_header">
+        android:layout_height="wrap_content">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/view_pager"

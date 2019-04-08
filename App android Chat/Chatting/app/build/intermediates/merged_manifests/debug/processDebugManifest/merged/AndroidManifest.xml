@@ -45,6 +45,7 @@
             android:name="com.example.datvtd.chatting.ResetPassActivity"
             android:parentActivityName="com.example.datvtd.chatting.LoginActivity" />
         <activity android:name="com.example.datvtd.chatting.Adapter.ChatImageActivity" />
+        <activity android:name="com.example.datvtd.chatting.ProfileActivity" />
         <activity
             android:name="com.example.datvtd.chatting.UserGroupActivity"
             android:theme="@style/Theme.MyDialog" />

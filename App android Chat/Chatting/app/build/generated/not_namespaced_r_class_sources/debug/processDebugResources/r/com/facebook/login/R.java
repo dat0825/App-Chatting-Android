@@ -850,11 +850,11 @@ public final class R {
         public static final int abc_search_dropdown_item_icons_2line = 0x7f0b0018;
         public static final int abc_search_view = 0x7f0b0019;
         public static final int abc_select_dialog_material = 0x7f0b001a;
-        public static final int com_facebook_activity_layout = 0x7f0b0025;
-        public static final int com_facebook_device_auth_dialog_fragment = 0x7f0b0026;
-        public static final int com_facebook_login_fragment = 0x7f0b0027;
-        public static final int com_facebook_smart_device_dialog_fragment = 0x7f0b0028;
-        public static final int com_facebook_tooltip_bubble = 0x7f0b0029;
+        public static final int com_facebook_activity_layout = 0x7f0b0026;
+        public static final int com_facebook_device_auth_dialog_fragment = 0x7f0b0027;
+        public static final int com_facebook_login_fragment = 0x7f0b0028;
+        public static final int com_facebook_smart_device_dialog_fragment = 0x7f0b0029;
+        public static final int com_facebook_tooltip_bubble = 0x7f0b002a;
         public static final int notification_action = 0x7f0b0046;
         public static final int notification_action_tombstone = 0x7f0b0047;
         public static final int notification_media_action = 0x7f0b0048;

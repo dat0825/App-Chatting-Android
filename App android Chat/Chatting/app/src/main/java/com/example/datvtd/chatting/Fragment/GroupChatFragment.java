@@ -1,6 +1,5 @@
 package com.example.datvtd.chatting.Fragment;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,7 +7,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -17,13 +15,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.datvtd.chatting.Adapter.UserAdapter;
-import com.example.datvtd.chatting.Animation.SwipeController;
 import com.example.datvtd.chatting.Model.GroupChat;
 import com.example.datvtd.chatting.Model.User;
 import com.example.datvtd.chatting.Notifications.Token;
+import com.example.datvtd.chatting.ProfileActivity;
 import com.example.datvtd.chatting.R;
 import com.example.datvtd.chatting.UserGroupActivity;
 import com.google.firebase.auth.FirebaseAuth;
@@ -37,8 +35,9 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class GroupChatFragment extends Fragment {
     @Nullable
@@ -50,14 +49,12 @@ public class GroupChatFragment extends Fragment {
         mGroupChats.clear();
         this.searchGroupText = view.findViewById(R.id.text_search_group);
         this.creatGroupImage = view.findViewById(R.id.b_create_group);
+        this.profileImage = view.findViewById(R.id.profile_image);
         this.recyclerView = view.findViewById(R.id.recycler_view);
         this.recyclerView.setHasFixedSize(true);
         this.recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        // call textView from another class
-//        TextView nameFragment = ((Activity) getContext()).findViewById(R.id.text_name_fragment);
-        Log.d("SAD!@#!@#","2");
-//        nameFragment.setText("2");
+        setImageProfile();
 
         updateToken(FirebaseInstanceId.getInstance().getToken());
 
@@ -94,6 +91,14 @@ public class GroupChatFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), UserGroupActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        profileImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), ProfileActivity.class);
                 startActivity(intent);
             }
         });
@@ -172,9 +177,32 @@ public class GroupChatFragment extends Fragment {
         this.reference.child(firebaseUser.getUid()).setValue(token1);
     }
 
+    public void setImageProfile() {
+        reference = FirebaseDatabase.getInstance().getReference("Users")
+                .child(firebaseUser.getUid());
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                User user = dataSnapshot.getValue(User.class);
+                if (user.getImageURL().equals("default")) {
+                    profileImage.setImageResource(R.mipmap.ic_launcher_round);
+                } else {
+                    Glide.with(GroupChatFragment.this).load(user.getImageURL()).into(profileImage);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
     private RecyclerView recyclerView;
     private EditText searchGroupText;
     private ImageView creatGroupImage;
+    private CircleImageView profileImage;
     private FirebaseUser firebaseUser;
     private DatabaseReference reference;
     private List<GroupChat> mGroupChats;
