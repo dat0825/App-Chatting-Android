@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         this.viewPager = findViewById(R.id.view_pager);
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.icon_chat_in_tab));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.mipmap.ic_chat_in_tab));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.icon_group_chat_in_tab));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_user_in_tab));
 

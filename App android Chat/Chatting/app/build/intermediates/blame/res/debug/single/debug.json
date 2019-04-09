@@ -1,27 +1,27 @@
 [
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_icon_white.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-mdpi-v4/com_facebook_button_icon_white.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-mdpi-v4/com_facebook_button_icon_white.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/777a169a50244de2db633e523522cf43/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -32,32 +32,32 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/animator/design_fab_hide_motion_spec.xml"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/anim_design_snackbar_in.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/anim/design_snackbar_in.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/animator/design_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_ic_info_blue_20dp.xml.flat",
         "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/drawable/ic_info_blue_20dp.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_mtrl_text_btn_text_color_selector.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/color/mtrl_text_btn_text_color_selector.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -88,12 +88,12 @@
         "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/drawable/ic_back.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_fragment_users.xml.flat",
-        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/fragment_users.xml"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_fragment_users.xml.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/fragment_users.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -128,12 +128,12 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-hdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/anim/design_snackbar_out.xml"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_mtrl_chip_ripple_color.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/color/mtrl_chip_ripple_color.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/anim/design_snackbar_out.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -160,44 +160,44 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_message.xml.flat",
-        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_message.xml"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_design_bottom_navigation_item.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/layout/design_bottom_navigation_item.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/mipmap-xhdpi_colordialog.jpg.flat",
-        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/mipmap-xhdpi/colordialog.jpg"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_message.xml.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_message.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout-v26_abc_screen_toolbar.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/layout-v26/abc_screen_toolbar.xml"
     },
     {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/mipmap-xhdpi_colordialog.jpg.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/mipmap-xhdpi/colordialog.jpg"
+    },
+    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/777a169a50244de2db633e523522cf43/res/drawable-hdpi-v4/googleg_standard_color_18.png"
-    },
-    {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/color/abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable/tooltip_frame_dark.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_info_group.xml.flat",
         "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_info_group.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable/tooltip_frame_dark.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/color/abc_primary_text_material_dark.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -229,7 +229,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
@@ -253,7 +253,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
@@ -261,7 +261,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -273,7 +273,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_mtrl_btn_stroke_color_selector.xml.flat",
@@ -305,7 +305,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -320,12 +320,12 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/color-v23/abc_tint_spinner.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
@@ -397,7 +397,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -425,7 +425,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_material.xml.flat",
@@ -465,7 +465,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_profile_picture_blank_square.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -489,7 +489,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_login_background.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable/com_facebook_button_login_background.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable/com_facebook_button_login_background.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -585,7 +585,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_background.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable/com_facebook_button_background.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable/com_facebook_button_background.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_abc_tab_indicator_material.xml.flat",
@@ -609,7 +609,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -621,7 +621,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -629,7 +629,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -693,7 +693,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_favicon_blue.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable/com_facebook_favicon_blue.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable/com_facebook_favicon_blue.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -805,7 +805,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_com_facebook_device_auth_dialog_fragment.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/layout/com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -873,7 +873,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_com_facebook_activity_layout.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/layout/com_facebook_activity_layout.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/layout/com_facebook_activity_layout.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat",
@@ -893,7 +893,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
@@ -937,7 +937,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_header_background.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable/com_facebook_auth_dialog_header_background.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable/com_facebook_auth_dialog_header_background.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_abc_action_bar_up_container.xml.flat",
@@ -957,7 +957,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -973,7 +973,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
@@ -981,7 +981,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1193,7 +1193,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_icon_white.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-xhdpi-v4/com_facebook_button_icon_white.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-xhdpi-v4/com_facebook_button_icon_white.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1202,10 +1202,6 @@
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_icon_chat_in_tab.xml.flat",
-        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/drawable/icon_chat_in_tab.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -1353,7 +1349,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -1385,7 +1381,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_close.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-mdpi-v4/com_facebook_close.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-mdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_message_receive_background.xml.flat",
@@ -1405,11 +1401,11 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_icon_white.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-xxhdpi-v4/com_facebook_button_icon_white.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-xxhdpi-v4/com_facebook_button_icon_white.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -1452,6 +1448,10 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e795524a59c94f67f9b8ae26296d8411/res/drawable-hdpi-v4/notification_bg_normal.9.png"
     },
     {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_chat_in_tab.png.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/mipmap-hdpi/ic_chat_in_tab.png"
+    },
+    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
@@ -1485,7 +1485,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-v21_abc_edit_text_material.xml.flat",
@@ -1493,7 +1493,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat",
@@ -1537,7 +1537,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_top_material.xml.flat",
@@ -1557,7 +1557,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_icon_blue.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-xhdpi-v4/com_facebook_button_icon_blue.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-xhdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_ic_user_in_tab.xml.flat",
@@ -1577,7 +1577,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -1609,7 +1609,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_close.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-xhdpi-v4/com_facebook_close.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-xhdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -1617,11 +1617,11 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_com_facebook_smart_device_dialog_fragment.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/layout/com_facebook_smart_device_dialog_fragment.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_close.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-hdpi-v4/com_facebook_close.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-hdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_small_icon.xml.flat",
@@ -1641,7 +1641,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_com_facebook_tooltip_bubble.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/layout/com_facebook_tooltip_bubble.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/layout/com_facebook_tooltip_bubble.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_select_dialog_multichoice_material.xml.flat",
@@ -1689,7 +1689,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_cancel_background.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
@@ -1712,12 +1712,12 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_profile.xml.flat",
         "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_profile.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1745,7 +1745,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_com_facebook_login_fragment.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/layout/com_facebook_login_fragment.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/layout/com_facebook_login_fragment.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1761,7 +1761,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -1777,7 +1777,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_icon_blue.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-mdpi-v4/com_facebook_button_icon_blue.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-mdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_mtrl_chip_close_icon_tint.xml.flat",
@@ -1789,7 +1789,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_like_background.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable/com_facebook_button_like_background.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable/com_facebook_button_like_background.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view.xml.flat",
@@ -1805,7 +1805,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_login_silver_background.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable/com_facebook_button_login_silver_background.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable/com_facebook_button_login_silver_background.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_ic_remove_red_20dp.xml.flat",
@@ -1817,7 +1817,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_icon_blue.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_dark.xml.flat",
@@ -1829,7 +1829,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_icon_blue.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-hdpi-v4/com_facebook_button_icon_blue.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-hdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_mtrl_tabs_icon_color_selector.xml.flat",
@@ -1953,7 +1953,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark.xml.flat",
@@ -1961,7 +1961,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_background.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable/com_facebook_auth_dialog_background.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable/com_facebook_auth_dialog_background.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -2013,7 +2013,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
@@ -2045,7 +2045,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_button_background.xml.flat",
@@ -2081,7 +2081,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_profile_picture_blank_portrait.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
@@ -2089,7 +2089,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_login_logo.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable/com_facebook_button_login_logo.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable/com_facebook_button_login_logo.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
@@ -2149,7 +2149,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_item_user.xml.flat",
@@ -2237,7 +2237,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -2245,7 +2245,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_icon_white.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable-hdpi-v4/com_facebook_button_icon_white.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable-hdpi-v4/com_facebook_button_icon_white.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -2253,7 +2253,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_icon.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/drawable/com_facebook_button_icon.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/drawable/com_facebook_button_icon.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -2317,7 +2317,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/1ab149a34e0be182e6f5655982576563/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
@@ -2342,6 +2342,10 @@
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/anim_slide_left_to_right.xml.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/anim/slide_left_to_right.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -2437,7 +2441,7 @@
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_com_facebook_button_text_color.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/3cd29be691b4d666c8e2f3d907c11bdf/res/color/com_facebook_button_text_color.xml"
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/12b0e830147ea40a07c127a94884633b/res/color/com_facebook_button_text_color.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat",

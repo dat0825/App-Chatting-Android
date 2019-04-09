@@ -16,6 +16,7 @@ anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
 anim slide_down
+anim slide_left_to_right
 anim slide_up
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
@@ -1180,7 +1181,6 @@ drawable ic_search_black_24dp
 drawable ic_send
 drawable ic_send_image_15dp
 drawable ic_user_in_tab
-drawable icon_chat_in_tab
 drawable icon_group_chat_in_tab
 drawable message_receive_background
 drawable message_send_background
@@ -1330,6 +1330,9 @@ id header_creat_account
 id highlight
 id home
 id homeAsUp
+id ic_1
+id ic_2
+id ic_3
 id ic_remove_member
 id icon
 id icon_group
@@ -1349,6 +1352,7 @@ id largeLabel
 id layout_bottom
 id layout_confirm
 id layout_header
+id layout_icons
 id left
 id light
 id line1
@@ -1605,6 +1609,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap colordialog
+mipmap ic_chat_in_tab
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap openimage

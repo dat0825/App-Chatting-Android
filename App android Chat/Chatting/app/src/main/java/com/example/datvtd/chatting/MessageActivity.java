@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.design.animation.AnimationUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,10 +16,13 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.Animation;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -185,6 +189,22 @@ public class MessageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openImage();
+            }
+        });
+
+
+        final ImageView imageView1 = findViewById(R.id.ic_1);
+        final ImageView imageView2 = findViewById(R.id.ic_2);
+        ImageView imageView3 = findViewById(R.id.ic_3);
+
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation slide = android.view.animation.AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_left_to_right);
+                RelativeLayout relativeLayout = findViewById(R.id.layout_icons);
+                relativeLayout.setVisibility(View.VISIBLE);
+                relativeLayout.startAnimation(slide);
+
             }
         });
     }

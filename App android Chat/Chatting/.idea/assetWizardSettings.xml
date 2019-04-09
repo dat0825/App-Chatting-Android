@@ -34,11 +34,11 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="height" value="32" />
-                            <entry key="outputName" value="ic_group_chat_in_tab" />
+                            <entry key="height" value="304" />
+                            <entry key="outputName" value="ic_xxx" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="$PROJECT_DIR$/../../../chat.svg" />
-                            <entry key="width" value="32" />
+                            <entry key="sourceFile" value="$PROJECT_DIR$/../../../xxx.psd" />
+                            <entry key="width" value="304" />
                           </map>
                         </option>
                       </PersistentState>
