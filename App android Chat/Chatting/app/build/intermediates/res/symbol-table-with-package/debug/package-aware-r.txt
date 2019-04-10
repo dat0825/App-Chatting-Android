@@ -218,6 +218,7 @@ attr counterEnabled
 attr counterMaxLength
 attr counterOverflowTextAppearance
 attr counterTextAppearance
+attr customBgColor
 attr customNavigationLayout
 attr defaultQueryHint
 attr dialogCornerRadius
@@ -1170,6 +1171,7 @@ drawable googleg_standard_color_18
 drawable ic_add_box_black_24dp
 drawable ic_add_person
 drawable ic_back
+drawable ic_extend
 drawable ic_info_blue_20dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1332,7 +1334,7 @@ id home
 id homeAsUp
 id ic_1
 id ic_2
-id ic_3
+id ic_extend
 id ic_remove_member
 id icon
 id icon_group
@@ -1919,6 +1921,7 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style DarkMode
 style MenuStyle
 style Platform_AppCompat
 style Platform_AppCompat_Light

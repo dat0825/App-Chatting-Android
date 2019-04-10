@@ -27,7 +27,7 @@
         <activity android:name=".RegisterActivity" />
         <activity
             android:name=".MessageActivity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ResetPassActivity"
             android:parentActivityName=".LoginActivity" />

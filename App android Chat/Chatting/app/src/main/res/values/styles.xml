@@ -4,8 +4,9 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">@color/color_black</item>
     </style>
 
     <style name="MenuStyle" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -19,5 +20,13 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowBackground">@drawable/edit_text_background</item>
+    </style>
+
+    <style name = "DarkMode" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Other values-->
+        <item name="colorPrimary">@color/color_black</item>
+        <item name="colorPrimaryDark">@color/color_black</item>
+        <item name="colorAccent">@color/color_black</item>
+        <item name="customBgColor">@color/color_black</item>  // phải khai báo thêm trong file attrs.xml. chỉ dùng những màu đã khai báo trong colors.xml. Không dùng giá trị màu trực tiếp
     </style>
 </resources>

@@ -1,6 +1,8 @@
 package com.example.datvtd.chatting;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.Application;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -17,6 +19,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
@@ -71,6 +74,7 @@ public class MessageActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.DarkMode);  // cần đặt trước setContentView
         setContentView(R.layout.activity_message);
         this.usernameTextView = findViewById(R.id.text_username);
         this.profileImage = findViewById(R.id.profile_image);
@@ -78,6 +82,8 @@ public class MessageActivity extends AppCompatActivity {
         this.sendButton = findViewById(R.id.b_send);
         this.sendImageButton = findViewById(R.id.b_send_image);
         this.backButton = findViewById(R.id.b_back);
+        this.extendIconsButton = findViewById(R.id.ic_extend);
+        this.iconsLayout = findViewById(R.id.layout_icons);
         this.contentSendEditText = findViewById(R.id.text_send);
         this.intent = getIntent();
         this.idReceiver = intent.getStringExtra("ID");
@@ -192,19 +198,22 @@ public class MessageActivity extends AppCompatActivity {
             }
         });
 
-
-        final ImageView imageView1 = findViewById(R.id.ic_1);
-        final ImageView imageView2 = findViewById(R.id.ic_2);
-        ImageView imageView3 = findViewById(R.id.ic_3);
-
-        imageView3.setOnClickListener(new View.OnClickListener() {
+        extendIconsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Animation slide = android.view.animation.AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_left_to_right);
-                RelativeLayout relativeLayout = findViewById(R.id.layout_icons);
-                relativeLayout.setVisibility(View.VISIBLE);
-                relativeLayout.startAnimation(slide);
+                Animation slide = android.view.animation.AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_left_to_right);
+                iconsLayout.setVisibility(View.VISIBLE);
+                iconsLayout.startAnimation(slide);
+                extendIconsButton.setVisibility(View.GONE);
+            }
+        });
 
+        contentSendEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                contentSendEditText.setFocusableInTouchMode(true);  // thêm " android:focusableInTouchMode="false" -- phải double click mới gõ text được
+                iconsLayout.setVisibility(View.GONE);
+                extendIconsButton.setVisibility(View.VISIBLE);
             }
         });
     }
@@ -437,7 +446,7 @@ public class MessageActivity extends AppCompatActivity {
 
         //set notification for group type image
         if (checkGroup.equals("true")) {
-            Log.d("ASD!@#21312","ASD!@#");
+            Log.d("ASD!@#21312", "ASD!@#");
             final String msg = message;
             reference = FirebaseDatabase.getInstance().getReference("ChatGroup").child(idGroup).child("members");
             reference.addValueEventListener(new ValueEventListener() {
@@ -804,7 +813,9 @@ public class MessageActivity extends AppCompatActivity {
     private ImageView profileImage;
     private ImageView iconInforGroup;
     private ImageView backButton;
+    private ImageView extendIconsButton;
     private TextView usernameTextView;
+    private RelativeLayout iconsLayout;
     private FirebaseUser firebaseUser;
     private DatabaseReference reference;
     private Intent intent;
