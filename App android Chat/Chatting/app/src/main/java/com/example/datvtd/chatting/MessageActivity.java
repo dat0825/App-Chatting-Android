@@ -18,6 +18,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.inputmethod.InputMethodManager;
 import android.webkit.MimeTypeMap;
@@ -74,7 +75,16 @@ public class MessageActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(R.style.DarkMode);  // cần đặt trước setContentView
+//        setTheme(R.style.DarkMode);  // cần đặt trước setContentView
+
+        // full screen with no status bar
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        // full screen with status bar
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+//                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+
         setContentView(R.layout.activity_message);
         this.usernameTextView = findViewById(R.id.text_username);
         this.profileImage = findViewById(R.id.profile_image);
@@ -797,6 +807,7 @@ public class MessageActivity extends AppCompatActivity {
         this.iconInforGroup.setColorFilter(Color.parseColor(colorValue)); // muốn set được màu thì trong file .xml cần phải để là src: "tên ảnh". K được để là setbackgound vì sẽ k set được màu
         this.sendButton.setColorFilter(Color.parseColor(colorValue));
         this.sendImageButton.setColorFilter(Color.parseColor(colorValue));
+        this.extendIconsButton.setColorFilter(Color.parseColor(colorValue));
     }
 
     private EditText contentSendEditText;
