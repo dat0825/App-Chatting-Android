@@ -1,5 +1,9 @@
 package com.example.datvtd.chatting.Animation;
 
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -12,11 +16,11 @@ import android.view.View;
 import com.example.datvtd.chatting.InfoGroupActivity;
 import com.example.datvtd.chatting.MessageActivity;
 import com.example.datvtd.chatting.Model.User;
+import com.example.datvtd.chatting.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import java.lang.reflect.Array;
-
 import static android.support.v7.widget.helper.ItemTouchHelper.*;
 
 enum ButtonsState {
@@ -30,6 +34,7 @@ public class SwipeController extends Callback {
     public SwipeController(SwipeControllerActions buttonsActions) {
         this.buttonsActions = buttonsActions;
     }
+
 
     @Override
     public int getMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
@@ -223,9 +228,10 @@ public class SwipeController extends Callback {
             promoteButton = new RectF(itemView.getRight() - buttonWidthWithoutPadding,
                     itemView.getTop(), itemView.getRight() - buttonWidthWithoutPadding / 2, itemView.getBottom());
             p.setColor(Color.BLUE);
+        }
+
             c.drawRoundRect(promoteButton, corners, corners, p);
             drawText("Promote", c, promoteButton, p);
-        }
 
         buttonInstance[0] = null;
         buttonInstance[1] = null;

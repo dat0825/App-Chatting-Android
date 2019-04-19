@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.app.Application;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -17,6 +18,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
@@ -57,6 +60,12 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.sinch.android.rtc.PushPair;
+import com.sinch.android.rtc.Sinch;
+import com.sinch.android.rtc.SinchClient;
+import com.sinch.android.rtc.calling.CallClient;
+import com.sinch.android.rtc.calling.CallClientListener;
+import com.sinch.android.rtc.calling.CallListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -93,6 +102,7 @@ public class MessageActivity extends AppCompatActivity {
         this.sendImageButton = findViewById(R.id.b_send_image);
         this.backButton = findViewById(R.id.b_back);
         this.extendIconsButton = findViewById(R.id.ic_extend);
+        this.callButton = findViewById(R.id.ic_call);
         this.iconsLayout = findViewById(R.id.layout_icons);
         this.contentSendEditText = findViewById(R.id.text_send);
         this.intent = getIntent();
@@ -224,6 +234,14 @@ public class MessageActivity extends AppCompatActivity {
                 contentSendEditText.setFocusableInTouchMode(true);  // thêm " android:focusableInTouchMode="false" -- phải double click mới gõ text được
                 iconsLayout.setVisibility(View.GONE);
                 extendIconsButton.setVisibility(View.VISIBLE);
+            }
+        });
+
+        callVoice();
+        callButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callUser();
             }
         });
     }
@@ -810,6 +828,106 @@ public class MessageActivity extends AppCompatActivity {
         this.extendIconsButton.setColorFilter(Color.parseColor(colorValue));
     }
 
+    public void callVoice(){
+        sinchClient = Sinch.getSinchClientBuilder()
+                .context(this)
+                .userId(firebaseUser.getUid())
+                .applicationKey("08c39146-6d90-41b2-8c1d-2e76a03ea62b")
+                .applicationSecret("LLRk8KPO6katlsOjm6VRZw==")
+                .environmentHost("clientapi.sinch.com")
+                .build();
+
+        sinchClient.setSupportCalling(true);
+        sinchClient.startListeningOnActiveConnection();
+
+//        sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener(){
+//
+//        });
+
+//        sinchClient.getCallClient().callUser(idReceiver);
+
+        sinchClient.start();
+    }
+
+    public void callUser(){
+
+        if(call == null){
+            call = sinchClient.getCallClient().callUser(idReceiver);
+            sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
+            call.addCallListener(new SinchCallListener());
+            openCallerDialog(call);
+        }
+    }
+
+    public void openCallerDialog(final com.sinch.android.rtc.calling.Call call){
+        AlertDialog alertDialogCall = new AlertDialog.Builder(MessageActivity.this).create();
+        alertDialogCall.setTitle("ALERT");
+        alertDialogCall.setMessage("Calling");
+        alertDialogCall.setButton(AlertDialog.BUTTON_NEUTRAL, "Hang up", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                call.hangup();
+            }
+        });
+
+        alertDialogCall.show();
+    }
+
+    private class SinchCallClientListener implements CallClientListener {
+
+        @Override
+        public void onIncomingCall(final CallClient callClient, final com.sinch.android.rtc.calling.Call incomingCall) {
+            // set dialog for call
+
+            AlertDialog alertDialog = new AlertDialog.Builder(MessageActivity.this).create();
+            alertDialog.setTitle("Calling");
+            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Reject", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                    call.hangup();
+                }
+            });
+            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Pick", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    call = incomingCall;
+                    call.answer();
+                    call.addCallListener(new SinchCallListener());
+                    Toast.makeText(getApplicationContext(),"Call is started",Toast.LENGTH_LONG).show();
+                }
+            });
+
+            alertDialog.show();
+        }
+    }
+
+    private class SinchCallListener implements CallListener{
+
+        @Override
+        public void onCallProgressing(com.sinch.android.rtc.calling.Call call) {
+            Toast.makeText(getApplicationContext(),"Calling....",Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onCallEstablished(com.sinch.android.rtc.calling.Call call) {
+            Toast.makeText(getApplicationContext(),"Connected",Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onCallEnded(com.sinch.android.rtc.calling.Call endedCall) {
+            Toast.makeText(getApplicationContext(),"End Game!",Toast.LENGTH_LONG).show();
+            call = null;
+            endedCall.hangup();
+        }
+
+        @Override
+        public void onShouldSendPushNotification(com.sinch.android.rtc.calling.Call call, List<PushPair> list) {
+
+        }
+    }
+
     private EditText contentSendEditText;
     private String idReceiver = "";
     public String idGroup = "";
@@ -825,6 +943,7 @@ public class MessageActivity extends AppCompatActivity {
     private ImageView iconInforGroup;
     private ImageView backButton;
     private ImageView extendIconsButton;
+    private Button callButton;
     private TextView usernameTextView;
     private RelativeLayout iconsLayout;
     private FirebaseUser firebaseUser;
@@ -843,4 +962,7 @@ public class MessageActivity extends AppCompatActivity {
     private UploadTask uploadTask;
     private static final int RESULT_OK = -1;
     private static final int IMAGE_REQUEST = 1;
+
+    SinchClient sinchClient;
+    com.sinch.android.rtc.calling.Call call;
 }

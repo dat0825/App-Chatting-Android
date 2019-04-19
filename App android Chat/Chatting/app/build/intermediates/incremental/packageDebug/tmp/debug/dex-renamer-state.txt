@@ -1,7 +1,13 @@
-#Thu Apr 11 14:05:20 ICT 2019
-base.0=/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/transforms/dexMerger/debug/0
+#Thu Apr 18 23:44:51 ICT 2019
+path.3=classes.dex
+path.2=classes.dex
 path.1=classes.dex
-renamed.1=classes2.dex
 path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.3=/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/transforms/dexMerger/debug/4
+base.2=/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/transforms/dexMerger/debug/3
 base.1=/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/transforms/dexMerger/debug/1
+base.0=/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/transforms/dexMerger/debug/0

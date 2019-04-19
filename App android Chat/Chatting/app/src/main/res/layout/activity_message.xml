@@ -100,19 +100,20 @@
                 android:src="@drawable/ic_send_image_15dp"
                 android:layout_centerVertical="true" />
 
-            <ImageView
-                android:id="@+id/ic_1"
+            <Button
+                android:id="@+id/ic_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_back"
+                android:text="Call"
                 android:layout_toRightOf="@id/b_send_image"
                 android:layout_centerVertical="true" />
             <ImageView
                 android:id="@+id/ic_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_info_blue_20dp"
-                android:layout_toRightOf="@id/ic_1"
+                android:src="@drawable/icon_call"
+                android:layout_toRightOf="@id/ic_call"
                 android:layout_centerVertical="true" />
         </RelativeLayout>
         <ImageView
