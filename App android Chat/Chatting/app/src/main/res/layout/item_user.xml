@@ -51,7 +51,7 @@
             android:layout_height="15dp"
             android:layout_marginStart="45dp"
             android:layout_marginTop="40dp"
-            android:src="@color/color_gray"
+            android:src="@color/color_green"
             android:visibility="visible"
             app:civ_border_color="@color/color_white"
             app:civ_border_width="2dp" />

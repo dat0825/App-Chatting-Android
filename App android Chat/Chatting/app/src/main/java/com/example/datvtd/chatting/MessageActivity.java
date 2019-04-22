@@ -60,9 +60,12 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.sinch.android.rtc.ClientRegistration;
 import com.sinch.android.rtc.PushPair;
 import com.sinch.android.rtc.Sinch;
 import com.sinch.android.rtc.SinchClient;
+import com.sinch.android.rtc.SinchClientListener;
+import com.sinch.android.rtc.SinchError;
 import com.sinch.android.rtc.calling.CallClient;
 import com.sinch.android.rtc.calling.CallClientListener;
 import com.sinch.android.rtc.calling.CallListener;
@@ -162,6 +165,7 @@ public class MessageActivity extends AppCompatActivity {
 
         } else {
             if (!this.color.equals("default")) {
+                Log.d("Sad21#", color);
                 updateColor(this.color);
             }
         }
@@ -828,7 +832,7 @@ public class MessageActivity extends AppCompatActivity {
         this.extendIconsButton.setColorFilter(Color.parseColor(colorValue));
     }
 
-    public void callVoice(){
+    public void callVoice() {
         sinchClient = Sinch.getSinchClientBuilder()
                 .context(this)
                 .userId(firebaseUser.getUid())
@@ -838,36 +842,39 @@ public class MessageActivity extends AppCompatActivity {
                 .build();
 
         sinchClient.setSupportCalling(true);
+//        sinchClient.setSupportManagedPush(true);
         sinchClient.startListeningOnActiveConnection();
+        sinchClient.start();
+        sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
 
 //        sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener(){
 //
 //        });
 
 //        sinchClient.getCallClient().callUser(idReceiver);
-
-        sinchClient.start();
     }
 
-    public void callUser(){
-
-        if(call == null){
+    public void callUser() {
+        if (call == null) {
             call = sinchClient.getCallClient().callUser(idReceiver);
-            sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
             call.addCallListener(new SinchCallListener());
+            sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
             openCallerDialog(call);
         }
     }
 
-    public void openCallerDialog(final com.sinch.android.rtc.calling.Call call){
+    public void openCallerDialog(final com.sinch.android.rtc.calling.Call call) {
         AlertDialog alertDialogCall = new AlertDialog.Builder(MessageActivity.this).create();
         alertDialogCall.setTitle("ALERT");
         alertDialogCall.setMessage("Calling");
+        alertDialogCall.setCancelable(false);
         alertDialogCall.setButton(AlertDialog.BUTTON_NEUTRAL, "Hang up", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
                 call.hangup();
+                sinchClient.stopListeningOnActiveConnection();
+//                sinchClient.terminate();
             }
         });
 
@@ -882,11 +889,16 @@ public class MessageActivity extends AppCompatActivity {
 
             AlertDialog alertDialog = new AlertDialog.Builder(MessageActivity.this).create();
             alertDialog.setTitle("Calling");
+            alertDialog.setCancelable(false);
             alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Reject", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
-                    call.hangup();
+                    if (call != null) {
+                        call.hangup();
+                        sinchClient.stopListeningOnActiveConnection();
+//                        sinchClient.terminate();
+                    }
                 }
             });
             alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Pick", new DialogInterface.OnClickListener() {
@@ -894,8 +906,7 @@ public class MessageActivity extends AppCompatActivity {
                 public void onClick(DialogInterface dialog, int which) {
                     call = incomingCall;
                     call.answer();
-                    call.addCallListener(new SinchCallListener());
-                    Toast.makeText(getApplicationContext(),"Call is started",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
                 }
             });
 
@@ -924,7 +935,7 @@ public class MessageActivity extends AppCompatActivity {
 
         @Override
         public void onShouldSendPushNotification(com.sinch.android.rtc.calling.Call call, List<PushPair> list) {
-
+            Log.d("sad213","notificationn");
         }
     }
 
