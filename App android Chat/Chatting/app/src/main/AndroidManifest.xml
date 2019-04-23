@@ -64,6 +64,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+        <receiver android:name=".Notifications.ActionCall" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

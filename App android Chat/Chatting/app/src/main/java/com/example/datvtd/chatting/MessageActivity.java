@@ -380,7 +380,7 @@ public class MessageActivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     User user = dataSnapshot.getValue(User.class);
                     if (notify) {
-                        sendNotification(user.getId(), nameCurrentUser, msg, true);
+                        sendNotification(user.getId(), nameCurrentUser, msg, false);
                     }
                     notify = false;
                 }
@@ -404,7 +404,7 @@ public class MessageActivity extends AppCompatActivity {
                         User user = snapshot.getValue(User.class);
                         if (!firebaseUser.getUid().equals(user.getId())) {
                             if (notify) {
-                                sendNotification(user.getId(), nameCurrentUser, msg, true);
+                                sendNotification(user.getId(), nameCurrentUser, msg, false);
                             }
                         }
                     }
@@ -488,7 +488,7 @@ public class MessageActivity extends AppCompatActivity {
                         User user = snapshot.getValue(User.class);
                         if (!firebaseUser.getUid().equals(user.getId())) {
                             if (notify) {
-                                sendNotification(user.getId(), nameCurrentUser, msg, true);
+                                sendNotification(user.getId(), nameCurrentUser, msg, false);
                             }
                         }
                     }
@@ -633,8 +633,7 @@ public class MessageActivity extends AppCompatActivity {
         status("offline");
     }
 
-    public void sendNotification(final String receiver, final String username, final String message, boolean sendText) {
-        Log.d("SAD@!#", "AS@");
+    public void sendNotification(final String receiver, final String username, final String message, final boolean checkCall) {
         DatabaseReference tokens = FirebaseDatabase.getInstance().getReference("Tokens");
         Query query = tokens.orderByKey().equalTo(receiver);
         query.addValueEventListener(new ValueEventListener() {
@@ -649,20 +648,26 @@ public class MessageActivity extends AppCompatActivity {
                         title = "New Message " + nameGroup;
                     }
 
-                    Data data;
+                    Data data = null;
 
-                    if (checkSendImage.equals("false")) {
-                        if (checkGroup.equals("true")) {
-                            data = new Data(firebaseUser.getUid(), idGroup, username + ": " + message, title, receiver);
+                    if (!checkCall) {  // dùng cho tin nhắn text và gửi ảnh
+                        if (checkSendImage.equals("false")) {
+                            if (checkGroup.equals("true")) {
+                                data = new Data(firebaseUser.getUid(), idGroup, username + ": " + message, title, receiver);
+                            } else {
+                                data = new Data(firebaseUser.getUid(), "noneGroup", username + ": " + message, title, receiver);
+                            }
                         } else {
-                            data = new Data(firebaseUser.getUid(), "noneGroup", username + ": " + message, title, receiver);
+                            if (checkGroup.equals("true")) {
+                                data = new Data(firebaseUser.getUid(), idGroup, username + ": " + "Send an image", title, receiver);
+                            } else {
+                                data = new Data(firebaseUser.getUid(), "noneGroup", username + ": " + "Send an image", title, receiver);
+                            }
                         }
-                    } else {
-                        if (checkGroup.equals("true")) {
-                            data = new Data(firebaseUser.getUid(), idGroup, username + ": " + "Send an image", title, receiver);
-                        } else {
-                            data = new Data(firebaseUser.getUid(), "noneGroup", username + ": " + "Send an image", title, receiver);
-                        }
+                    }
+
+                    if (checkCall) { // dùng cho cuộc gọi
+                        data = new Data(firebaseUser.getUid(), "Call", username + " " + message, title, receiver);
                     }
 
                     Sender sender = new Sender(data, token.getToken());
@@ -670,7 +675,6 @@ public class MessageActivity extends AppCompatActivity {
                             .enqueue(new Callback<MyResponse>() {
                                 @Override
                                 public void onResponse(Call<MyResponse> call, Response<MyResponse> response) {
-                                    Log.d("SAD@!#!@", String.valueOf(response.code()) + " - " + String.valueOf(response.body().success));
                                     if (response.code() == 200) {
                                         if (response.body().success != 1) {
                                             Toast.makeText(MessageActivity.this, "Failed", Toast.LENGTH_SHORT).show();
@@ -859,7 +863,7 @@ public class MessageActivity extends AppCompatActivity {
             call = sinchClient.getCallClient().callUser(idReceiver);
             call.addCallListener(new SinchCallListener());
             sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
-            openCallerDialog(call);
+            sendNotification(idReceiver, nameCurrentUser, "Calling...", true);
         }
     }
 
@@ -914,28 +918,28 @@ public class MessageActivity extends AppCompatActivity {
         }
     }
 
-    private class SinchCallListener implements CallListener{
+    private class SinchCallListener implements CallListener {
 
         @Override
         public void onCallProgressing(com.sinch.android.rtc.calling.Call call) {
-            Toast.makeText(getApplicationContext(),"Calling....",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Calling....", Toast.LENGTH_LONG).show();
         }
 
         @Override
         public void onCallEstablished(com.sinch.android.rtc.calling.Call call) {
-            Toast.makeText(getApplicationContext(),"Connected",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Connected", Toast.LENGTH_LONG).show();
         }
 
         @Override
         public void onCallEnded(com.sinch.android.rtc.calling.Call endedCall) {
-            Toast.makeText(getApplicationContext(),"End Game!",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "End Game!", Toast.LENGTH_LONG).show();
             call = null;
             endedCall.hangup();
         }
 
         @Override
         public void onShouldSendPushNotification(com.sinch.android.rtc.calling.Call call, List<PushPair> list) {
-            Log.d("sad213","notificationn");
+            Log.d("sad213", "notificationn");
         }
     }
 
@@ -974,6 +978,6 @@ public class MessageActivity extends AppCompatActivity {
     private static final int RESULT_OK = -1;
     private static final int IMAGE_REQUEST = 1;
 
-    SinchClient sinchClient;
-    com.sinch.android.rtc.calling.Call call;
+    public static SinchClient sinchClient;
+    public static com.sinch.android.rtc.calling.Call call;
 }

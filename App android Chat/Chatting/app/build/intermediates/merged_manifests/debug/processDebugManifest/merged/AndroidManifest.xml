@@ -77,6 +77,8 @@
             </intent-filter>
         </service>
 
+        <receiver android:name="com.example.datvtd.chatting.Notifications.ActionCall" />
+
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />

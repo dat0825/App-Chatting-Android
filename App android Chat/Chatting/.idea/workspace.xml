@@ -13,6 +13,9 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java" line="214" />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
@@ -20,6 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb785ab2-6d5e-4601-b134-b94ce585ae17" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/ActionCall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -29,26 +33,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/QLDabatr77k5tox7G1moeGzZ7kk=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/QLDabatr77k5tox7G1moeGzZ7kk=" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$14.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$15.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$18.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$19.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$22.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$23$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$23$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$23.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$24.class" afterDir="false" />
@@ -57,36 +46,21 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$27.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$27.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$28.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$29.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$29.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$30.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$30.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$SinchCallListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity$SinchCallListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/MessageActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_item_user.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_item_user.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$10.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$10.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$11.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$11.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$12.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$12.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$13.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$13.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$14.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$14.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$15.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$15.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$16.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$16.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$17.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$17.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$18.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$18.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$19.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$19.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$20.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$20.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$21.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$21.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$22.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$22.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$23$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$23$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$23.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$23.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$24.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$24.dex" afterDir="false" />
@@ -95,23 +69,22 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$27.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$27.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$28.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$28.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$29.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$29.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$3.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$30.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$30.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$4.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$4.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$5.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$5.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$6.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$6.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$7.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$7.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$8.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$8.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$9.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$9.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener$2.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$SinchCallClientListener.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$SinchCallListener.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity$SinchCallListener.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/MessageActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging$3.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/84/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -147,56 +120,30 @@
       <file leaf-file-name="MessageActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-251">
-              <caret line="872" column="59" selection-start-line="872" selection-start-column="59" selection-end-line="872" selection-end-column="59" />
+            <state relative-caret-position="184">
+              <caret line="841" selection-start-line="841" selection-end-line="841" />
               <folding>
-                <element signature="e#7262#7508#0" expanded="true" />
-                <element signature="e#7507#7508#0" expanded="true" />
-                <element signature="e#7602#7815#0" expanded="true" />
-                <element signature="e#7814#7815#0" expanded="true" />
-                <element signature="e#7872#8269#0" expanded="true" />
-                <element signature="e#8268#8269#0" expanded="true" />
-                <element signature="e#8321#8470#0" expanded="true" />
-                <element signature="e#8469#8470#0" expanded="true" />
-                <element signature="e#8543#8688#0" expanded="true" />
-                <element signature="e#8687#8688#0" expanded="true" />
-                <element signature="e#8737#9161#0" expanded="true" />
-                <element signature="e#9160#9161#0" expanded="true" />
-                <element signature="e#9212#9598#0" expanded="true" />
-                <element signature="e#9597#9598#0" expanded="true" />
                 <element signature="e#9661#9805#0" expanded="true" />
                 <element signature="e#9804#9805#0" expanded="true" />
                 <element signature="e#9819#11459#0" />
                 <element signature="class#10048:10843" />
                 <element signature="method#onDataChange#0;class#10048:10843" />
                 <element signature="method#onCancelled#0;class#10048:10843" />
-                <element signature="e#11021#11451#0" expanded="true" />
-                <element signature="e#11450#11451#0" expanded="true" />
                 <element signature="e#11465#13173#0" />
                 <element signature="class#11702:12562" />
                 <element signature="method#onDataChange#0;class#11702:12562" />
                 <element signature="method#onCancelled#0;class#11702:12562" />
-                <element signature="e#12738#13165#0" expanded="true" />
-                <element signature="e#13164#13165#0" expanded="true" />
-                <element signature="e#13179#16444#0" />
                 <element signature="class#14115:14604" />
                 <element signature="method#onDataChange#0;class#14115:14604" />
                 <element signature="method#onCancelled#0;class#14115:14604" />
-                <element signature="class#14817:15345" />
-                <element signature="method#onDataChange#0;class#14817:15345" />
                 <element signature="method#onCancelled#0;class#14817:15345" />
-                <element signature="class#15672:16426" />
-                <element signature="method#onDataChange#0;class#15672:16426" />
                 <element signature="method#onCancelled#0;class#15672:16426" />
-                <element signature="e#16450#19725#0" />
                 <element signature="class#17410:17831" />
                 <element signature="method#onDataChange#0;class#17410:17831" />
                 <element signature="method#onCancelled#0;class#17410:17831" />
                 <element signature="class#18075:18604" />
                 <element signature="method#onDataChange#0;class#18075:18604" />
                 <element signature="method#onCancelled#0;class#18075:18604" />
-                <element signature="class#18953:19707" />
-                <element signature="method#onDataChange#0;class#18953:19707" />
                 <element signature="method#onCancelled#0;class#18953:19707" />
                 <element signature="e#19731#22062#0" />
                 <element signature="class#20023:22054" />
@@ -215,59 +162,22 @@
                 <element signature="e#24632#24729#0" />
                 <element signature="e#24735#24831#0" />
                 <element signature="e#24837#24932#0" />
-                <element signature="e#24938#27898#0" />
-                <element signature="class#25278:27890" />
-                <element signature="method#onDataChange#0;class#25278:27890" />
-                <element signature="class#26842:27732" />
-                <element signature="method#onResponse#0;class#26842:27732" />
-                <element signature="method#onFailure#0;class#26842:27732" />
-                <element signature="method#onCancelled#0;class#25278:27890" />
-                <element signature="e#27904#28116#0" />
-                <element signature="e#28122#28400#0" />
-                <element signature="e#28406#30614#0" />
-                <element signature="e#28892#29288#0" expanded="true" />
-                <element signature="e#29287#29288#0" expanded="true" />
-                <element signature="e#29312#30168#0" expanded="true" />
-                <element signature="e#30167#30168#0" expanded="true" />
-                <element signature="e#30191#30482#0" expanded="true" />
-                <element signature="e#30481#30482#0" expanded="true" />
-                <element signature="e#30620#31475#0" />
-                <element signature="e#31291#31381#0" />
-                <element signature="e#31481#33638#0" />
-                <element signature="e#31974#32370#0" expanded="true" />
-                <element signature="e#32369#32370#0" expanded="true" />
-                <element signature="e#32394#33192#0" expanded="true" />
-                <element signature="e#33191#33192#0" expanded="true" />
-                <element signature="e#33215#33506#0" expanded="true" />
-                <element signature="e#33505#33506#0" expanded="true" />
-                <element signature="e#36105#36106#0" expanded="true" />
-                <element signature="e#36656#37087#0" expanded="true" />
-                <element signature="e#37086#37087#0" expanded="true" />
-                <element signature="e#37161#37513#0" expanded="true" />
-                <element signature="e#37512#37513#0" expanded="true" />
+                <element signature="e#35554#35879#0" expanded="true" />
+                <element signature="e#35878#35879#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyFirebaseMessaging.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
+      <file leaf-file-name="ActionCall.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/ActionCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+            <state relative-caret-position="157">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_user.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_user.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
           </provider>
         </entry>
       </file>
@@ -300,6 +210,7 @@
       <find>getCallClient</find>
       <find>SinchCallClientListener</find>
       <find>openCallerDialog</find>
+      <find>MyFirebaseMessaging</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -3010,15 +2921,16 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/icon_call.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/SinchCallClientListener.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_user.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/ActionCall.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="348" />
     <option name="y" value="40" />
     <option name="width" value="1046" />
@@ -3030,9 +2942,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -3051,14 +2961,23 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="chatting" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Chatting" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="chatting" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Notifications" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.last.selected" value="sinch-android-rtc-3.12.9" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="device.picker.selection" value="9ee5c124" />
@@ -3206,7 +3125,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-4" width="1545" height="904" extended-state="6" />
+    <frame x="54" y="-11" width="1547" height="912" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -3218,11 +3138,11 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32933334" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="7" visible="true" weight="0.31016043" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="7" visible="true" weight="0.43983957" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13675784" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21147431" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.19866666" />
       <window_info anchor="right" id="Gradle" order="5" weight="0.32955304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -3245,259 +3165,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_user.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12660">
-          <caret line="844" column="48" lean-forward="true" selection-start-line="844" selection-start-column="48" selection-end-line="844" selection-end-column="48" />
-          <folding>
-            <element signature="e#7262#7508#0" expanded="true" />
-            <element signature="e#7507#7508#0" expanded="true" />
-            <element signature="e#7602#7815#0" expanded="true" />
-            <element signature="e#7814#7815#0" expanded="true" />
-            <element signature="e#7872#8269#0" expanded="true" />
-            <element signature="e#8268#8269#0" expanded="true" />
-            <element signature="e#8321#8470#0" expanded="true" />
-            <element signature="e#8469#8470#0" expanded="true" />
-            <element signature="e#8543#8688#0" expanded="true" />
-            <element signature="e#8687#8688#0" expanded="true" />
-            <element signature="e#8737#9161#0" expanded="true" />
-            <element signature="e#9160#9161#0" expanded="true" />
-            <element signature="e#9212#9598#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9661#9805#0" expanded="true" />
-            <element signature="e#9804#9805#0" expanded="true" />
-            <element signature="e#9819#11459#0" />
-            <element signature="class#10048:10843" />
-            <element signature="method#onDataChange#0;class#10048:10843" />
-            <element signature="method#onCancelled#0;class#10048:10843" />
-            <element signature="e#11021#11451#0" expanded="true" />
-            <element signature="e#11450#11451#0" expanded="true" />
-            <element signature="e#11465#13173#0" />
-            <element signature="class#11702:12562" />
-            <element signature="method#onDataChange#0;class#11702:12562" />
-            <element signature="method#onCancelled#0;class#11702:12562" />
-            <element signature="e#12738#13165#0" expanded="true" />
-            <element signature="e#13164#13165#0" expanded="true" />
-            <element signature="e#13179#16444#0" />
-            <element signature="class#14115:14604" />
-            <element signature="method#onDataChange#0;class#14115:14604" />
-            <element signature="method#onCancelled#0;class#14115:14604" />
-            <element signature="class#14817:15345" />
-            <element signature="method#onDataChange#0;class#14817:15345" />
-            <element signature="method#onCancelled#0;class#14817:15345" />
-            <element signature="class#15672:16426" />
-            <element signature="method#onDataChange#0;class#15672:16426" />
-            <element signature="method#onCancelled#0;class#15672:16426" />
-            <element signature="e#16450#19725#0" />
-            <element signature="class#17410:17831" />
-            <element signature="method#onDataChange#0;class#17410:17831" />
-            <element signature="method#onCancelled#0;class#17410:17831" />
-            <element signature="class#18075:18604" />
-            <element signature="method#onDataChange#0;class#18075:18604" />
-            <element signature="method#onCancelled#0;class#18075:18604" />
-            <element signature="class#18953:19707" />
-            <element signature="method#onDataChange#0;class#18953:19707" />
-            <element signature="method#onCancelled#0;class#18953:19707" />
-            <element signature="e#19731#22062#0" />
-            <element signature="class#20023:22054" />
-            <element signature="method#onDataChange#0;class#20023:22054" />
-            <element signature="method#onCancelled#0;class#20023:22054" />
-            <element signature="e#22068#23165#0" />
-            <element signature="class#22238:23157" />
-            <element signature="e#22273#22302#0" />
-            <element signature="method#onDataChange#0;class#22238:23157" />
-            <element signature="method#onCancelled#0;class#22238:23157" />
-            <element signature="e#23171#24234#0" />
-            <element signature="class#23347:24226" />
-            <element signature="method#onDataChange#0;class#23347:24226" />
-            <element signature="method#onCancelled#0;class#23347:24226" />
-            <element signature="e#24240#24626#0" />
-            <element signature="e#24632#24729#0" />
-            <element signature="e#24735#24831#0" />
-            <element signature="e#24837#24932#0" />
-            <element signature="e#24938#27898#0" />
-            <element signature="class#25278:27890" />
-            <element signature="method#onDataChange#0;class#25278:27890" />
-            <element signature="class#26842:27732" />
-            <element signature="method#onResponse#0;class#26842:27732" />
-            <element signature="method#onFailure#0;class#26842:27732" />
-            <element signature="method#onCancelled#0;class#25278:27890" />
-            <element signature="e#27904#28116#0" />
-            <element signature="e#28122#28400#0" />
-            <element signature="e#28406#30614#0" />
-            <element signature="e#28892#29288#0" expanded="true" />
-            <element signature="e#29287#29288#0" expanded="true" />
-            <element signature="e#29312#30168#0" expanded="true" />
-            <element signature="e#30167#30168#0" expanded="true" />
-            <element signature="e#30191#30482#0" expanded="true" />
-            <element signature="e#30481#30482#0" expanded="true" />
-            <element signature="e#30620#31475#0" />
-            <element signature="e#31291#31381#0" />
-            <element signature="e#31481#33638#0" />
-            <element signature="e#31974#32370#0" expanded="true" />
-            <element signature="e#32369#32370#0" expanded="true" />
-            <element signature="e#32394#33192#0" expanded="true" />
-            <element signature="e#33191#33192#0" expanded="true" />
-            <element signature="e#33215#33506#0" expanded="true" />
-            <element signature="e#33505#33506#0" expanded="true" />
-            <element signature="e#36105#36106#0" expanded="true" />
-            <element signature="e#36656#37087#0" expanded="true" />
-            <element signature="e#37086#37087#0" expanded="true" />
-            <element signature="e#37161#37513#0" expanded="true" />
-            <element signature="e#37512#37513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_user.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13140">
-          <caret line="876" column="42" selection-start-line="876" selection-start-column="42" selection-end-line="876" selection-end-column="42" />
-          <folding>
-            <element signature="e#7262#7508#0" expanded="true" />
-            <element signature="e#7507#7508#0" expanded="true" />
-            <element signature="e#7602#7815#0" expanded="true" />
-            <element signature="e#7814#7815#0" expanded="true" />
-            <element signature="e#7872#8269#0" expanded="true" />
-            <element signature="e#8268#8269#0" expanded="true" />
-            <element signature="e#8321#8470#0" expanded="true" />
-            <element signature="e#8469#8470#0" expanded="true" />
-            <element signature="e#8543#8688#0" expanded="true" />
-            <element signature="e#8687#8688#0" expanded="true" />
-            <element signature="e#8737#9161#0" expanded="true" />
-            <element signature="e#9160#9161#0" expanded="true" />
-            <element signature="e#9212#9598#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9661#9805#0" expanded="true" />
-            <element signature="e#9804#9805#0" expanded="true" />
-            <element signature="e#9819#11459#0" />
-            <element signature="class#10048:10843" />
-            <element signature="method#onDataChange#0;class#10048:10843" />
-            <element signature="method#onCancelled#0;class#10048:10843" />
-            <element signature="e#11021#11451#0" expanded="true" />
-            <element signature="e#11450#11451#0" expanded="true" />
-            <element signature="e#11465#13173#0" />
-            <element signature="class#11702:12562" />
-            <element signature="method#onDataChange#0;class#11702:12562" />
-            <element signature="method#onCancelled#0;class#11702:12562" />
-            <element signature="e#12738#13165#0" expanded="true" />
-            <element signature="e#13164#13165#0" expanded="true" />
-            <element signature="e#13179#16444#0" />
-            <element signature="class#14115:14604" />
-            <element signature="method#onDataChange#0;class#14115:14604" />
-            <element signature="method#onCancelled#0;class#14115:14604" />
-            <element signature="class#14817:15345" />
-            <element signature="method#onDataChange#0;class#14817:15345" />
-            <element signature="method#onCancelled#0;class#14817:15345" />
-            <element signature="class#15672:16426" />
-            <element signature="method#onDataChange#0;class#15672:16426" />
-            <element signature="method#onCancelled#0;class#15672:16426" />
-            <element signature="e#16450#19725#0" />
-            <element signature="class#17410:17831" />
-            <element signature="method#onDataChange#0;class#17410:17831" />
-            <element signature="method#onCancelled#0;class#17410:17831" />
-            <element signature="class#18075:18604" />
-            <element signature="method#onDataChange#0;class#18075:18604" />
-            <element signature="method#onCancelled#0;class#18075:18604" />
-            <element signature="class#18953:19707" />
-            <element signature="method#onDataChange#0;class#18953:19707" />
-            <element signature="method#onCancelled#0;class#18953:19707" />
-            <element signature="e#19731#22062#0" />
-            <element signature="class#20023:22054" />
-            <element signature="method#onDataChange#0;class#20023:22054" />
-            <element signature="method#onCancelled#0;class#20023:22054" />
-            <element signature="e#22068#23165#0" />
-            <element signature="class#22238:23157" />
-            <element signature="e#22273#22302#0" />
-            <element signature="method#onDataChange#0;class#22238:23157" />
-            <element signature="method#onCancelled#0;class#22238:23157" />
-            <element signature="e#23171#24234#0" />
-            <element signature="class#23347:24226" />
-            <element signature="method#onDataChange#0;class#23347:24226" />
-            <element signature="method#onCancelled#0;class#23347:24226" />
-            <element signature="e#24240#24626#0" />
-            <element signature="e#24632#24729#0" />
-            <element signature="e#24735#24831#0" />
-            <element signature="e#24837#24932#0" />
-            <element signature="e#24938#27898#0" />
-            <element signature="class#25278:27890" />
-            <element signature="method#onDataChange#0;class#25278:27890" />
-            <element signature="class#26842:27732" />
-            <element signature="method#onResponse#0;class#26842:27732" />
-            <element signature="method#onFailure#0;class#26842:27732" />
-            <element signature="method#onCancelled#0;class#25278:27890" />
-            <element signature="e#27904#28116#0" />
-            <element signature="e#28122#28400#0" />
-            <element signature="e#28406#30614#0" />
-            <element signature="e#28892#29288#0" expanded="true" />
-            <element signature="e#29287#29288#0" expanded="true" />
-            <element signature="e#29312#30168#0" expanded="true" />
-            <element signature="e#30167#30168#0" expanded="true" />
-            <element signature="e#30191#30482#0" expanded="true" />
-            <element signature="e#30481#30482#0" expanded="true" />
-            <element signature="e#30620#31475#0" />
-            <element signature="e#31291#31381#0" />
-            <element signature="e#31481#33638#0" />
-            <element signature="e#31974#32370#0" expanded="true" />
-            <element signature="e#32369#32370#0" expanded="true" />
-            <element signature="e#32394#33192#0" expanded="true" />
-            <element signature="e#33191#33192#0" expanded="true" />
-            <element signature="e#33215#33506#0" expanded="true" />
-            <element signature="e#33505#33506#0" expanded="true" />
-            <element signature="e#36105#36106#0" expanded="true" />
-            <element signature="e#36656#37087#0" expanded="true" />
-            <element signature="e#37086#37087#0" expanded="true" />
-            <element signature="e#37161#37513#0" expanded="true" />
-            <element signature="e#37512#37513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_user.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
@@ -3537,53 +3208,27 @@
         <state relative-caret-position="12720">
           <caret line="848" column="52" selection-start-line="848" selection-start-column="20" selection-end-line="848" selection-end-column="52" />
           <folding>
-            <element signature="e#7262#7508#0" expanded="true" />
-            <element signature="e#7507#7508#0" expanded="true" />
-            <element signature="e#7602#7815#0" expanded="true" />
-            <element signature="e#7814#7815#0" expanded="true" />
-            <element signature="e#7872#8269#0" expanded="true" />
-            <element signature="e#8268#8269#0" expanded="true" />
-            <element signature="e#8321#8470#0" expanded="true" />
-            <element signature="e#8469#8470#0" expanded="true" />
-            <element signature="e#8543#8688#0" expanded="true" />
-            <element signature="e#8687#8688#0" expanded="true" />
-            <element signature="e#8737#9161#0" expanded="true" />
-            <element signature="e#9160#9161#0" expanded="true" />
-            <element signature="e#9212#9598#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
             <element signature="e#9661#9805#0" expanded="true" />
             <element signature="e#9804#9805#0" expanded="true" />
             <element signature="e#9819#11459#0" />
             <element signature="class#10048:10843" />
             <element signature="method#onDataChange#0;class#10048:10843" />
             <element signature="method#onCancelled#0;class#10048:10843" />
-            <element signature="e#11021#11451#0" expanded="true" />
-            <element signature="e#11450#11451#0" expanded="true" />
             <element signature="e#11465#13173#0" />
             <element signature="class#11702:12562" />
             <element signature="method#onDataChange#0;class#11702:12562" />
             <element signature="method#onCancelled#0;class#11702:12562" />
-            <element signature="e#12738#13165#0" expanded="true" />
-            <element signature="e#13164#13165#0" expanded="true" />
-            <element signature="e#13179#16444#0" />
             <element signature="class#14115:14604" />
             <element signature="method#onDataChange#0;class#14115:14604" />
             <element signature="method#onCancelled#0;class#14115:14604" />
-            <element signature="class#14817:15345" />
-            <element signature="method#onDataChange#0;class#14817:15345" />
             <element signature="method#onCancelled#0;class#14817:15345" />
-            <element signature="class#15672:16426" />
-            <element signature="method#onDataChange#0;class#15672:16426" />
             <element signature="method#onCancelled#0;class#15672:16426" />
-            <element signature="e#16450#19725#0" />
             <element signature="class#17410:17831" />
             <element signature="method#onDataChange#0;class#17410:17831" />
             <element signature="method#onCancelled#0;class#17410:17831" />
             <element signature="class#18075:18604" />
             <element signature="method#onDataChange#0;class#18075:18604" />
             <element signature="method#onCancelled#0;class#18075:18604" />
-            <element signature="class#18953:19707" />
-            <element signature="method#onDataChange#0;class#18953:19707" />
             <element signature="method#onCancelled#0;class#18953:19707" />
             <element signature="e#19731#22062#0" />
             <element signature="class#20023:22054" />
@@ -3602,36 +3247,8 @@
             <element signature="e#24632#24729#0" />
             <element signature="e#24735#24831#0" />
             <element signature="e#24837#24932#0" />
-            <element signature="e#24938#27898#0" />
-            <element signature="class#25278:27890" />
-            <element signature="method#onDataChange#0;class#25278:27890" />
-            <element signature="class#26842:27732" />
-            <element signature="method#onResponse#0;class#26842:27732" />
-            <element signature="method#onFailure#0;class#26842:27732" />
-            <element signature="method#onCancelled#0;class#25278:27890" />
-            <element signature="e#27904#28116#0" />
-            <element signature="e#28122#28400#0" />
-            <element signature="e#28406#30614#0" />
-            <element signature="e#28892#29288#0" expanded="true" />
-            <element signature="e#29287#29288#0" expanded="true" />
-            <element signature="e#29312#30168#0" expanded="true" />
-            <element signature="e#30167#30168#0" expanded="true" />
-            <element signature="e#30191#30482#0" expanded="true" />
-            <element signature="e#30481#30482#0" expanded="true" />
-            <element signature="e#30620#31475#0" />
-            <element signature="e#31291#31381#0" />
-            <element signature="e#31481#33638#0" />
-            <element signature="e#31974#32370#0" expanded="true" />
-            <element signature="e#32369#32370#0" expanded="true" />
-            <element signature="e#32394#33192#0" expanded="true" />
-            <element signature="e#33191#33192#0" expanded="true" />
-            <element signature="e#33215#33506#0" expanded="true" />
-            <element signature="e#33505#33506#0" expanded="true" />
-            <element signature="e#36105#36106#0" expanded="true" />
-            <element signature="e#36656#37087#0" expanded="true" />
-            <element signature="e#37086#37087#0" expanded="true" />
-            <element signature="e#37161#37513#0" expanded="true" />
-            <element signature="e#37512#37513#0" expanded="true" />
+            <element signature="e#35554#35879#0" expanded="true" />
+            <element signature="e#35878#35879#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3665,53 +3282,27 @@
         <state relative-caret-position="13035">
           <caret line="869" column="33" lean-forward="true" selection-start-line="869" selection-start-column="33" selection-end-line="869" selection-end-column="33" />
           <folding>
-            <element signature="e#7262#7508#0" expanded="true" />
-            <element signature="e#7507#7508#0" expanded="true" />
-            <element signature="e#7602#7815#0" expanded="true" />
-            <element signature="e#7814#7815#0" expanded="true" />
-            <element signature="e#7872#8269#0" expanded="true" />
-            <element signature="e#8268#8269#0" expanded="true" />
-            <element signature="e#8321#8470#0" expanded="true" />
-            <element signature="e#8469#8470#0" expanded="true" />
-            <element signature="e#8543#8688#0" expanded="true" />
-            <element signature="e#8687#8688#0" expanded="true" />
-            <element signature="e#8737#9161#0" expanded="true" />
-            <element signature="e#9160#9161#0" expanded="true" />
-            <element signature="e#9212#9598#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
             <element signature="e#9661#9805#0" expanded="true" />
             <element signature="e#9804#9805#0" expanded="true" />
             <element signature="e#9819#11459#0" />
             <element signature="class#10048:10843" />
             <element signature="method#onDataChange#0;class#10048:10843" />
             <element signature="method#onCancelled#0;class#10048:10843" />
-            <element signature="e#11021#11451#0" expanded="true" />
-            <element signature="e#11450#11451#0" expanded="true" />
             <element signature="e#11465#13173#0" />
             <element signature="class#11702:12562" />
             <element signature="method#onDataChange#0;class#11702:12562" />
             <element signature="method#onCancelled#0;class#11702:12562" />
-            <element signature="e#12738#13165#0" expanded="true" />
-            <element signature="e#13164#13165#0" expanded="true" />
-            <element signature="e#13179#16444#0" />
             <element signature="class#14115:14604" />
             <element signature="method#onDataChange#0;class#14115:14604" />
             <element signature="method#onCancelled#0;class#14115:14604" />
-            <element signature="class#14817:15345" />
-            <element signature="method#onDataChange#0;class#14817:15345" />
             <element signature="method#onCancelled#0;class#14817:15345" />
-            <element signature="class#15672:16426" />
-            <element signature="method#onDataChange#0;class#15672:16426" />
             <element signature="method#onCancelled#0;class#15672:16426" />
-            <element signature="e#16450#19725#0" />
             <element signature="class#17410:17831" />
             <element signature="method#onDataChange#0;class#17410:17831" />
             <element signature="method#onCancelled#0;class#17410:17831" />
             <element signature="class#18075:18604" />
             <element signature="method#onDataChange#0;class#18075:18604" />
             <element signature="method#onCancelled#0;class#18075:18604" />
-            <element signature="class#18953:19707" />
-            <element signature="method#onDataChange#0;class#18953:19707" />
             <element signature="method#onCancelled#0;class#18953:19707" />
             <element signature="e#19731#22062#0" />
             <element signature="class#20023:22054" />
@@ -3730,36 +3321,8 @@
             <element signature="e#24632#24729#0" />
             <element signature="e#24735#24831#0" />
             <element signature="e#24837#24932#0" />
-            <element signature="e#24938#27898#0" />
-            <element signature="class#25278:27890" />
-            <element signature="method#onDataChange#0;class#25278:27890" />
-            <element signature="class#26842:27732" />
-            <element signature="method#onResponse#0;class#26842:27732" />
-            <element signature="method#onFailure#0;class#26842:27732" />
-            <element signature="method#onCancelled#0;class#25278:27890" />
-            <element signature="e#27904#28116#0" />
-            <element signature="e#28122#28400#0" />
-            <element signature="e#28406#30614#0" />
-            <element signature="e#28892#29288#0" expanded="true" />
-            <element signature="e#29287#29288#0" expanded="true" />
-            <element signature="e#29312#30168#0" expanded="true" />
-            <element signature="e#30167#30168#0" expanded="true" />
-            <element signature="e#30191#30482#0" expanded="true" />
-            <element signature="e#30481#30482#0" expanded="true" />
-            <element signature="e#30620#31475#0" />
-            <element signature="e#31291#31381#0" />
-            <element signature="e#31481#33638#0" />
-            <element signature="e#31974#32370#0" expanded="true" />
-            <element signature="e#32369#32370#0" expanded="true" />
-            <element signature="e#32394#33192#0" expanded="true" />
-            <element signature="e#33191#33192#0" expanded="true" />
-            <element signature="e#33215#33506#0" expanded="true" />
-            <element signature="e#33505#33506#0" expanded="true" />
-            <element signature="e#36105#36106#0" expanded="true" />
-            <element signature="e#36656#37087#0" expanded="true" />
-            <element signature="e#37086#37087#0" expanded="true" />
-            <element signature="e#37161#37513#0" expanded="true" />
-            <element signature="e#37512#37513#0" expanded="true" />
+            <element signature="e#35554#35879#0" expanded="true" />
+            <element signature="e#35878#35879#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3793,53 +3356,27 @@
         <state relative-caret-position="13530">
           <caret line="902" column="15" lean-forward="true" selection-start-line="902" selection-start-column="15" selection-end-line="902" selection-end-column="15" />
           <folding>
-            <element signature="e#7262#7508#0" expanded="true" />
-            <element signature="e#7507#7508#0" expanded="true" />
-            <element signature="e#7602#7815#0" expanded="true" />
-            <element signature="e#7814#7815#0" expanded="true" />
-            <element signature="e#7872#8269#0" expanded="true" />
-            <element signature="e#8268#8269#0" expanded="true" />
-            <element signature="e#8321#8470#0" expanded="true" />
-            <element signature="e#8469#8470#0" expanded="true" />
-            <element signature="e#8543#8688#0" expanded="true" />
-            <element signature="e#8687#8688#0" expanded="true" />
-            <element signature="e#8737#9161#0" expanded="true" />
-            <element signature="e#9160#9161#0" expanded="true" />
-            <element signature="e#9212#9598#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
             <element signature="e#9661#9805#0" expanded="true" />
             <element signature="e#9804#9805#0" expanded="true" />
             <element signature="e#9819#11459#0" />
             <element signature="class#10048:10843" />
             <element signature="method#onDataChange#0;class#10048:10843" />
             <element signature="method#onCancelled#0;class#10048:10843" />
-            <element signature="e#11021#11451#0" expanded="true" />
-            <element signature="e#11450#11451#0" expanded="true" />
             <element signature="e#11465#13173#0" />
             <element signature="class#11702:12562" />
             <element signature="method#onDataChange#0;class#11702:12562" />
             <element signature="method#onCancelled#0;class#11702:12562" />
-            <element signature="e#12738#13165#0" expanded="true" />
-            <element signature="e#13164#13165#0" expanded="true" />
-            <element signature="e#13179#16444#0" />
             <element signature="class#14115:14604" />
             <element signature="method#onDataChange#0;class#14115:14604" />
             <element signature="method#onCancelled#0;class#14115:14604" />
-            <element signature="class#14817:15345" />
-            <element signature="method#onDataChange#0;class#14817:15345" />
             <element signature="method#onCancelled#0;class#14817:15345" />
-            <element signature="class#15672:16426" />
-            <element signature="method#onDataChange#0;class#15672:16426" />
             <element signature="method#onCancelled#0;class#15672:16426" />
-            <element signature="e#16450#19725#0" />
             <element signature="class#17410:17831" />
             <element signature="method#onDataChange#0;class#17410:17831" />
             <element signature="method#onCancelled#0;class#17410:17831" />
             <element signature="class#18075:18604" />
             <element signature="method#onDataChange#0;class#18075:18604" />
             <element signature="method#onCancelled#0;class#18075:18604" />
-            <element signature="class#18953:19707" />
-            <element signature="method#onDataChange#0;class#18953:19707" />
             <element signature="method#onCancelled#0;class#18953:19707" />
             <element signature="e#19731#22062#0" />
             <element signature="class#20023:22054" />
@@ -3858,36 +3395,8 @@
             <element signature="e#24632#24729#0" />
             <element signature="e#24735#24831#0" />
             <element signature="e#24837#24932#0" />
-            <element signature="e#24938#27898#0" />
-            <element signature="class#25278:27890" />
-            <element signature="method#onDataChange#0;class#25278:27890" />
-            <element signature="class#26842:27732" />
-            <element signature="method#onResponse#0;class#26842:27732" />
-            <element signature="method#onFailure#0;class#26842:27732" />
-            <element signature="method#onCancelled#0;class#25278:27890" />
-            <element signature="e#27904#28116#0" />
-            <element signature="e#28122#28400#0" />
-            <element signature="e#28406#30614#0" />
-            <element signature="e#28892#29288#0" expanded="true" />
-            <element signature="e#29287#29288#0" expanded="true" />
-            <element signature="e#29312#30168#0" expanded="true" />
-            <element signature="e#30167#30168#0" expanded="true" />
-            <element signature="e#30191#30482#0" expanded="true" />
-            <element signature="e#30481#30482#0" expanded="true" />
-            <element signature="e#30620#31475#0" />
-            <element signature="e#31291#31381#0" />
-            <element signature="e#31481#33638#0" />
-            <element signature="e#31974#32370#0" expanded="true" />
-            <element signature="e#32369#32370#0" expanded="true" />
-            <element signature="e#32394#33192#0" expanded="true" />
-            <element signature="e#33191#33192#0" expanded="true" />
-            <element signature="e#33215#33506#0" expanded="true" />
-            <element signature="e#33505#33506#0" expanded="true" />
-            <element signature="e#36105#36106#0" expanded="true" />
-            <element signature="e#36656#37087#0" expanded="true" />
-            <element signature="e#37086#37087#0" expanded="true" />
-            <element signature="e#37161#37513#0" expanded="true" />
-            <element signature="e#37512#37513#0" expanded="true" />
+            <element signature="e#35554#35879#0" expanded="true" />
+            <element signature="e#35878#35879#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3914,53 +3423,27 @@
         <state relative-caret-position="12810">
           <caret line="854" column="29" selection-start-line="854" selection-start-column="29" selection-end-line="854" selection-end-column="29" />
           <folding>
-            <element signature="e#7262#7508#0" expanded="true" />
-            <element signature="e#7507#7508#0" expanded="true" />
-            <element signature="e#7602#7815#0" expanded="true" />
-            <element signature="e#7814#7815#0" expanded="true" />
-            <element signature="e#7872#8269#0" expanded="true" />
-            <element signature="e#8268#8269#0" expanded="true" />
-            <element signature="e#8321#8470#0" expanded="true" />
-            <element signature="e#8469#8470#0" expanded="true" />
-            <element signature="e#8543#8688#0" expanded="true" />
-            <element signature="e#8687#8688#0" expanded="true" />
-            <element signature="e#8737#9161#0" expanded="true" />
-            <element signature="e#9160#9161#0" expanded="true" />
-            <element signature="e#9212#9598#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
             <element signature="e#9661#9805#0" expanded="true" />
             <element signature="e#9804#9805#0" expanded="true" />
             <element signature="e#9819#11459#0" />
             <element signature="class#10048:10843" />
             <element signature="method#onDataChange#0;class#10048:10843" />
             <element signature="method#onCancelled#0;class#10048:10843" />
-            <element signature="e#11021#11451#0" expanded="true" />
-            <element signature="e#11450#11451#0" expanded="true" />
             <element signature="e#11465#13173#0" />
             <element signature="class#11702:12562" />
             <element signature="method#onDataChange#0;class#11702:12562" />
             <element signature="method#onCancelled#0;class#11702:12562" />
-            <element signature="e#12738#13165#0" expanded="true" />
-            <element signature="e#13164#13165#0" expanded="true" />
-            <element signature="e#13179#16444#0" />
             <element signature="class#14115:14604" />
             <element signature="method#onDataChange#0;class#14115:14604" />
             <element signature="method#onCancelled#0;class#14115:14604" />
-            <element signature="class#14817:15345" />
-            <element signature="method#onDataChange#0;class#14817:15345" />
             <element signature="method#onCancelled#0;class#14817:15345" />
-            <element signature="class#15672:16426" />
-            <element signature="method#onDataChange#0;class#15672:16426" />
             <element signature="method#onCancelled#0;class#15672:16426" />
-            <element signature="e#16450#19725#0" />
             <element signature="class#17410:17831" />
             <element signature="method#onDataChange#0;class#17410:17831" />
             <element signature="method#onCancelled#0;class#17410:17831" />
             <element signature="class#18075:18604" />
             <element signature="method#onDataChange#0;class#18075:18604" />
             <element signature="method#onCancelled#0;class#18075:18604" />
-            <element signature="class#18953:19707" />
-            <element signature="method#onDataChange#0;class#18953:19707" />
             <element signature="method#onCancelled#0;class#18953:19707" />
             <element signature="e#19731#22062#0" />
             <element signature="class#20023:22054" />
@@ -3979,36 +3462,8 @@
             <element signature="e#24632#24729#0" />
             <element signature="e#24735#24831#0" />
             <element signature="e#24837#24932#0" />
-            <element signature="e#24938#27898#0" />
-            <element signature="class#25278:27890" />
-            <element signature="method#onDataChange#0;class#25278:27890" />
-            <element signature="class#26842:27732" />
-            <element signature="method#onResponse#0;class#26842:27732" />
-            <element signature="method#onFailure#0;class#26842:27732" />
-            <element signature="method#onCancelled#0;class#25278:27890" />
-            <element signature="e#27904#28116#0" />
-            <element signature="e#28122#28400#0" />
-            <element signature="e#28406#30614#0" />
-            <element signature="e#28892#29288#0" expanded="true" />
-            <element signature="e#29287#29288#0" expanded="true" />
-            <element signature="e#29312#30168#0" expanded="true" />
-            <element signature="e#30167#30168#0" expanded="true" />
-            <element signature="e#30191#30482#0" expanded="true" />
-            <element signature="e#30481#30482#0" expanded="true" />
-            <element signature="e#30620#31475#0" />
-            <element signature="e#31291#31381#0" />
-            <element signature="e#31481#33638#0" />
-            <element signature="e#31974#32370#0" expanded="true" />
-            <element signature="e#32369#32370#0" expanded="true" />
-            <element signature="e#32394#33192#0" expanded="true" />
-            <element signature="e#33191#33192#0" expanded="true" />
-            <element signature="e#33215#33506#0" expanded="true" />
-            <element signature="e#33505#33506#0" expanded="true" />
-            <element signature="e#36105#36106#0" expanded="true" />
-            <element signature="e#36656#37087#0" expanded="true" />
-            <element signature="e#37086#37087#0" expanded="true" />
-            <element signature="e#37161#37513#0" expanded="true" />
-            <element signature="e#37512#37513#0" expanded="true" />
+            <element signature="e#35554#35879#0" expanded="true" />
+            <element signature="e#35878#35879#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -4146,23 +3601,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/ChatsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sinch-android-rtc-3.12.9.aar/9bf02044cba95323be367e21876b0067/jars/classes.jar!/com/sinch/android/rtc/calling/Call.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -4186,7 +3624,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_user.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
+        <state relative-caret-position="240">
           <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
         </state>
       </provider>
@@ -4194,65 +3632,112 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-28/android/content/ContextWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="157" column="27" selection-start-line="157" selection-start-column="27" selection-end-line="157" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Fragment/ChatsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="66" column="57" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/MyFirebaseMessaging.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        <state relative-caret-position="480">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="method#updateColor#0;class#MyFirebaseMessaging#0" />
+            <element signature="method#getUrlAvatar#0;class#MyFirebaseMessaging#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/Notifications/ActionCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/datvtd/chatting/MessageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret line="872" column="59" selection-start-line="872" selection-start-column="59" selection-end-line="872" selection-end-column="59" />
+        <state relative-caret-position="184">
+          <caret line="841" selection-start-line="841" selection-end-line="841" />
           <folding>
-            <element signature="e#7262#7508#0" expanded="true" />
-            <element signature="e#7507#7508#0" expanded="true" />
-            <element signature="e#7602#7815#0" expanded="true" />
-            <element signature="e#7814#7815#0" expanded="true" />
-            <element signature="e#7872#8269#0" expanded="true" />
-            <element signature="e#8268#8269#0" expanded="true" />
-            <element signature="e#8321#8470#0" expanded="true" />
-            <element signature="e#8469#8470#0" expanded="true" />
-            <element signature="e#8543#8688#0" expanded="true" />
-            <element signature="e#8687#8688#0" expanded="true" />
-            <element signature="e#8737#9161#0" expanded="true" />
-            <element signature="e#9160#9161#0" expanded="true" />
-            <element signature="e#9212#9598#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
             <element signature="e#9661#9805#0" expanded="true" />
             <element signature="e#9804#9805#0" expanded="true" />
             <element signature="e#9819#11459#0" />
             <element signature="class#10048:10843" />
             <element signature="method#onDataChange#0;class#10048:10843" />
             <element signature="method#onCancelled#0;class#10048:10843" />
-            <element signature="e#11021#11451#0" expanded="true" />
-            <element signature="e#11450#11451#0" expanded="true" />
             <element signature="e#11465#13173#0" />
             <element signature="class#11702:12562" />
             <element signature="method#onDataChange#0;class#11702:12562" />
             <element signature="method#onCancelled#0;class#11702:12562" />
-            <element signature="e#12738#13165#0" expanded="true" />
-            <element signature="e#13164#13165#0" expanded="true" />
-            <element signature="e#13179#16444#0" />
             <element signature="class#14115:14604" />
             <element signature="method#onDataChange#0;class#14115:14604" />
             <element signature="method#onCancelled#0;class#14115:14604" />
-            <element signature="class#14817:15345" />
-            <element signature="method#onDataChange#0;class#14817:15345" />
             <element signature="method#onCancelled#0;class#14817:15345" />
-            <element signature="class#15672:16426" />
-            <element signature="method#onDataChange#0;class#15672:16426" />
             <element signature="method#onCancelled#0;class#15672:16426" />
-            <element signature="e#16450#19725#0" />
             <element signature="class#17410:17831" />
             <element signature="method#onDataChange#0;class#17410:17831" />
             <element signature="method#onCancelled#0;class#17410:17831" />
             <element signature="class#18075:18604" />
             <element signature="method#onDataChange#0;class#18075:18604" />
             <element signature="method#onCancelled#0;class#18075:18604" />
-            <element signature="class#18953:19707" />
-            <element signature="method#onDataChange#0;class#18953:19707" />
             <element signature="method#onCancelled#0;class#18953:19707" />
             <element signature="e#19731#22062#0" />
             <element signature="class#20023:22054" />
@@ -4271,36 +3756,8 @@
             <element signature="e#24632#24729#0" />
             <element signature="e#24735#24831#0" />
             <element signature="e#24837#24932#0" />
-            <element signature="e#24938#27898#0" />
-            <element signature="class#25278:27890" />
-            <element signature="method#onDataChange#0;class#25278:27890" />
-            <element signature="class#26842:27732" />
-            <element signature="method#onResponse#0;class#26842:27732" />
-            <element signature="method#onFailure#0;class#26842:27732" />
-            <element signature="method#onCancelled#0;class#25278:27890" />
-            <element signature="e#27904#28116#0" />
-            <element signature="e#28122#28400#0" />
-            <element signature="e#28406#30614#0" />
-            <element signature="e#28892#29288#0" expanded="true" />
-            <element signature="e#29287#29288#0" expanded="true" />
-            <element signature="e#29312#30168#0" expanded="true" />
-            <element signature="e#30167#30168#0" expanded="true" />
-            <element signature="e#30191#30482#0" expanded="true" />
-            <element signature="e#30481#30482#0" expanded="true" />
-            <element signature="e#30620#31475#0" />
-            <element signature="e#31291#31381#0" />
-            <element signature="e#31481#33638#0" />
-            <element signature="e#31974#32370#0" expanded="true" />
-            <element signature="e#32369#32370#0" expanded="true" />
-            <element signature="e#32394#33192#0" expanded="true" />
-            <element signature="e#33191#33192#0" expanded="true" />
-            <element signature="e#33215#33506#0" expanded="true" />
-            <element signature="e#33505#33506#0" expanded="true" />
-            <element signature="e#36105#36106#0" expanded="true" />
-            <element signature="e#36656#37087#0" expanded="true" />
-            <element signature="e#37086#37087#0" expanded="true" />
-            <element signature="e#37161#37513#0" expanded="true" />
-            <element signature="e#37512#37513#0" expanded="true" />
+            <element signature="e#35554#35879#0" expanded="true" />
+            <element signature="e#35878#35879#0" expanded="true" />
           </folding>
         </state>
       </provider>

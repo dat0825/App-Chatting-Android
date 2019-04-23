@@ -14,6 +14,7 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.example.datvtd.chatting.Adapter.UserAdapter;
+import com.example.datvtd.chatting.LoginActivity;
 import com.example.datvtd.chatting.MessageActivity;
 import com.example.datvtd.chatting.Model.GroupChat;
 import com.example.datvtd.chatting.Model.User;
@@ -67,19 +68,20 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
                 intent.putExtra("checkGroup", "false");
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             } else {
-                intent.putExtra("idGroup", idGroup);
-                intent.putExtra("nameGroup", nameGroup);
-                intent.putExtra("adminGroup", adminGroup);
-                intent.putExtra("color", color);
-                intent.putExtra("checkGroup", "true");
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                getInfoGroup(typeNotification);
+                if(!typeNotification.equals("Call")){       // dùng cho gửi tin nhắn text và ảnh cho group
+                    intent.putExtra("idGroup", idGroup);
+                    intent.putExtra("nameGroup", nameGroup);
+                    intent.putExtra("adminGroup", adminGroup);
+                    intent.putExtra("color", color);
+                    intent.putExtra("checkGroup", "true");
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    getInfoGroup(typeNotification);
+                }
             }
         }
 
+        // chuyển từ thông báo sang lớp MessageActivity.class bởi vì intent = new Intent(this, MessageActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(), intent, PendingIntent.FLAG_ONE_SHOT);
-
-        Bitmap largeIcon;
 
         if (this.urlAvatarSender.equals("default")) {
             largeIcon = BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher);
@@ -88,16 +90,41 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
             largeIcon = BitmapFactory.decodeStream((InputStream) urlImage.getContent());
         }
 
+        // chuyển từ thông báo sang lớp Login
+        Intent buttonIntent = new Intent(this,ActionCall.class);
+        buttonIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        PendingIntent buttonPendingIntent = PendingIntent.getBroadcast(this, (int) System.currentTimeMillis(),buttonIntent,PendingIntent.FLAG_ONE_SHOT);
+
         Uri defaultSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        Notification notification = new NotificationCompat.Builder(this)
-                .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
-                .setLargeIcon(largeIcon)
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
-                .setContentTitle(title)
-                .setContentText(body)
-                .setAutoCancel(true)
-                .setSound(defaultSound)
-                .setContentIntent(pendingIntent).build();
+
+        Notification notification;
+
+        //set view thông báo cho 2 loại ( tin nhắn và cuộc gọi)
+        if(typeNotification.equals("Call")){
+             notification = new NotificationCompat.Builder(this)
+                    .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
+                    .setLargeIcon(largeIcon)
+                    .setPriority(NotificationCompat.PRIORITY_HIGH)
+                    .setContentTitle(title)
+                    .setContentText(body)
+                    .setAutoCancel(true)
+                    .setSound(defaultSound)
+                    .setContentIntent(pendingIntent)  // thực hiện lệnh pendingIntent (chuyển sang lớp khác) click vào thông báo
+                    .addAction(R.drawable.ic_add_person,getString(R.string.project_id),buttonPendingIntent)  // thực hiện lệnh buttonpendingIntent (chuyển sang lớp khác) khi click vào nút dưới thông báo
+                    .addAction(R.drawable.ic_info_blue_20dp,getString(R.string.project_id),buttonPendingIntent)
+                    .build();
+        } else {
+             notification = new NotificationCompat.Builder(this)
+                    .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
+                    .setLargeIcon(largeIcon)
+                    .setPriority(NotificationCompat.PRIORITY_HIGH)
+                    .setContentTitle(title)
+                    .setContentText(body)
+                    .setAutoCancel(true)
+                    .setSound(defaultSound)
+                    .setContentIntent(pendingIntent)  // thực hiện lệnh pendingIntent (chuyển sang lớp khác) click vào thông báo
+                    .build();
+        }
 
         NotificationManager noti = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
@@ -175,6 +202,22 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         });
     }
 
+    private void processIntentAction(Intent intent) {
+        if (intent.getAction() != null) {
+            switch (intent.getAction()) {
+                case YES_ACTION:
+                    Log.d("babyshark","yes action");
+                    break;
+                case MAYBE_ACTION:
+                    Log.d("babyshark","may be action");
+                    break;
+                case NO_ACTION:
+                    Log.d("babyshark","no action");
+                    break;
+            }
+        }
+    }
+
     private String user;
     private String typeNotification;  // nếu là thông báo từ group thì giá trị này là id của group
     private String title;
@@ -189,4 +232,10 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
     private FirebaseUser firebaseUser;
     private DatabaseReference reference;
     private Intent intent;
+    private Bitmap largeIcon;
+
+    private static final String YES_ACTION = "com.tinbytes.simplenotificationapp.YES_ACTION";
+    private static final String MAYBE_ACTION = "com.tinbytes.simplenotificationapp.MAYBE_ACTION";
+    private static final String NO_ACTION = "com.tinbytes.simplenotificationapp.NO_ACTION";
+
 }
