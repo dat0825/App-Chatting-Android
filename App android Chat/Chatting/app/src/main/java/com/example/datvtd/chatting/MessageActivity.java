@@ -241,11 +241,17 @@ public class MessageActivity extends AppCompatActivity {
             }
         });
 
-        callVoice();
+//        callVoice();
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                callUser();
+//                callUser();
+                sendNotification(idReceiver, nameCurrentUser, "Calling...", true);
+                Intent intent = new Intent(MessageActivity.this,CallActivity.class);
+                intent.putExtra("caller",firebaseUser.getUid());
+                intent.putExtra("receiver",idReceiver);
+                intent.putExtra("action","call");
+                startActivity(intent);
             }
         });
     }
@@ -836,112 +842,112 @@ public class MessageActivity extends AppCompatActivity {
         this.extendIconsButton.setColorFilter(Color.parseColor(colorValue));
     }
 
-    public void callVoice() {
-        sinchClient = Sinch.getSinchClientBuilder()
-                .context(this)
-                .userId(firebaseUser.getUid())
-                .applicationKey("08c39146-6d90-41b2-8c1d-2e76a03ea62b")
-                .applicationSecret("LLRk8KPO6katlsOjm6VRZw==")
-                .environmentHost("clientapi.sinch.com")
-                .build();
-
-        sinchClient.setSupportCalling(true);
-//        sinchClient.setSupportManagedPush(true);
-        sinchClient.startListeningOnActiveConnection();
-        sinchClient.start();
-        sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
-
-//        sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener(){
+//    public void callVoice() {
+//        sinchClient = Sinch.getSinchClientBuilder()
+//                .context(this)
+//                .userId(firebaseUser.getUid())
+//                .applicationKey("08c39146-6d90-41b2-8c1d-2e76a03ea62b")
+//                .applicationSecret("LLRk8KPO6katlsOjm6VRZw==")
+//                .environmentHost("clientapi.sinch.com")
+//                .build();
 //
+//        sinchClient.setSupportCalling(true);
+////        sinchClient.setSupportManagedPush(true);
+//        sinchClient.startListeningOnActiveConnection();
+//        sinchClient.start();
+//        sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
+//
+////        sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener(){
+////
+////        });
+//
+////        sinchClient.getCallClient().callUser(idReceiver);
+//    }
+//
+//    public void callUser() {
+//        if (call == null) {
+//            call = sinchClient.getCallClient().callUser(idReceiver);
+//            call.addCallListener(new SinchCallListener());
+//            sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
+//            sendNotification(idReceiver, nameCurrentUser, "Calling...", true);
+//            openCallerDialog(call);
+//        }
+//    }
+//
+//    public void openCallerDialog(final com.sinch.android.rtc.calling.Call call) {
+//        AlertDialog alertDialogCall = new AlertDialog.Builder(MessageActivity.this).create();
+//        alertDialogCall.setTitle("ALERT");
+//        alertDialogCall.setMessage("Calling");
+//        alertDialogCall.setCancelable(false);
+//        alertDialogCall.setButton(AlertDialog.BUTTON_NEUTRAL, "Hang up", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//                dialog.dismiss();
+//                call.hangup();
+//                sinchClient.stopListeningOnActiveConnection();
+////                sinchClient.terminate();
+//            }
 //        });
-
-//        sinchClient.getCallClient().callUser(idReceiver);
-    }
-
-    public void callUser() {
-        if (call == null) {
-            call = sinchClient.getCallClient().callUser(idReceiver);
-            call.addCallListener(new SinchCallListener());
-            sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
-            sendNotification(idReceiver, nameCurrentUser, "Calling...", true);
-        }
-    }
-
-    public void openCallerDialog(final com.sinch.android.rtc.calling.Call call) {
-        AlertDialog alertDialogCall = new AlertDialog.Builder(MessageActivity.this).create();
-        alertDialogCall.setTitle("ALERT");
-        alertDialogCall.setMessage("Calling");
-        alertDialogCall.setCancelable(false);
-        alertDialogCall.setButton(AlertDialog.BUTTON_NEUTRAL, "Hang up", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                call.hangup();
-                sinchClient.stopListeningOnActiveConnection();
-//                sinchClient.terminate();
-            }
-        });
-
-        alertDialogCall.show();
-    }
-
-    private class SinchCallClientListener implements CallClientListener {
-
-        @Override
-        public void onIncomingCall(final CallClient callClient, final com.sinch.android.rtc.calling.Call incomingCall) {
-            // set dialog for call
-
-            AlertDialog alertDialog = new AlertDialog.Builder(MessageActivity.this).create();
-            alertDialog.setTitle("Calling");
-            alertDialog.setCancelable(false);
-            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Reject", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                    if (call != null) {
-                        call.hangup();
-                        sinchClient.stopListeningOnActiveConnection();
-//                        sinchClient.terminate();
-                    }
-                }
-            });
-            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Pick", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    call = incomingCall;
-                    call.answer();
-                    Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
-                }
-            });
-
-            alertDialog.show();
-        }
-    }
-
-    private class SinchCallListener implements CallListener {
-
-        @Override
-        public void onCallProgressing(com.sinch.android.rtc.calling.Call call) {
-            Toast.makeText(getApplicationContext(), "Calling....", Toast.LENGTH_LONG).show();
-        }
-
-        @Override
-        public void onCallEstablished(com.sinch.android.rtc.calling.Call call) {
-            Toast.makeText(getApplicationContext(), "Connected", Toast.LENGTH_LONG).show();
-        }
-
-        @Override
-        public void onCallEnded(com.sinch.android.rtc.calling.Call endedCall) {
-            Toast.makeText(getApplicationContext(), "End Game!", Toast.LENGTH_LONG).show();
-            call = null;
-            endedCall.hangup();
-        }
-
-        @Override
-        public void onShouldSendPushNotification(com.sinch.android.rtc.calling.Call call, List<PushPair> list) {
-            Log.d("sad213", "notificationn");
-        }
-    }
+//
+//        alertDialogCall.show();
+//    }
+//
+//    private class SinchCallClientListener implements CallClientListener {
+//
+//        @Override
+//        public void onIncomingCall(final CallClient callClient, final com.sinch.android.rtc.calling.Call incomingCall) {
+//            // set dialog for call
+//            AlertDialog alertDialog = new AlertDialog.Builder(MessageActivity.this).create();
+//            alertDialog.setTitle("Calling");
+//            alertDialog.setCancelable(false);
+//            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Reject", new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//                    dialog.dismiss();
+//                    if (call != null) {
+//                        call.hangup();
+//                        sinchClient.stopListeningOnActiveConnection();
+////                        sinchClient.terminate();
+//                    }
+//                }
+//            });
+//            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Pick", new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//                    call = incomingCall;
+//                    call.answer();
+//                    Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
+//                }
+//            });
+//
+//            alertDialog.show();
+//        }
+//    }
+//
+//    private class SinchCallListener implements CallListener {
+//
+//        @Override
+//        public void onCallProgressing(com.sinch.android.rtc.calling.Call call) {
+//            Toast.makeText(getApplicationContext(), "Calling....", Toast.LENGTH_LONG).show();
+//        }
+//
+//        @Override
+//        public void onCallEstablished(com.sinch.android.rtc.calling.Call call) {
+//            Toast.makeText(getApplicationContext(), "Connected", Toast.LENGTH_LONG).show();
+//        }
+//
+//        @Override
+//        public void onCallEnded(com.sinch.android.rtc.calling.Call endedCall) {
+//            Toast.makeText(getApplicationContext(), "End Game!", Toast.LENGTH_LONG).show();
+//            call = null;
+//            endedCall.hangup();
+//        }
+//
+//        @Override
+//        public void onShouldSendPushNotification(com.sinch.android.rtc.calling.Call call, List<PushPair> list) {
+//            Log.d("sad213", "notificationn");
+//        }
+//    }
 
     private EditText contentSendEditText;
     private String idReceiver = "";

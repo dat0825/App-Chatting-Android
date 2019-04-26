@@ -260,6 +260,10 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
     },
     {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_call.xml.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_call.xml"
+    },
+    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
     },

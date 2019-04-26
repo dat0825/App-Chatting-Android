@@ -14,6 +14,7 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.example.datvtd.chatting.Adapter.UserAdapter;
+import com.example.datvtd.chatting.CallActivity;
 import com.example.datvtd.chatting.LoginActivity;
 import com.example.datvtd.chatting.MessageActivity;
 import com.example.datvtd.chatting.Model.GroupChat;
@@ -91,9 +92,9 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         }
 
         // chuyển từ thông báo sang lớp Login
-        Intent buttonIntent = new Intent(this,ActionCall.class);
+        Intent buttonIntent = new Intent(this,CallActivity.class);
         buttonIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        PendingIntent buttonPendingIntent = PendingIntent.getBroadcast(this, (int) System.currentTimeMillis(),buttonIntent,PendingIntent.FLAG_ONE_SHOT);
+        PendingIntent buttonPendingIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(),buttonIntent,PendingIntent.FLAG_ONE_SHOT);
 
         Uri defaultSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
@@ -109,7 +110,7 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
                     .setContentText(body)
                     .setAutoCancel(true)
                     .setSound(defaultSound)
-                    .setContentIntent(pendingIntent)  // thực hiện lệnh pendingIntent (chuyển sang lớp khác) click vào thông báo
+//                    .setContentIntent(pendingIntent)  // thực hiện lệnh pendingIntent (chuyển sang lớp khác) khi click vào chính giữa thông báo
                     .addAction(R.drawable.ic_add_person,getString(R.string.project_id),buttonPendingIntent)  // thực hiện lệnh buttonpendingIntent (chuyển sang lớp khác) khi click vào nút dưới thông báo
                     .addAction(R.drawable.ic_info_blue_20dp,getString(R.string.project_id),buttonPendingIntent)
                     .build();
@@ -202,22 +203,6 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         });
     }
 
-    private void processIntentAction(Intent intent) {
-        if (intent.getAction() != null) {
-            switch (intent.getAction()) {
-                case YES_ACTION:
-                    Log.d("babyshark","yes action");
-                    break;
-                case MAYBE_ACTION:
-                    Log.d("babyshark","may be action");
-                    break;
-                case NO_ACTION:
-                    Log.d("babyshark","no action");
-                    break;
-            }
-        }
-    }
-
     private String user;
     private String typeNotification;  // nếu là thông báo từ group thì giá trị này là id của group
     private String title;
@@ -233,9 +218,5 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
     private DatabaseReference reference;
     private Intent intent;
     private Bitmap largeIcon;
-
-    private static final String YES_ACTION = "com.tinbytes.simplenotificationapp.YES_ACTION";
-    private static final String MAYBE_ACTION = "com.tinbytes.simplenotificationapp.MAYBE_ACTION";
-    private static final String NO_ACTION = "com.tinbytes.simplenotificationapp.NO_ACTION";
 
 }

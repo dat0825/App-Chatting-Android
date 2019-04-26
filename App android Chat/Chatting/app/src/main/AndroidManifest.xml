@@ -6,10 +6,10 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
     <application
         android:allowBackup="true"
@@ -36,7 +36,7 @@
             android:name=".ResetPassActivity"
             android:parentActivityName=".LoginActivity" />
         <activity android:name=".Adapter.ChatImageActivity" />
-        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".ProfileActivity" />
         <activity
             android:name=".UserGroupActivity"
             android:theme="@style/Theme.MyDialog" />
@@ -45,8 +45,7 @@
             android:theme="@style/Theme.MyDialog" />
         <activity
             android:name=".DialogColorActivity"
-            android:theme="@style/Theme.MyDialog">
-        </activity>
+            android:theme="@style/Theme.MyDialog"></activity>
 
         <service
             android:name=".Notifications.MyFirebaseService"
@@ -64,6 +63,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
         <receiver android:name=".Notifications.ActionCall" />
 
         <meta-data
@@ -86,6 +86,7 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+        <activity android:name=".CallActivity"></activity>
     </application>
 
 </manifest>

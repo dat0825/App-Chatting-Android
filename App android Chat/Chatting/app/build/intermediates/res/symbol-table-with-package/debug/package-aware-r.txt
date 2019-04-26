@@ -1253,10 +1253,12 @@ id avatar_users
 id b_Login
 id b_Login_facebook
 id b_Regiser
+id b_accept
 id b_add_person
 id b_back
 id b_change_color
 id b_create_group
+id b_decline
 id b_logout
 id b_no
 id b_ok_change_color
@@ -1559,6 +1561,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_user_group
+layout activity_call
 layout activity_info_group
 layout activity_login
 layout activity_main

@@ -12,9 +12,10 @@ import com.example.datvtd.chatting.MessageActivity;
 public class ActionCall extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        new MessageActivity().callVoice();
-        new MessageActivity().callUser();
+//        new MessageActivity().callVoice();
+//        new MessageActivity().callUser();
 //        new MessageActivity().openCallerDialog(new MessageActivity().call);
+        
         Intent it = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
         context.sendBroadcast(it);
     }
