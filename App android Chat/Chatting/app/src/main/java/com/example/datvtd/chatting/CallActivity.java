@@ -32,13 +32,34 @@ public class CallActivity extends AppCompatActivity {
         caller = intent.getStringExtra("caller");
         action = intent.getStringExtra("action");
 
-        if(caller == null && receiver == null){
-            caller = "O1uT2YW7B9UsUOWYoo7kgjFnc053";
-            receiver = "H4EJ39XcVNYMXXR4fGvfhqi1nn82";
+        if (caller == null && receiver == null) {
+            caller = "H4EJ39XcVNYMXXR4fGvfhqi1nn82";
+            receiver = "O1uT2YW7B9UsUOWYoo7kgjFnc053";
         }
 
-        callVoice();
-        Log.d("abcbbcas",receiver + " -- " + caller);
+        if (sinchClient == null) {
+            callVoice(caller);
+        } else {
+            acceptButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    call.answer();
+                    Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
+                }
+            });
+
+            declineButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (call != null) {
+                        call.hangup();
+                        sinchClient.stopListeningOnActiveConnection();
+                        sinchClient.terminate();
+                    }
+                }
+            });
+        }
+        Log.d("abcbbcas", receiver + " -- " + caller);
 
         if (action != null) {
             if (action.equals("call")) {
@@ -52,7 +73,7 @@ public class CallActivity extends AppCompatActivity {
         }
     }
 
-    public void callVoice() {
+    public void callVoice(String caller) {
         sinchClient = Sinch.getSinchClientBuilder()
                 .context(this)
                 .userId(caller)
@@ -72,6 +93,7 @@ public class CallActivity extends AppCompatActivity {
 //        });
 
 //        sinchClient.getCallClient().callUser(idReceiver);
+        Log.d("abcbbcas", "dcmmmmmm");
     }
 
     public void callUser() {
@@ -101,11 +123,20 @@ public class CallActivity extends AppCompatActivity {
         alertDialogCall.show();
     }
 
-    private class SinchCallClientListener implements CallClientListener {
+    public class SinchCallClientListener implements CallClientListener {
 
         @Override
         public void onIncomingCall(final CallClient callClient, final com.sinch.android.rtc.calling.Call incomingCall) {
-            // set dialog for call
+            Log.d("abcbbcas", "input - bphone");
+//             set dialog for call
+//            acceptButton.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+            call = incomingCall;
+//                    call.answer();
+//                    Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
+//                }
+//            });
 //            AlertDialog alertDialog = new AlertDialog.Builder(CallActivity.this).create();
 //            alertDialog.setTitle("Calling");
 //            alertDialog.setCancelable(false);
@@ -130,16 +161,6 @@ public class CallActivity extends AppCompatActivity {
 //            });
 //
 //            alertDialog.show();
-            Log.d("abcbbcas","input");
-            acceptButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("abcbbcas","ngheee");
-                    call = incomingCall;
-                    call.answer();
-                    Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
-                }
-            });
         }
     }
 
@@ -169,12 +190,12 @@ public class CallActivity extends AppCompatActivity {
     }
 
     private Button declineButton;
-    private Button acceptButton;
+    public Button acceptButton;
     private String receiver;
-    private String caller;
+    public String caller;
     private String action;
-    private SinchClient sinchClient;
-    private com.sinch.android.rtc.calling.Call call;
+    public static SinchClient sinchClient;
+    public static com.sinch.android.rtc.calling.Call call;
 }
 
 
