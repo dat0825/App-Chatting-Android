@@ -3,13 +3,22 @@ package com.example.datvtd.chatting;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.load.engine.Resource;
 import com.sinch.android.rtc.PushPair;
 import com.sinch.android.rtc.Sinch;
 import com.sinch.android.rtc.SinchClient;
@@ -18,8 +27,16 @@ import com.sinch.android.rtc.calling.CallClientListener;
 import com.sinch.android.rtc.calling.CallListener;
 
 import java.util.List;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.io.IOException;
+import java.io.InputStream;
+
 
 public class CallActivity extends AppCompatActivity {
+
+    public static SinchClient sinchClient;
+    public static com.sinch.android.rtc.calling.Call call;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,73 +44,48 @@ public class CallActivity extends AppCompatActivity {
         setContentView(R.layout.activity_call);
         declineButton = findViewById(R.id.b_decline);
         acceptButton = findViewById(R.id.b_accept);
+        backgroundLayout = findViewById(R.id.backgoundLayout);
+        nameCallerTextView = findViewById(R.id.nameCaller);
+
         Intent intent = getIntent();
         receiver = intent.getStringExtra("receiver");
         caller = intent.getStringExtra("caller");
+        nameCaller = intent.getStringExtra("nameCaller");
         action = intent.getStringExtra("action");
+        avatarCaller = intent.getStringExtra("avatarCaller");
 
-        if (caller == null && receiver == null) {
-            caller = "H4EJ39XcVNYMXXR4fGvfhqi1nn82";
-            receiver = "O1uT2YW7B9UsUOWYoo7kgjFnc053";
+        //set background and nameCaller
+        if (nameCaller != null && avatarCaller != null) {
+            if (avatarCaller.equals("default")) {
+                Resources res = getResources();
+                Drawable drawable = res.getDrawable(R.drawable.ic_launcher_background);
+                backgroundLayout.setBackground(drawable);
+            } else {
+                new MyDownloader().execute(avatarCaller);
+            }
+            nameCallerTextView.setText(nameCaller);
         }
 
-        if (sinchClient == null) {
-            callVoice(caller);
-        } else {
-            acceptButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    call.answer();
-                    Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
-                }
-            });
+        acceptButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                call.answer();
+                Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
+            }
+        });
 
-            declineButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (call != null) {
-                        call.hangup();
-                        sinchClient.stopListeningOnActiveConnection();
-                        sinchClient.terminate();
-                    }
-                }
-            });
-        }
-        Log.d("abcbbcas", receiver + " -- " + caller);
-
-        if (action != null) {
-            if (action.equals("call")) {
-                try {
-                    Thread.sleep(2000);
-//                    callUser();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+        declineButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (call != null) {
+                    call.hangup();
+                    sinchClient.stopListeningOnActiveConnection();
+                    sinchClient.terminate();
                 }
             }
-        }
-    }
+        });
 
-    public void callVoice(String caller) {
-        sinchClient = Sinch.getSinchClientBuilder()
-                .context(this)
-                .userId(caller)
-                .applicationKey("08c39146-6d90-41b2-8c1d-2e76a03ea62b")
-                .applicationSecret("LLRk8KPO6katlsOjm6VRZw==")
-                .environmentHost("clientapi.sinch.com")
-                .build();
-
-        sinchClient.setSupportCalling(true);
-//        sinchClient.setSupportManagedPush(true);
-        sinchClient.startListeningOnActiveConnection();
-        sinchClient.start();
-        sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
-
-//        sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener(){
-//
-//        });
-
-//        sinchClient.getCallClient().callUser(idReceiver);
-        Log.d("abcbbcas", "dcmmmmmm");
+        callUser();
     }
 
     public void callUser() {
@@ -116,14 +108,13 @@ public class CallActivity extends AppCompatActivity {
                 dialog.dismiss();
                 call.hangup();
                 sinchClient.stopListeningOnActiveConnection();
-//                sinchClient.terminate();
             }
         });
 
         alertDialogCall.show();
     }
 
-    public class SinchCallClientListener implements CallClientListener {
+    public static class SinchCallClientListener implements CallClientListener {
 
         @Override
         public void onIncomingCall(final CallClient callClient, final com.sinch.android.rtc.calling.Call incomingCall) {
@@ -164,7 +155,7 @@ public class CallActivity extends AppCompatActivity {
         }
     }
 
-    private class SinchCallListener implements CallListener {
+    public class SinchCallListener implements CallListener {
 
         @Override
         public void onCallProgressing(com.sinch.android.rtc.calling.Call call) {
@@ -189,13 +180,50 @@ public class CallActivity extends AppCompatActivity {
         }
     }
 
+    public class MyDownloader extends AsyncTask<String, Void, Bitmap> {
+
+        @Override
+        protected void onPreExecute() {
+
+            super.onPreExecute();
+
+        }
+
+        @Override
+        protected void onPostExecute(Bitmap bitmap) {
+            super.onPostExecute(bitmap);
+            Drawable drawable = new BitmapDrawable(bitmap);
+            backgroundLayout.setBackground(drawable);
+        }
+
+        @Override
+        protected Bitmap doInBackground(String... params) {
+            String imageUrl = params[0];
+            try {
+                URL url = new URL(imageUrl);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setDoInput(true);
+                connection.connect();
+                InputStream input = connection.getInputStream();
+                Bitmap myBitmap = BitmapFactory.decodeStream(input);
+                return myBitmap;
+            } catch (IOException e) {
+                e.printStackTrace();
+                return null;
+            }
+        }
+
+    }
+
+    private RelativeLayout backgroundLayout;
     private Button declineButton;
+    private TextView nameCallerTextView;
     public Button acceptButton;
     private String receiver;
     public String caller;
     private String action;
-    public static SinchClient sinchClient;
-    public static com.sinch.android.rtc.calling.Call call;
+    private String nameCaller;
+    private String avatarCaller;
 }
 
 

@@ -62,6 +62,12 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         updateColor();
         getUrlAvatar();
 
+        //get nameCaller
+        if(typeNotification.equals("Call")){
+            String caller[] = body.split(" Calling");
+            nameCaller = caller[0];
+        }
+
         intent = new Intent(this, MessageActivity.class);
         if (this.typeNotification != null) {
             if (typeNotification.equals("noneGroup")) {
@@ -91,8 +97,10 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
             largeIcon = BitmapFactory.decodeStream((InputStream) urlImage.getContent());
         }
 
-        // chuyển từ thông báo sang lớp Login
+        // chuyển từ thông báo sang lớp CallActivity
         Intent buttonIntent = new Intent(this,CallActivity.class);
+        buttonIntent.putExtra("nameCaller",nameCaller);
+        buttonIntent.putExtra("avatarCaller",urlAvatarSender);
         buttonIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent buttonPendingIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(),buttonIntent,PendingIntent.FLAG_ONE_SHOT);
 
@@ -208,6 +216,7 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
     private String title;
     private String body;
     private String sented;
+    private String nameCaller;
     private String[] url;
     private String urlAvatarSender = "";
     private String idGroup = "";

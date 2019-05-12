@@ -42,6 +42,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.sinch.android.rtc.Sinch;
 
 import org.json.JSONObject;
 
@@ -123,6 +124,8 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        setupSinch();
     }
 
     public void loginFacebook() {
@@ -266,6 +269,21 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void setupSinch() {
+        new CallActivity().sinchClient = Sinch.getSinchClientBuilder()
+                .context(this)
+                .userId(firebaseUser.getUid())
+                .applicationKey("08c39146-6d90-41b2-8c1d-2e76a03ea62b")
+                .applicationSecret("LLRk8KPO6katlsOjm6VRZw==")
+                .environmentHost("clientapi.sinch.com")
+                .build();
+
+        new CallActivity().sinchClient.setSupportCalling(true);
+        new CallActivity().sinchClient.startListeningOnActiveConnection();
+        new CallActivity().sinchClient.start();
+        new CallActivity().sinchClient.getCallClient().addCallClientListener(new CallActivity.SinchCallClientListener());
     }
 
     public void keyhash(Context context) {

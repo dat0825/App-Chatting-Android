@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,20 +7,40 @@
     tools:context=".CallActivity">
 
     <RelativeLayout
+        android:id="@+id/backgoundLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="@color/color_green"
+        android:alpha="0.7">
+
+        <TextView
+            android:id="@+id/nameCaller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name Caller"
+            android:textSize="40dp"
+            android:textColor="@color/color_white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+
         <Button
             android:id="@+id/b_decline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Decline"
-            android:layout_marginLeft="50dp"/>
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:text="Decline" />
+
         <Button
             android:id="@+id/b_accept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Accept"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="50dp"/>
+            android:layout_marginRight="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:text="Accept" />
+
     </RelativeLayout>
 </RelativeLayout>
