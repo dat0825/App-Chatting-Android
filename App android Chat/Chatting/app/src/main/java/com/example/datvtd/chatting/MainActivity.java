@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.sinch.android.rtc.Sinch;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(viewpagerAdpater);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(viewPager));
+        setupSinch();
     }
 
     //set trang thai online hay offline
@@ -65,6 +67,21 @@ public class MainActivity extends AppCompatActivity {
             hashMap.put("status", status);
             reference.updateChildren(hashMap);
         }
+    }
+
+    public void setupSinch() {
+        new CallActivity().sinchClient = Sinch.getSinchClientBuilder()
+                .context(this)
+                .userId(firebaseUser.getUid())
+                .applicationKey("08c39146-6d90-41b2-8c1d-2e76a03ea62b")
+                .applicationSecret("LLRk8KPO6katlsOjm6VRZw==")
+                .environmentHost("clientapi.sinch.com")
+                .build();
+
+        new CallActivity().sinchClient.setSupportCalling(true);
+        new CallActivity().sinchClient.startListeningOnActiveConnection();
+        new CallActivity().sinchClient.start();
+        new CallActivity().sinchClient.getCallClient().addCallClientListener(new CallActivity.SinchCallClientListener());
     }
 
 

@@ -11,16 +11,16 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.Fade;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.load.engine.Resource;
 import com.sinch.android.rtc.PushPair;
-import com.sinch.android.rtc.Sinch;
 import com.sinch.android.rtc.SinchClient;
 import com.sinch.android.rtc.calling.CallClient;
 import com.sinch.android.rtc.calling.CallClientListener;
@@ -44,26 +44,25 @@ public class CallActivity extends AppCompatActivity {
         setContentView(R.layout.activity_call);
         declineButton = findViewById(R.id.b_decline);
         acceptButton = findViewById(R.id.b_accept);
+        hangupButton = findViewById(R.id.b_hangup);
         backgroundLayout = findViewById(R.id.backgoundLayout);
         nameCallerTextView = findViewById(R.id.nameCaller);
 
         Intent intent = getIntent();
         receiver = intent.getStringExtra("receiver");
-        caller = intent.getStringExtra("caller");
         nameCaller = intent.getStringExtra("nameCaller");
         action = intent.getStringExtra("action");
         avatarCaller = intent.getStringExtra("avatarCaller");
+        avatarReceiver = intent.getStringExtra("avatarReceiver");
+        nameReceiver = intent.getStringExtra("nameReceiver");
 
-        //set background and nameCaller
-        if (nameCaller != null && avatarCaller != null) {
-            if (avatarCaller.equals("default")) {
-                Resources res = getResources();
-                Drawable drawable = res.getDrawable(R.drawable.ic_launcher_background);
-                backgroundLayout.setBackground(drawable);
-            } else {
-                new MyDownloader().execute(avatarCaller);
-            }
-            nameCallerTextView.setText(nameCaller);
+        if (action == null) {
+            //set background and nameCaller cho người nhận cuộc gọi
+            setViewReceiver();
+        } else {
+            //set background cho người gọi điện
+            setViewCaler();
+            callUser();
         }
 
         acceptButton.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +84,13 @@ public class CallActivity extends AppCompatActivity {
             }
         });
 
-        callUser();
+        hangupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                call.hangup();
+                sinchClient.stopListeningOnActiveConnection();
+            }
+        });
     }
 
     public void callUser() {
@@ -93,65 +98,41 @@ public class CallActivity extends AppCompatActivity {
             call = sinchClient.getCallClient().callUser(receiver);
             call.addCallListener(new SinchCallListener());
             sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
-            openCallerDialog(call);
         }
     }
 
-    public void openCallerDialog(final com.sinch.android.rtc.calling.Call call) {
-        AlertDialog alertDialogCall = new AlertDialog.Builder(CallActivity.this).create();
-        alertDialogCall.setTitle("ALERT");
-        alertDialogCall.setMessage("Calling");
-        alertDialogCall.setCancelable(false);
-        alertDialogCall.setButton(AlertDialog.BUTTON_NEUTRAL, "Hang up", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                call.hangup();
-                sinchClient.stopListeningOnActiveConnection();
-            }
-        });
+    public void setViewCaler() {
+        // set view cho người gọi
+        declineButton.setVisibility(View.INVISIBLE);
+        acceptButton.setVisibility(View.INVISIBLE);
+        if (avatarReceiver.equals("default")) {
+            Resources res = getResources();
+            Drawable drawable = res.getDrawable(R.drawable.ic_launcher_background);
+            backgroundLayout.setBackground(drawable);
+        } else {
+            new MyDownloader().execute(avatarReceiver);
+        }
+        nameCallerTextView.setText(nameReceiver);
+    }
 
-        alertDialogCall.show();
+    public void setViewReceiver() {
+        //set View cho người nhận
+        hangupButton.setVisibility(View.INVISIBLE);
+        if (avatarCaller.equals("default")) {
+            Resources res = getResources();
+            Drawable drawable = res.getDrawable(R.drawable.ic_launcher_background);
+            backgroundLayout.setBackground(drawable);
+        } else {
+            new MyDownloader().execute(avatarCaller);
+        }
+        nameCallerTextView.setText(nameCaller);
     }
 
     public static class SinchCallClientListener implements CallClientListener {
 
         @Override
         public void onIncomingCall(final CallClient callClient, final com.sinch.android.rtc.calling.Call incomingCall) {
-            Log.d("abcbbcas", "input - bphone");
-//             set dialog for call
-//            acceptButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
             call = incomingCall;
-//                    call.answer();
-//                    Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
-//                }
-//            });
-//            AlertDialog alertDialog = new AlertDialog.Builder(CallActivity.this).create();
-//            alertDialog.setTitle("Calling");
-//            alertDialog.setCancelable(false);
-//            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Reject", new DialogInterface.OnClickListener() {
-//                @Override
-//                public void onClick(DialogInterface dialog, int which) {
-//                    dialog.dismiss();
-//                    if (call != null) {
-//                        call.hangup();
-//                        sinchClient.stopListeningOnActiveConnection();
-////                        sinchClient.terminate();
-//                    }
-//                }
-//            });
-//            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Pick", new DialogInterface.OnClickListener() {
-//                @Override
-//                public void onClick(DialogInterface dialog, int which) {
-//                    call = incomingCall;
-//                    call.answer();
-//                    Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
-//                }
-//            });
-//
-//            alertDialog.show();
         }
     }
 
@@ -176,7 +157,7 @@ public class CallActivity extends AppCompatActivity {
 
         @Override
         public void onShouldSendPushNotification(com.sinch.android.rtc.calling.Call call, List<PushPair> list) {
-            Log.d("sad213", "notificationn");
+
         }
     }
 
@@ -216,14 +197,16 @@ public class CallActivity extends AppCompatActivity {
     }
 
     private RelativeLayout backgroundLayout;
-    private Button declineButton;
+    private ImageView declineButton;
+    private ImageView acceptButton;
+    private ImageView hangupButton;
     private TextView nameCallerTextView;
-    public Button acceptButton;
     private String receiver;
-    public String caller;
     private String action;
     private String nameCaller;
     private String avatarCaller;
+    private String avatarReceiver;
+    private String nameReceiver;
 }
 
 

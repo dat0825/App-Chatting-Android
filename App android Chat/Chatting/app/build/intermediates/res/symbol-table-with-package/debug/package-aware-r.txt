@@ -1175,9 +1175,11 @@ drawable edit_text_background
 drawable edit_text_background_border
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_acceptcall
 drawable ic_add_box_black_24dp
 drawable ic_add_person
 drawable ic_back
+drawable ic_declinecall
 drawable ic_extend
 drawable ic_info_blue_20dp
 drawable ic_launcher_background
@@ -1259,6 +1261,7 @@ id b_back
 id b_change_color
 id b_create_group
 id b_decline
+id b_hangup
 id b_logout
 id b_no
 id b_ok_change_color
@@ -1343,7 +1346,6 @@ id header_creat_account
 id highlight
 id home
 id homeAsUp
-id ic_2
 id ic_call
 id ic_extend
 id ic_remove_member

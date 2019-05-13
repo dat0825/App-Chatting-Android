@@ -1,34 +1,23 @@
 package com.example.datvtd.chatting;
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
-import android.app.Application;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.support.annotation.NonNull;
-import android.support.design.animation.AnimationUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.animation.Animation;
-import android.view.inputmethod.InputMethodManager;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -60,21 +49,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.sinch.android.rtc.ClientRegistration;
-import com.sinch.android.rtc.PushPair;
-import com.sinch.android.rtc.Sinch;
-import com.sinch.android.rtc.SinchClient;
-import com.sinch.android.rtc.SinchClientListener;
-import com.sinch.android.rtc.SinchError;
-import com.sinch.android.rtc.calling.CallClient;
-import com.sinch.android.rtc.calling.CallClientListener;
-import com.sinch.android.rtc.calling.CallListener;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.zip.Inflater;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -249,6 +227,8 @@ public class MessageActivity extends AppCompatActivity {
                 intent.putExtra("caller", firebaseUser.getUid());
                 intent.putExtra("receiver", idReceiver);
                 intent.putExtra("action", "call");
+                intent.putExtra("avatarReceiver", avatarReceiver);
+                intent.putExtra("nameReceiver",nameReceiver);
                 startActivity(intent);
             }
         });
@@ -262,9 +242,12 @@ public class MessageActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 User user = dataSnapshot.getValue(User.class);
                 usernameTextView.setText(user.getUser());
+                nameReceiver = user.getUser();
                 if (user.getImageURL().equals("default")) {
+                    avatarReceiver = user.getImageURL();
                     profileImage.setImageResource(R.mipmap.ic_launcher_round);
                 } else {
+                    avatarReceiver = user.getImageURL();
                     Glide.with(getApplicationContext()).load(user.getImageURL()).into(profileImage);
                 }
 
@@ -850,12 +833,14 @@ public class MessageActivity extends AppCompatActivity {
     private String checkChangeAvatar = "false";
     private String checkSendImage = "false";
     private String color = "";
+    private String avatarReceiver ="";
+    private String nameReceiver="";
     private boolean allowSeenMessage = false;
     private ImageView profileImage;
     private ImageView iconInforGroup;
     private ImageView backButton;
     private ImageView extendIconsButton;
-    private Button callButton;
+    private ImageView callButton;
     private TextView usernameTextView;
     private RelativeLayout iconsLayout;
     private FirebaseUser firebaseUser;

@@ -124,8 +124,6 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        setupSinch();
     }
 
     public void loginFacebook() {
@@ -248,42 +246,27 @@ public class LoginActivity extends AppCompatActivity {
                     assert firebaseUser != null;
                     assert user != null;
 
-                    if (user.getId().equals(ID)) {
-                        Log.d("FAILLL", "FAILLL");
-                    } else {
-                        Log.d("Success", "FIGHTING");
-                        String linkImage = Profile.getCurrentProfile().getProfilePictureUri(200, 200).toString();
+//                    if (user.getId().equals(ID)) {
+//                        Log.d("FAILLL", "FAILLL");
+//                    } else {
+                    Log.d("Success", "FIGHTING");
+                    String linkImage = Profile.getCurrentProfile().getProfilePictureUri(200, 200).toString();
 
-                        HashMap<String, Object> hashMap = new HashMap<>();
-                        hashMap.put("id", ID);
-                        hashMap.put("user", usernameFacebook);
-                        hashMap.put("imageURL", linkImage);
-                        hashMap.put("status", "offline");
-                        reference.child(ID).setValue(hashMap);
-                    }
+                    HashMap<String, Object> hashMap = new HashMap<>();
+                    hashMap.put("id", ID);
+                    hashMap.put("user", usernameFacebook);
+                    hashMap.put("imageURL", linkImage);
+                    hashMap.put("status", "offline");
+                    reference.child(ID).setValue(hashMap);
                 }
             }
+//            }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
         });
-    }
-
-    public void setupSinch() {
-        new CallActivity().sinchClient = Sinch.getSinchClientBuilder()
-                .context(this)
-                .userId(firebaseUser.getUid())
-                .applicationKey("08c39146-6d90-41b2-8c1d-2e76a03ea62b")
-                .applicationSecret("LLRk8KPO6katlsOjm6VRZw==")
-                .environmentHost("clientapi.sinch.com")
-                .build();
-
-        new CallActivity().sinchClient.setSupportCalling(true);
-        new CallActivity().sinchClient.startListeningOnActiveConnection();
-        new CallActivity().sinchClient.start();
-        new CallActivity().sinchClient.getCallClient().addCallClientListener(new CallActivity.SinchCallClientListener());
     }
 
     public void keyhash(Context context) {

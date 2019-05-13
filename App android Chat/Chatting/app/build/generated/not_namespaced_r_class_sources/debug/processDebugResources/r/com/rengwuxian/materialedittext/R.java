@@ -442,8 +442,8 @@ public final class R {
         public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f070057;
         public static final int abc_textfield_search_default_mtrl_alpha = 0x7f070058;
         public static final int abc_textfield_search_material = 0x7f070059;
-        public static final int met_ic_clear = 0x7f0700a7;
-        public static final int notification_template_icon_bg = 0x7f0700b3;
+        public static final int met_ic_clear = 0x7f0700a9;
+        public static final int notification_template_icon_bg = 0x7f0700b5;
     }
     public static final class id {
         private id() {}
@@ -466,26 +466,26 @@ public final class R {
         public static final int activity_chooser_view_content = 0x7f080019;
         public static final int alertTitle = 0x7f08001d;
         public static final int always = 0x7f08001f;
-        public static final int beginning = 0x7f080037;
-        public static final int buttonPanel = 0x7f08003d;
-        public static final int cancel_action = 0x7f08003e;
-        public static final int checkbox = 0x7f080045;
-        public static final int chronometer = 0x7f080047;
-        public static final int collapseActionView = 0x7f08004a;
-        public static final int contentPanel = 0x7f080059;
-        public static final int custom = 0x7f08005b;
-        public static final int customPanel = 0x7f08005c;
-        public static final int decor_content_parent = 0x7f08005e;
-        public static final int default_activity_button = 0x7f08005f;
-        public static final int disableHome = 0x7f080067;
-        public static final int edit_query = 0x7f080069;
-        public static final int end = 0x7f08006a;
-        public static final int end_padder = 0x7f08006b;
-        public static final int expand_activities_button = 0x7f08006f;
-        public static final int expanded_menu = 0x7f080070;
-        public static final int highlight = 0x7f08007e;
-        public static final int home = 0x7f08007f;
-        public static final int homeAsUp = 0x7f080080;
+        public static final int beginning = 0x7f080038;
+        public static final int buttonPanel = 0x7f08003e;
+        public static final int cancel_action = 0x7f08003f;
+        public static final int checkbox = 0x7f080046;
+        public static final int chronometer = 0x7f080048;
+        public static final int collapseActionView = 0x7f08004b;
+        public static final int contentPanel = 0x7f08005a;
+        public static final int custom = 0x7f08005c;
+        public static final int customPanel = 0x7f08005d;
+        public static final int decor_content_parent = 0x7f08005f;
+        public static final int default_activity_button = 0x7f080060;
+        public static final int disableHome = 0x7f080068;
+        public static final int edit_query = 0x7f08006a;
+        public static final int end = 0x7f08006b;
+        public static final int end_padder = 0x7f08006c;
+        public static final int expand_activities_button = 0x7f080070;
+        public static final int expanded_menu = 0x7f080071;
+        public static final int highlight = 0x7f08007f;
+        public static final int home = 0x7f080080;
+        public static final int homeAsUp = 0x7f080081;
         public static final int icon = 0x7f080085;
         public static final int ifRoom = 0x7f080089;
         public static final int image = 0x7f08008a;

@@ -118,9 +118,9 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
                     .setContentText(body)
                     .setAutoCancel(true)
                     .setSound(defaultSound)
+                     .setContentIntent(buttonPendingIntent)
 //                    .setContentIntent(pendingIntent)  // thực hiện lệnh pendingIntent (chuyển sang lớp khác) khi click vào chính giữa thông báo
-                    .addAction(R.drawable.ic_add_person,getString(R.string.project_id),buttonPendingIntent)  // thực hiện lệnh buttonpendingIntent (chuyển sang lớp khác) khi click vào nút dưới thông báo
-                    .addAction(R.drawable.ic_info_blue_20dp,getString(R.string.project_id),buttonPendingIntent)
+//                    .addAction(R.drawable.ic_add_person,getString(R.string.project_id),buttonPendingIntent)  // thực hiện lệnh buttonpendingIntent (chuyển sang lớp khác) khi click vào nút dưới thông báo
                     .build();
         } else {
              notification = new NotificationCompat.Builder(this)

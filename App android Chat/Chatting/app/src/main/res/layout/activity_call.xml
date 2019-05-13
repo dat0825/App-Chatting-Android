@@ -23,16 +23,16 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"/>
 
-        <Button
+        <ImageView
             android:id="@+id/b_decline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="50dp"
-            android:text="Decline" />
+            android:src="@drawable/ic_declinecall" />
 
-        <Button
+        <ImageView
             android:id="@+id/b_accept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +40,17 @@
             android:layout_marginRight="50dp"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="50dp"
-            android:text="Accept" />
+            android:src="@drawable/ic_acceptcall" />
+
+        <ImageView
+            android:id="@+id/b_hangup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/ic_declinecall" />
+
 
     </RelativeLayout>
 </RelativeLayout>
