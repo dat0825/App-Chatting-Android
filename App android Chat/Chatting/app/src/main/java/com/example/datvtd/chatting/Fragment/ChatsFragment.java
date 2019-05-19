@@ -119,15 +119,17 @@ public class ChatsFragment extends Fragment {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                User user = dataSnapshot.getValue(User.class);
-                if(user.getImageURL() != null){
-                    if (user.getImageURL().equals("default")) {
-                        profileImage.setImageResource(R.mipmap.ic_launcher_round);
+                if(isAdded()){        // tranh bi crash
+                    User user = dataSnapshot.getValue(User.class);
+                    if(user.getImageURL() != null){
+                        if (user.getImageURL().equals("default")) {
+                            profileImage.setImageResource(R.mipmap.ic_launcher_round);
+                        } else {
+                            Glide.with(ChatsFragment.this).load(user.getImageURL()).into(profileImage);
+                        }
                     } else {
-                        Glide.with(ChatsFragment.this).load(user.getImageURL()).into(profileImage);
+                        profileImage.setImageResource(R.mipmap.ic_launcher_round);
                     }
-                } else {
-                    profileImage.setImageResource(R.mipmap.ic_launcher_round);
                 }
             }
 

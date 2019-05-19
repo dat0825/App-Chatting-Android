@@ -140,10 +140,13 @@ public class MessageActivity extends AppCompatActivity {
         });
 
         if (this.color == null) {
+            this.color = "default";
+        }
 
-        } else {
-            if (!this.color.equals("default")) {
-                Log.d("Sad21#", color);
+        if(this.color != null){
+            if (this.color.equals("default")) {
+                updateColor("#008577");
+            } else {
                 updateColor(this.color);
             }
         }
@@ -832,7 +835,7 @@ public class MessageActivity extends AppCompatActivity {
     private String adminGroup = "";
     private String checkChangeAvatar = "false";
     private String checkSendImage = "false";
-    private String color = "";
+    private String color;
     private String avatarReceiver ="";
     private String nameReceiver="";
     private boolean allowSeenMessage = false;

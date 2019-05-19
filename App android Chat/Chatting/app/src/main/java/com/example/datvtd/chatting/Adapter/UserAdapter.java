@@ -41,7 +41,7 @@ import java.util.List;
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public boolean isGroup;
     public List<User> mUsers = new ArrayList<>();
-    public static String color = "";
+    public static String color;
 
     public UserAdapter() {
 

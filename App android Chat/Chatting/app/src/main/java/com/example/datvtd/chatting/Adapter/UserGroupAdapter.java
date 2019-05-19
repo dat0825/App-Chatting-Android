@@ -41,10 +41,12 @@ public class UserGroupAdapter extends RecyclerView.Adapter<UserGroupAdapter.View
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
 
         final User user = this.mUsers.get(position);
-        if (user.getImageURL().equals("default")) {
-            holder.avatarUser.setImageResource(R.mipmap.ic_launcher_round);
-        } else {
-            Glide.with(this.mContext).load(user.getImageURL()).into(holder.avatarUser);
+        if(user.getImageURL() != null){
+            if (user.getImageURL().equals("default")) {
+                holder.avatarUser.setImageResource(R.mipmap.ic_launcher_round);
+            } else {
+                Glide.with(this.mContext).load(user.getImageURL()).into(holder.avatarUser);
+            }
         }
 
         holder.checkBoxUser.setTextColor(Color.BLACK);

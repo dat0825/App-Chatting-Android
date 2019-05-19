@@ -60,8 +60,10 @@ public class InfoGroupActivity extends AppCompatActivity {
             this.recyclerView.setVisibility(View.GONE);
         }
 
-        if (!this.color.equals("default")) {
-            updateColor(this.color);
+        if(this.color != null){
+            if (!this.color.equals("default")) {
+                updateColor(this.color);
+            }
         }
 
         backButton.setOnClickListener(new View.OnClickListener() {

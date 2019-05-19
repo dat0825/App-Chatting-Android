@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.sinch.android.rtc.PushPair;
 import com.sinch.android.rtc.SinchClient;
 import com.sinch.android.rtc.calling.CallClient;
@@ -68,8 +69,12 @@ public class CallActivity extends AppCompatActivity {
         acceptButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                call.answer();
-                Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
+                if (call != null) {
+                    call.answer();
+                    Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "nulll", Toast.LENGTH_LONG).show();
+                }
             }
         });
 

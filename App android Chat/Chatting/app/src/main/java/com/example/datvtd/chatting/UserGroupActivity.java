@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.datvtd.chatting.Adapter.UserGroupAdapter;
+import com.example.datvtd.chatting.Fragment.GroupChatFragment;
 import com.example.datvtd.chatting.Model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -89,17 +90,20 @@ public class UserGroupActivity extends AppCompatActivity {
 
     public void readUser() {
 
+        this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
+
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 mUsers.clear();
-                // set cho view tao group
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     User user = snapshot.getValue(User.class);
                     assert user != null;
                     assert firebaseUser != null;
-                    if (!user.getId().equals(firebaseUser.getUid())) {
+                    if (firebaseUser != null
+                            && user.getId() != null
+                            && !user.getId().equals(firebaseUser.getUid())) {
                         mUsers.add(user);
                     }
                 }
@@ -116,19 +120,23 @@ public class UserGroupActivity extends AppCompatActivity {
 
     public void readUserAddGroup() {
         mUsers.clear();
+        this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
+
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                mUsers.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     final User user = snapshot.getValue(User.class);
-
+                    assert user != null;
+                    assert firebaseUser != null;
                     DatabaseReference referenceMembers = FirebaseDatabase.getInstance().getReference("ChatGroup")
                             .child(idGroupAddPerson).child("members");
                     referenceMembers.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            if (!dataSnapshot.child(user.getId()).exists()) {
+                            if (user.getId() != null && !dataSnapshot.child(user.getId()).exists()) {
                                 mUsers.add(user);
                             }
                         }
@@ -209,6 +217,7 @@ public class UserGroupActivity extends AppCompatActivity {
             intent.putExtra("nameGroup", nameGroupText.getText().toString());
             intent.putExtra("checkGroup", "true");
             intent.putExtra("adminGroup",firebaseUser.getUid());
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             finish();
         }

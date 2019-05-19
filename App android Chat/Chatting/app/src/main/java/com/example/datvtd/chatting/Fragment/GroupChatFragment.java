@@ -40,6 +40,7 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class GroupChatFragment extends Fragment {
+    public List<GroupChat> mGroupChats;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -183,11 +184,13 @@ public class GroupChatFragment extends Fragment {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                User user = dataSnapshot.getValue(User.class);
-                if (user.getImageURL().equals("default")) {
-                    profileImage.setImageResource(R.mipmap.ic_launcher_round);
-                } else {
-                    Glide.with(GroupChatFragment.this).load(user.getImageURL()).into(profileImage);
+                if(isAdded()){     // tranh bi crash
+                    User user = dataSnapshot.getValue(User.class);
+                    if (user.getImageURL().equals("default")) {
+                        profileImage.setImageResource(R.mipmap.ic_launcher_round);
+                    } else {
+                        Glide.with(GroupChatFragment.this).load(user.getImageURL()).into(profileImage);
+                    }
                 }
             }
 
@@ -205,7 +208,6 @@ public class GroupChatFragment extends Fragment {
     private CircleImageView profileImage;
     private FirebaseUser firebaseUser;
     private DatabaseReference reference;
-    private List<GroupChat> mGroupChats;
     private UserAdapter mUserAdapter;
     private int checkSearch = 0;
 }

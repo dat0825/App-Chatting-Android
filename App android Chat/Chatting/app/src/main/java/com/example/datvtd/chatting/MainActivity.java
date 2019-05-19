@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.datvtd.chatting.Fragment.ChatsFragment;
 import com.example.datvtd.chatting.Fragment.GroupChatFragment;
@@ -55,7 +56,20 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(viewpagerAdpater);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(viewPager));
-        setupSinch();
+
+        while(new CallActivity().sinchClient == null){
+            setupSinch();
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        if(new CallActivity().sinchClient != null){
+            Toast.makeText(getApplicationContext(),"sinch client connected",Toast.LENGTH_LONG).show();
+            Log.d("sinchConnect","connected");
+        }
     }
 
     //set trang thai online hay offline

@@ -153,11 +153,13 @@ public class UsersFragment extends Fragment {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                User user = dataSnapshot.getValue(User.class);
-                if (user.getImageURL().equals("default")) {
-                    profileImage.setImageResource(R.mipmap.ic_launcher_round);
-                } else {
-                    Glide.with(UsersFragment.this).load(user.getImageURL()).into(profileImage);
+                if(isAdded()){     //tranh bi crash
+                    User user = dataSnapshot.getValue(User.class);
+                    if (user.getImageURL().equals("default")) {
+                        profileImage.setImageResource(R.mipmap.ic_launcher_round);
+                    } else {
+                        Glide.with(UsersFragment.this).load(user.getImageURL()).into(profileImage);
+                    }
                 }
             }
 

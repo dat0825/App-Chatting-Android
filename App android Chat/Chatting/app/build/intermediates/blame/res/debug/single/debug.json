@@ -8,20 +8,20 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/777a169a50244de2db633e523522cf43/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -32,20 +32,20 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/animator/design_fab_hide_motion_spec.xml"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/anim_design_snackbar_in.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/anim/design_snackbar_in.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/animator/design_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_ic_info_blue_20dp.xml.flat",
@@ -88,12 +88,12 @@
         "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/drawable/ic_back.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_fragment_users.xml.flat",
-        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/fragment_users.xml"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_fragment_users.xml.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/fragment_users.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -128,12 +128,12 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-hdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/anim/design_snackbar_out.xml"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_mtrl_chip_ripple_color.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/color/mtrl_chip_ripple_color.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/anim/design_snackbar_out.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -160,44 +160,44 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_message.xml.flat",
-        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_message.xml"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_design_bottom_navigation_item.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/layout/design_bottom_navigation_item.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/mipmap-xhdpi_colordialog.jpg.flat",
-        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/mipmap-xhdpi/colordialog.jpg"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_message.xml.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_message.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout-v26_abc_screen_toolbar.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/layout-v26/abc_screen_toolbar.xml"
     },
     {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/mipmap-xhdpi_colordialog.jpg.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/mipmap-xhdpi/colordialog.jpg"
+    },
+    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/777a169a50244de2db633e523522cf43/res/drawable-hdpi-v4/googleg_standard_color_18.png"
-    },
-    {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/color/abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable/tooltip_frame_dark.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_info_group.xml.flat",
         "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_info_group.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png"
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable/tooltip_frame_dark.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/color/abc_primary_text_material_dark.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -260,12 +260,12 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/24104640feabe8a27f9cd7cc24ff2de3/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_call.xml.flat",
-        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_call.xml"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/7b1fb46d3d072fea0366fb97b4a294bc/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_activity_call.xml.flat",
+        "source": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/src/main/res/layout/activity_call.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -328,12 +328,12 @@
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/color-v23/abc_tint_spinner.xml"
     },
     {
-        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
