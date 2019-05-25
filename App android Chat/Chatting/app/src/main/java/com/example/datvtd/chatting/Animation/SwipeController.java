@@ -21,6 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import java.lang.reflect.Array;
+
 import static android.support.v7.widget.helper.ItemTouchHelper.*;
 
 enum ButtonsState {
@@ -228,10 +229,9 @@ public class SwipeController extends Callback {
             promoteButton = new RectF(itemView.getRight() - buttonWidthWithoutPadding,
                     itemView.getTop(), itemView.getRight() - buttonWidthWithoutPadding / 2, itemView.getBottom());
             p.setColor(Color.BLUE);
-        }
-
             c.drawRoundRect(promoteButton, corners, corners, p);
             drawText("Promote", c, promoteButton, p);
+        }
 
         buttonInstance[0] = null;
         buttonInstance[1] = null;

@@ -237,28 +237,23 @@ public class LoginActivity extends AppCompatActivity {
 
     public void checkAccountFacebookExist() {
         final String ID = firebaseUser.getUid();
-        reference = FirebaseDatabase.getInstance().getReference("Users");
+        reference = FirebaseDatabase.getInstance().getReference("Users").child(ID);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull final DataSnapshot dataSnapshot) {
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    User user = snapshot.getValue(User.class);
-                    assert firebaseUser != null;
-                    assert user != null;
 
 //                    if (user.getId().equals(ID)) {
 //                        Log.d("FAILLL", "FAILLL");
 //                    } else {
-                    Log.d("Success", "FIGHTING");
-                    String linkImage = Profile.getCurrentProfile().getProfilePictureUri(200, 200).toString();
+                Log.d("Success", "FIGHTING");
+                String linkImage = Profile.getCurrentProfile().getProfilePictureUri(200, 200).toString();
 
-                    HashMap<String, Object> hashMap = new HashMap<>();
-                    hashMap.put("id", ID);
-                    hashMap.put("user", usernameFacebook);
-                    hashMap.put("imageURL", linkImage);
-                    hashMap.put("status", "offline");
-                    reference.child(ID).setValue(hashMap);
-                }
+                HashMap<String, Object> hashMap = new HashMap<>();
+                hashMap.put("id", ID);
+                hashMap.put("user", usernameFacebook);
+                hashMap.put("imageURL", linkImage);
+                hashMap.put("status", "offline");
+                reference.setValue(hashMap);
             }
 //            }
 

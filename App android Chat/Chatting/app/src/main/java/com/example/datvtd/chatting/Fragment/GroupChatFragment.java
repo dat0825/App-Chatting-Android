@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
@@ -16,8 +19,12 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+
 import com.bumptech.glide.Glide;
 import com.example.datvtd.chatting.Adapter.UserAdapter;
+import com.example.datvtd.chatting.MainActivity;
 import com.example.datvtd.chatting.Model.GroupChat;
 import com.example.datvtd.chatting.Model.User;
 import com.example.datvtd.chatting.Notifications.Token;
@@ -39,8 +46,11 @@ import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
+import static android.content.Intent.getIntent;
+
 public class GroupChatFragment extends Fragment {
     public List<GroupChat> mGroupChats;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -112,17 +122,20 @@ public class GroupChatFragment extends Fragment {
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull final DataSnapshot dataSnapshot) {
                 mGroupChats.clear();
                 for (final DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     final GroupChat groupChat = snapshot.getValue(GroupChat.class);
+                    Log.d("heloo_every_one","2");
 
                     //xet 1 group xem nguoi dung hien tai co o trong do k de hien thi
                     DatabaseReference referenceMember = reference.child(groupChat.getIdGroup()).child("members");
                     referenceMember.addValueEventListener(new ValueEventListener() {
                         @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            if (dataSnapshot.child(firebaseUser.getUid()).exists()) {
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshotMember) {
+                            if (dataSnapshotMember.child(firebaseUser.getUid()).exists() &&
+                                    dataSnapshot.getChildrenCount() > mGroupChats.size() ) {  // dataSnapshot.getChildrenCount() > mGroupChats.size() dùng để tránh lặp item khi tạo nhóm trong ChatFragment
+                                Log.d("heloo_every_one","1");
                                 mGroupChats.add(groupChat);
                             }
                             Log.d("afterread", String.valueOf(mGroupChats.size()));
@@ -184,12 +197,14 @@ public class GroupChatFragment extends Fragment {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(isAdded()){     // tranh bi crash
+                if (isAdded()) {     // tranh bi crash
                     User user = dataSnapshot.getValue(User.class);
-                    if (user.getImageURL().equals("default")) {
-                        profileImage.setImageResource(R.mipmap.ic_launcher_round);
-                    } else {
-                        Glide.with(GroupChatFragment.this).load(user.getImageURL()).into(profileImage);
+                    if (user.getImageURL() != null) {
+                        if (user.getImageURL().equals("default")) {
+                            profileImage.setImageResource(R.mipmap.ic_launcher_round);
+                        } else {
+                            Glide.with(GroupChatFragment.this).load(user.getImageURL()).into(profileImage);
+                        }
                     }
                 }
             }
