@@ -92,8 +92,10 @@ public class CallActivity extends AppCompatActivity {
         hangupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                call.hangup();
-                sinchClient.stopListeningOnActiveConnection();
+                if (call != null) {
+                    call.hangup();
+                    sinchClient.stopListeningOnActiveConnection();
+                }
             }
         });
     }

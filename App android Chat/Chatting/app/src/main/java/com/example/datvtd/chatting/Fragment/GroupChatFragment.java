@@ -135,7 +135,7 @@ public class GroupChatFragment extends Fragment {
                         public void onDataChange(@NonNull DataSnapshot dataSnapshotMember) {
                             if (dataSnapshotMember.child(firebaseUser.getUid()).exists() &&
                                     dataSnapshot.getChildrenCount() > mGroupChats.size() ) {  // dataSnapshot.getChildrenCount() > mGroupChats.size() dùng để tránh lặp item khi tạo nhóm trong ChatFragment
-                                Log.d("heloo_every_one","1");
+                                Log.d("heloo_every_one", "1");
                                 mGroupChats.add(groupChat);
                             }
                             Log.d("afterread", String.valueOf(mGroupChats.size()));
