@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/datvtd/Desktop/App/App android Chat/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "C:\\Users\\dat.vt160978\\Desktop\\App Android Chat\\App-Chatting-Android\\App android Chat\\Chatting\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
-                    "source": "/home/datvtd/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c58b51b151a238223a4a97bafb8f38cb/res/values-watch-v21/values-watch-v21.xml",
+                    "source": "C:\\Users\\dat.vt160978\\.gradle\\caches\\transforms-2\\files-2.1\\a6452b9bc356cb362917489f6f442729\\appcompat-v7-28.0.0\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

@@ -15,6 +15,30 @@
       },
       "oauth_client": [
         {
+          "client_id": "120986371881-0cdp1ea82ikl1urhb49bqf7phl7o9kph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.datvtd.chatting",
+            "certificate_hash": "a3c0684d815f4782cbe25369ce90162f8b986b6a"
+          }
+        },
+        {
+          "client_id": "120986371881-a2e6o1bnvov98rmnh58umeafm8ted95v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.datvtd.chatting",
+            "certificate_hash": "5a51a3fe24f9e0096e46e3a7247f3fc5ff2025fc"
+          }
+        },
+        {
+          "client_id": "120986371881-ij0inpfl54rb4se7jn7n7bc6dge93cf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.datvtd.chatting",
+            "certificate_hash": "90b9850502f56305dff6e49c60a96902555683f0"
+          }
+        },
+        {
           "client_id": "120986371881-g27gfnvhfomh37lbe1kg5l6q9t1g7h61.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -33,20 +57,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "120986371881-jk8ik6cvrg5c2kl0kummohrt3darodk7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }
