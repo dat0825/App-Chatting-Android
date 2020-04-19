@@ -46,7 +46,7 @@
         android:textSize="20dp"
         android:paddingLeft="10dp"
         android:drawableLeft="@drawable/ic_search_black_24dp"
-        android:background="@drawable/edit_text_background"
+        android:background="@drawable/edit_text_background_radius"
         android:layout_below="@id/layout_header"/>
 
     <android.support.v7.widget.RecyclerView

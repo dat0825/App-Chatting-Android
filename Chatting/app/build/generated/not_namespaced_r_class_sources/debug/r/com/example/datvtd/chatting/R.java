@@ -5654,7 +5654,7 @@ public final class R {
     public static final int design_password_eye=0x7f07008e;
     public static final int design_snackbar_background=0x7f07008f;
     public static final int edit_text_background=0x7f070090;
-    public static final int edit_text_background_border=0x7f070091;
+    public static final int edit_text_background_radius=0x7f070091;
     public static final int googleg_disabled_color_18=0x7f070092;
     public static final int googleg_standard_color_18=0x7f070093;
     public static final int ic_acceptcall=0x7f070094;

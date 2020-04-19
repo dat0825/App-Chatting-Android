@@ -76,7 +76,7 @@
             android:layout_toLeftOf="@id/b_send"
             android:layout_toRightOf="@id/ic_extend"
             android:layout_marginLeft="5dp"
-            android:background="@drawable/edit_text_background"
+            android:background="@drawable/edit_text_background_radius"
             android:hint="Type a message"
             android:focusableInTouchMode="false"/> -- phải double click mới gõ text được
 
