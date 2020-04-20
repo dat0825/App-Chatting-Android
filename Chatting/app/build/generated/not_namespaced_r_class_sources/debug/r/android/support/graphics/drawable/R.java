@@ -146,14 +146,14 @@ public final class R {
     public static final class style {
         private style() {}
 
-        public static final int TextAppearance_Compat_Notification = 0x7f0e0117;
-        public static final int TextAppearance_Compat_Notification_Info = 0x7f0e0118;
-        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0e011a;
-        public static final int TextAppearance_Compat_Notification_Time = 0x7f0e011d;
-        public static final int TextAppearance_Compat_Notification_Title = 0x7f0e011f;
-        public static final int Widget_Compat_NotificationActionContainer = 0x7f0e01c7;
-        public static final int Widget_Compat_NotificationActionText = 0x7f0e01c8;
-        public static final int Widget_Support_CoordinatorLayout = 0x7f0e01f7;
+        public static final int TextAppearance_Compat_Notification = 0x7f0e0118;
+        public static final int TextAppearance_Compat_Notification_Info = 0x7f0e0119;
+        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0e011b;
+        public static final int TextAppearance_Compat_Notification_Time = 0x7f0e011e;
+        public static final int TextAppearance_Compat_Notification_Title = 0x7f0e0120;
+        public static final int Widget_Compat_NotificationActionContainer = 0x7f0e01c8;
+        public static final int Widget_Compat_NotificationActionText = 0x7f0e01c9;
+        public static final int Widget_Support_CoordinatorLayout = 0x7f0e01f8;
     }
     public static final class styleable {
         private styleable() {}

@@ -48,7 +48,7 @@
 22-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:26:22-79
 23
 24    <application
-24-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:15:5-90:19
+24-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:15:5-94:19
 25        android:allowBackup="true"
 25-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:16:9-35
 26        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
@@ -64,356 +64,362 @@
 31-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:20:9-35
 32        android:theme="@style/AppTheme" >
 32-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:21:9-40
-33        <activity android:name="com.example.datvtd.chatting.InfoGroupActivity" />
-33-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:9-55
-33-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:19-52
-34        <activity android:name="com.example.datvtd.chatting.LoginActivity" >
-34-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:23:9-29:20
-34-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:23:19-48
-35            <intent-filter>
-35-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:24:13-28:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:17-69
-36-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:27:17-77
-38-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:27:27-74
-39            </intent-filter>
-40        </activity>
-41        <activity android:name="com.example.datvtd.chatting.StartActivity" />
-41-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:30:9-51
-41-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:30:19-48
-42        <activity android:name="com.example.datvtd.chatting.MainActivity" />
-42-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:9-50
-42-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:19-47
-43        <activity android:name="com.example.datvtd.chatting.RegisterActivity" />
-43-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:32:9-54
-43-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:32:19-51
-44        <activity
-44-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:33:9-35:58
-45            android:name="com.example.datvtd.chatting.MessageActivity"
-45-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:34:13-44
-46            android:parentActivityName="com.example.datvtd.chatting.MainActivity" />
-46-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:35:13-55
+33        <activity
+33-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:9-29:20
+34            android:name="com.example.datvtd.chatting.SplashScreenActivity"
+34-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:19-55
+35            android:theme="@style/SplashTheme" >
+35-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:23:13-47
+36            <intent-filter>
+36-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:24:13-28:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:17-69
+37-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:27:17-77
+39-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:27:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity android:name="com.example.datvtd.chatting.InfoGroupActivity" />
+42-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:30:9-55
+42-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:30:19-52
+43        <activity android:name="com.example.datvtd.chatting.LoginActivity" />
+43-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:9-51
+43-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:19-48
+44        <activity android:name="com.example.datvtd.chatting.StartActivity" />
+44-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:33:9-51
+44-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:33:19-48
+45        <activity android:name="com.example.datvtd.chatting.MainActivity" />
+45-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:34:9-50
+45-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:34:19-47
+46        <activity android:name="com.example.datvtd.chatting.RegisterActivity" />
+46-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:35:9-54
+46-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:35:19-51
 47        <activity
-47-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:36:9-38:59
-48            android:name="com.example.datvtd.chatting.ResetPassActivity"
-48-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:37:13-46
-49            android:parentActivityName="com.example.datvtd.chatting.LoginActivity" />
-49-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:38:13-56
-50        <activity android:name="com.example.datvtd.chatting.Adapter.ChatImageActivity" />
-50-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:39:9-63
-50-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:39:19-60
-51        <activity android:name="com.example.datvtd.chatting.ProfileActivity" />
-51-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:40:9-53
-51-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:40:19-50
-52        <activity
-52-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:41:9-43:53
-53            android:name="com.example.datvtd.chatting.UserGroupActivity"
-53-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:42:13-46
-54            android:theme="@style/Theme.MyDialog" />
-54-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:43:13-50
+47-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:36:9-38:58
+48            android:name="com.example.datvtd.chatting.MessageActivity"
+48-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:37:13-44
+49            android:parentActivityName="com.example.datvtd.chatting.MainActivity" />
+49-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:38:13-55
+50        <activity
+50-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:39:9-41:59
+51            android:name="com.example.datvtd.chatting.ResetPassActivity"
+51-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:40:13-46
+52            android:parentActivityName="com.example.datvtd.chatting.LoginActivity" />
+52-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:41:13-56
+53        <activity android:name="com.example.datvtd.chatting.Adapter.ChatImageActivity" />
+53-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:42:9-63
+53-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:42:19-60
+54        <activity android:name="com.example.datvtd.chatting.ProfileActivity" />
+54-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:43:9-53
+54-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:43:19-50
 55        <activity
 55-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:44:9-46:53
-56            android:name="com.example.datvtd.chatting.DialogConfirmActivity"
-56-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:45:13-50
+56            android:name="com.example.datvtd.chatting.UserGroupActivity"
+56-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:45:13-46
 57            android:theme="@style/Theme.MyDialog" />
 57-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:46:13-50
 58        <activity
-58-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:47:9-49:62
-59            android:name="com.example.datvtd.chatting.DialogColorActivity"
-59-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:48:13-48
+58-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:47:9-49:53
+59            android:name="com.example.datvtd.chatting.DialogConfirmActivity"
+59-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:48:13-50
 60            android:theme="@style/Theme.MyDialog" />
 60-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:49:13-50
-61
-62        <service
-62-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:51:9-58:19
-63            android:name="com.example.datvtd.chatting.Notifications.MyFirebaseService"
-63-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:52:13-60
-64            android:enabled="true"
-64-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:53:13-35
-65            android:exported="true" >
-65-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:54:13-36
-66            <intent-filter>
-66-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:55:13-57:29
-67                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-67-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:56:17-80
-67-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:56:25-77
-68            </intent-filter>
-69        </service>
-70        <service
-70-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:9-66:19
-71            android:name="com.example.datvtd.chatting.Notifications.MyFirebaseMessaging"
-71-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:60:13-62
-72            android:enabled="true"
-72-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:61:13-35
-73            android:exported="true" >
-73-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:62:13-36
-74            <intent-filter>
-74-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:63:13-65:29
-75                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-75-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:64:17-78
-75-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:64:25-75
-76            </intent-filter>
-77        </service>
-78
-79        <receiver android:name="com.example.datvtd.chatting.Notifications.ActionCall" />
-79-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:9-62
-79-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:19-59
-80
-81        <meta-data
-81-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:69:9-71:55
-82            android:name="com.facebook.sdk.ApplicationId"
-82-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:70:13-58
-83            android:value="@string/facebook_app_id" />
-83-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:71:13-52
-84
-85        <activity
-85-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:73:9-76:48
-86            android:name="com.facebook.FacebookActivity"
-86-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:74:13-57
-87            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-87-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:75:13-96
-88            android:label="@string/app_name"
-88-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:76:13-45
-89            android:theme="@style/com_facebook_activity_theme" />
-89-->[com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:32:13-63
-90        <activity
-90-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:77:9-88:20
-91            android:name="com.facebook.CustomTabActivity"
-91-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:78:13-58
-92            android:exported="true" >
-92-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:79:13-36
-93            <intent-filter>
-93-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:80:13-87:29
-94                <action android:name="android.intent.action.VIEW" />
-94-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:81:17-69
-94-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:81:25-66
-95
-96                <category android:name="android.intent.category.DEFAULT" />
-96-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:83:17-76
-96-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:83:27-73
-97                <category android:name="android.intent.category.BROWSABLE" />
-97-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:84:17-78
-97-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:84:27-75
+61        <activity
+61-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:50:9-52:53
+62            android:name="com.example.datvtd.chatting.DialogColorActivity"
+62-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:51:13-48
+63            android:theme="@style/Theme.MyDialog" />
+63-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:52:13-50
+64
+65        <service
+65-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:54:9-61:19
+66            android:name="com.example.datvtd.chatting.Notifications.MyFirebaseService"
+66-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:55:13-60
+67            android:enabled="true"
+67-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:56:13-35
+68            android:exported="true" >
+68-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:57:13-36
+69            <intent-filter>
+69-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:13-60:29
+70                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+70-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:17-80
+70-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:25-77
+71            </intent-filter>
+72        </service>
+73        <service
+73-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:62:9-69:19
+74            android:name="com.example.datvtd.chatting.Notifications.MyFirebaseMessaging"
+74-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:63:13-62
+75            android:enabled="true"
+75-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:64:13-35
+76            android:exported="true" >
+76-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:65:13-36
+77            <intent-filter>
+77-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:13-68:29
+78                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+78-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:17-78
+78-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:25-75
+79            </intent-filter>
+80        </service>
+81
+82        <receiver android:name="com.example.datvtd.chatting.Notifications.ActionCall" />
+82-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:71:9-62
+82-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:71:19-59
+83
+84        <meta-data
+84-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:73:9-75:55
+85            android:name="com.facebook.sdk.ApplicationId"
+85-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:74:13-58
+86            android:value="@string/facebook_app_id" />
+86-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:75:13-52
+87
+88        <activity
+88-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:77:9-80:48
+89            android:name="com.facebook.FacebookActivity"
+89-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:78:13-57
+90            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+90-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:79:13-96
+91            android:label="@string/app_name"
+91-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:80:13-45
+92            android:theme="@style/com_facebook_activity_theme" />
+92-->[com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:32:13-63
+93        <activity
+93-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:81:9-92:20
+94            android:name="com.facebook.CustomTabActivity"
+94-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:82:13-58
+95            android:exported="true" >
+95-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:83:13-36
+96            <intent-filter>
+96-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:84:13-91:29
+97                <action android:name="android.intent.action.VIEW" />
+97-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:85:17-69
+97-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:85:25-66
 98
-99                <data android:scheme="@string/fb_login_protocol_scheme" />
-99-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:86:17-75
-99-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:86:23-72
-100            </intent-filter>
-101        </activity>
-102        <activity android:name="com.example.datvtd.chatting.CallActivity" />
-102-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:89:9-59
-102-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:89:19-47
-103        <activity android:name="com.facebook.CustomTabMainActivity" />
-103-->[com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:33:9-71
-103-->[com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:33:19-68
-104        <activity
-104-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:23:9-29:75
-105            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-105-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:24:13-85
-106            android:excludeFromRecents="true"
-106-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:25:13-46
-107            android:exported="true"
-107-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:26:13-36
-108            android:launchMode="singleInstance"
-108-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:27:13-48
-109            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-109-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:28:13-102
-110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-110-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:29:13-72
-111
-112        <service
-112-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:31:9-35:19
-113            android:name="com.google.firebase.components.ComponentDiscoveryService"
-113-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:31:18-89
-114            android:exported="false" >
-114-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:31:13-37
-115            <meta-data
-115-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:32:13-34:85
-116                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-116-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:33:17-109
-117                android:value="com.google.firebase.components.ComponentRegistrar" />
-117-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:34:17-82
+99                <category android:name="android.intent.category.DEFAULT" />
+99-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:87:17-76
+99-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:87:27-73
+100                <category android:name="android.intent.category.BROWSABLE" />
+100-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:88:17-78
+100-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:88:27-75
+101
+102                <data android:scheme="@string/fb_login_protocol_scheme" />
+102-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:90:17-75
+102-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:90:23-72
+103            </intent-filter>
+104        </activity>
+105        <activity android:name="com.example.datvtd.chatting.CallActivity" />
+105-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:93:9-50
+105-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:93:19-47
+106        <activity android:name="com.facebook.CustomTabMainActivity" />
+106-->[com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:33:9-71
+106-->[com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:33:19-68
+107        <activity
+107-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:23:9-29:75
+108            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+108-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:24:13-85
+109            android:excludeFromRecents="true"
+109-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:25:13-46
+110            android:exported="true"
+110-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:26:13-36
+111            android:launchMode="singleInstance"
+111-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:27:13-48
+112            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+112-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:28:13-102
+113            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+113-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:29:13-72
+114
+115        <service
+115-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:31:9-35:19
+116            android:name="com.google.firebase.components.ComponentDiscoveryService"
+116-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:31:18-89
+117            android:exported="false" >
+117-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:31:13-37
 118            <meta-data
-118-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/ec2aabb865606b53f276a65bbcce96ee/firebase-measurement-connector-impl-16.0.1/AndroidManifest.xml:28:13-30:85
-119                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-119-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/ec2aabb865606b53f276a65bbcce96ee/firebase-measurement-connector-impl-16.0.1/AndroidManifest.xml:29:17-139
+118-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:32:13-34:85
+119                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+119-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:33:17-109
 120                android:value="com.google.firebase.components.ComponentRegistrar" />
-120-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/ec2aabb865606b53f276a65bbcce96ee/firebase-measurement-connector-impl-16.0.1/AndroidManifest.xml:30:17-82
+120-->[com.google.firebase:firebase-auth:16.0.2] /home/datvtd/.gradle/caches/transforms-2/files-2.1/0b69acce0f4cc1e6651de28dbb2e1419/firebase-auth-16.0.2/AndroidManifest.xml:34:17-82
 121            <meta-data
-121-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:32:13-34:85
-122                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-122-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:33:17-96
+121-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/ec2aabb865606b53f276a65bbcce96ee/firebase-measurement-connector-impl-16.0.1/AndroidManifest.xml:28:13-30:85
+122                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+122-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/ec2aabb865606b53f276a65bbcce96ee/firebase-measurement-connector-impl-16.0.1/AndroidManifest.xml:29:17-139
 123                android:value="com.google.firebase.components.ComponentRegistrar" />
-123-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:34:17-82
-124        </service>
-125        <!--
-126             FirebaseMessagingService performs security checks at runtime,
-127             no need for explicit permissions despite exported="true"
-128        -->
-129        <service
-129-->[com.google.firebase:firebase-messaging:17.3.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/dc3c19f6062353cfd0bd59eaa88e1de9/firebase-messaging-17.3.1/AndroidManifest.xml:28:9-34:19
-130            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-130-->[com.google.firebase:firebase-messaging:17.3.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/dc3c19f6062353cfd0bd59eaa88e1de9/firebase-messaging-17.3.1/AndroidManifest.xml:29:13-82
-131            android:exported="true" >
-131-->[com.google.firebase:firebase-messaging:17.3.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/dc3c19f6062353cfd0bd59eaa88e1de9/firebase-messaging-17.3.1/AndroidManifest.xml:30:13-36
-132            <intent-filter android:priority="-500" >
-132-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:63:13-65:29
-133                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-133-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:64:17-78
-133-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:64:25-75
-134            </intent-filter>
-135        </service>
-136
-137        <receiver
-137-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:29:9-33:20
-138            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-138-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:30:13-85
-139            android:enabled="true"
-139-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:31:13-35
-140            android:exported="false" >
-140-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:32:13-37
-141        </receiver>
-142        <receiver
-142-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:34:9-42:20
-143            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-143-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:35:13-100
-144            android:enabled="true"
-144-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:36:13-35
-145            android:exported="true"
-145-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:37:13-36
-146            android:permission="android.permission.INSTALL_PACKAGES" >
-146-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:38:13-69
-147            <intent-filter>
-147-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:39:13-41:29
-148                <action android:name="com.android.vending.INSTALL_REFERRER" />
-148-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:40:17-79
-148-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:40:25-76
-149            </intent-filter>
-150        </receiver>
-151
-152        <service
-152-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:44:9-47:40
-153            android:name="com.google.android.gms.measurement.AppMeasurementService"
-153-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:45:13-84
-154            android:enabled="true"
-154-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:46:13-35
-155            android:exported="false" />
-155-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:47:13-37
-156        <service
-156-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:48:9-52:72
-157            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-157-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:49:13-87
-158            android:enabled="true"
-158-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:50:13-35
-159            android:exported="false"
-159-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:51:13-37
-160            android:permission="android.permission.BIND_JOB_SERVICE" />
-160-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:52:13-69
-161
-162        <receiver
-162-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:37:9-44:20
-163            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-163-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:38:13-78
-164            android:exported="true"
-164-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:39:13-36
-165            android:permission="com.google.android.c2dm.permission.SEND" >
-165-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:40:13-73
-166            <intent-filter>
-166-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:41:13-43:29
-167                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-167-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:42:17-81
-167-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:42:25-78
-168            </intent-filter>
-169        </receiver>
-170        <!--
-171             FirebaseInstanceIdService performs security checks at runtime,
-172             no need for explicit permissions despite exported="true"
-173        -->
-174        <service
-174-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:50:9-56:19
-175            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
-175-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:51:13-77
-176            android:exported="true" >
-176-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:52:13-36
-177            <intent-filter android:priority="-500" >
-177-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:55:13-57:29
-178                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-178-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:56:17-80
-178-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:56:25-77
-179            </intent-filter>
-180        </service>
-181
-182        <activity
-182-->[com.google.android.gms:play-services-base:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/d539f672eb0b958b2353c98de9eedfaa/play-services-base-15.0.1/AndroidManifest.xml:23:9-26:75
-183            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-183-->[com.google.android.gms:play-services-base:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/d539f672eb0b958b2353c98de9eedfaa/play-services-base-15.0.1/AndroidManifest.xml:24:13-79
-184            android:exported="false"
-184-->[com.google.android.gms:play-services-base:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/d539f672eb0b958b2353c98de9eedfaa/play-services-base-15.0.1/AndroidManifest.xml:25:13-37
-185            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-185-->[com.google.android.gms:play-services-base:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/d539f672eb0b958b2353c98de9eedfaa/play-services-base-15.0.1/AndroidManifest.xml:26:13-72
-186
-187        <provider
-187-->[com.google.firebase:firebase-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/21a4d9726d4cbd5353797b4273bf8e89/firebase-common-16.0.1/AndroidManifest.xml:10:9-14:39
-188            android:name="com.google.firebase.provider.FirebaseInitProvider"
-188-->[com.google.firebase:firebase-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/21a4d9726d4cbd5353797b4273bf8e89/firebase-common-16.0.1/AndroidManifest.xml:11:13-77
-189            android:authorities="com.example.datvtd.chatting.firebaseinitprovider"
-189-->[com.google.firebase:firebase-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/21a4d9726d4cbd5353797b4273bf8e89/firebase-common-16.0.1/AndroidManifest.xml:12:13-72
-190            android:exported="false"
-190-->[com.google.firebase:firebase-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/21a4d9726d4cbd5353797b4273bf8e89/firebase-common-16.0.1/AndroidManifest.xml:13:13-37
-191            android:initOrder="100" />
-191-->[com.google.firebase:firebase-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/21a4d9726d4cbd5353797b4273bf8e89/firebase-common-16.0.1/AndroidManifest.xml:14:13-36
-192
-193        <meta-data
-193-->[com.google.android.gms:play-services-basement:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/cfcc3a83da2152591bcfa40ffebdc04c/play-services-basement-15.0.1/AndroidManifest.xml:23:9-25:69
-194            android:name="com.google.android.gms.version"
-194-->[com.google.android.gms:play-services-basement:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/cfcc3a83da2152591bcfa40ffebdc04c/play-services-basement-15.0.1/AndroidManifest.xml:24:13-58
-195            android:value="@integer/google_play_services_version" />
-195-->[com.google.android.gms:play-services-basement:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/cfcc3a83da2152591bcfa40ffebdc04c/play-services-basement-15.0.1/AndroidManifest.xml:25:13-66
-196
-197        <service android:name="com.sinch.android.rtc.internal.client.fcm.InstanceIDTokenService" >
-197-->[:sinch-android-rtc-3.12.9] /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/sinch-android-rtc-3.12.9/build/.transforms/8ca79e13c92781346a35db095b294721/sinch-android-rtc-3.12.9/AndroidManifest.xml:12:9-16:19
-197-->[:sinch-android-rtc-3.12.9] /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/sinch-android-rtc-3.12.9/build/.transforms/8ca79e13c92781346a35db095b294721/sinch-android-rtc-3.12.9/AndroidManifest.xml:12:18-97
-198            <intent-filter>
-198-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:55:13-57:29
-199                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-199-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:56:17-80
-199-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:56:25-77
-200            </intent-filter>
-201        </service>
-202        <!--
-203         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-204         with the application context. This config is merged in with the host app's manifest,
-205         but there can only be one provider with the same authority activated at any given
-206         point; so if the end user has two or more different apps that use Facebook SDK, only the
-207         first one will be able to use the provider. To work around this problem, we use the
-208         following placeholder in the authority to identify each host application as if it was
-209         a completely different provider.
-210        -->
-211        <provider
-211-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:39:9-42:40
-212            android:name="com.facebook.internal.FacebookInitProvider"
-212-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:40:13-70
-213            android:authorities="com.example.datvtd.chatting.FacebookInitProvider"
-213-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:41:13-72
-214            android:exported="false" />
-214-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:42:13-37
-215
-216        <receiver
-216-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:44:9-50:20
-217            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-217-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:45:13-86
-218            android:exported="false" >
-218-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:46:13-37
-219            <intent-filter>
-219-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:47:13-49:29
-220                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-220-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:48:17-95
-220-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:48:25-92
-221            </intent-filter>
-222        </receiver>
-223    </application>
-224
-225</manifest>
+123-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/ec2aabb865606b53f276a65bbcce96ee/firebase-measurement-connector-impl-16.0.1/AndroidManifest.xml:30:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:32:13-34:85
+125                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+125-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:33:17-96
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:34:17-82
+127        </service>
+128        <!--
+129             FirebaseMessagingService performs security checks at runtime,
+130             no need for explicit permissions despite exported="true"
+131        -->
+132        <service
+132-->[com.google.firebase:firebase-messaging:17.3.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/dc3c19f6062353cfd0bd59eaa88e1de9/firebase-messaging-17.3.1/AndroidManifest.xml:28:9-34:19
+133            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+133-->[com.google.firebase:firebase-messaging:17.3.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/dc3c19f6062353cfd0bd59eaa88e1de9/firebase-messaging-17.3.1/AndroidManifest.xml:29:13-82
+134            android:exported="true" >
+134-->[com.google.firebase:firebase-messaging:17.3.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/dc3c19f6062353cfd0bd59eaa88e1de9/firebase-messaging-17.3.1/AndroidManifest.xml:30:13-36
+135            <intent-filter android:priority="-500" >
+135-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:13-68:29
+136                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+136-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:17-78
+136-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:25-75
+137            </intent-filter>
+138        </service>
+139
+140        <receiver
+140-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:29:9-33:20
+141            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+141-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:30:13-85
+142            android:enabled="true"
+142-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:31:13-35
+143            android:exported="false" >
+143-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:32:13-37
+144        </receiver>
+145        <receiver
+145-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:34:9-42:20
+146            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+146-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:35:13-100
+147            android:enabled="true"
+147-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:36:13-35
+148            android:exported="true"
+148-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:37:13-36
+149            android:permission="android.permission.INSTALL_PACKAGES" >
+149-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:38:13-69
+150            <intent-filter>
+150-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:39:13-41:29
+151                <action android:name="com.android.vending.INSTALL_REFERRER" />
+151-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:40:17-79
+151-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:40:25-76
+152            </intent-filter>
+153        </receiver>
+154
+155        <service
+155-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:44:9-47:40
+156            android:name="com.google.android.gms.measurement.AppMeasurementService"
+156-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:45:13-84
+157            android:enabled="true"
+157-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:46:13-35
+158            android:exported="false" />
+158-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:47:13-37
+159        <service
+159-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:48:9-52:72
+160            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+160-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:49:13-87
+161            android:enabled="true"
+161-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:50:13-35
+162            android:exported="false"
+162-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:51:13-37
+163            android:permission="android.permission.BIND_JOB_SERVICE" />
+163-->[com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:52:13-69
+164
+165        <receiver
+165-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:37:9-44:20
+166            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+166-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:38:13-78
+167            android:exported="true"
+167-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:39:13-36
+168            android:permission="com.google.android.c2dm.permission.SEND" >
+168-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:40:13-73
+169            <intent-filter>
+169-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:41:13-43:29
+170                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+170-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:42:17-81
+170-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:42:25-78
+171            </intent-filter>
+172        </receiver>
+173        <!--
+174             FirebaseInstanceIdService performs security checks at runtime,
+175             no need for explicit permissions despite exported="true"
+176        -->
+177        <service
+177-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:50:9-56:19
+178            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+178-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:51:13-77
+179            android:exported="true" >
+179-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:52:13-36
+180            <intent-filter android:priority="-500" >
+180-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:13-60:29
+181                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+181-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:17-80
+181-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:25-77
+182            </intent-filter>
+183        </service>
+184
+185        <activity
+185-->[com.google.android.gms:play-services-base:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/d539f672eb0b958b2353c98de9eedfaa/play-services-base-15.0.1/AndroidManifest.xml:23:9-26:75
+186            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+186-->[com.google.android.gms:play-services-base:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/d539f672eb0b958b2353c98de9eedfaa/play-services-base-15.0.1/AndroidManifest.xml:24:13-79
+187            android:exported="false"
+187-->[com.google.android.gms:play-services-base:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/d539f672eb0b958b2353c98de9eedfaa/play-services-base-15.0.1/AndroidManifest.xml:25:13-37
+188            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+188-->[com.google.android.gms:play-services-base:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/d539f672eb0b958b2353c98de9eedfaa/play-services-base-15.0.1/AndroidManifest.xml:26:13-72
+189
+190        <provider
+190-->[com.google.firebase:firebase-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/21a4d9726d4cbd5353797b4273bf8e89/firebase-common-16.0.1/AndroidManifest.xml:10:9-14:39
+191            android:name="com.google.firebase.provider.FirebaseInitProvider"
+191-->[com.google.firebase:firebase-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/21a4d9726d4cbd5353797b4273bf8e89/firebase-common-16.0.1/AndroidManifest.xml:11:13-77
+192            android:authorities="com.example.datvtd.chatting.firebaseinitprovider"
+192-->[com.google.firebase:firebase-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/21a4d9726d4cbd5353797b4273bf8e89/firebase-common-16.0.1/AndroidManifest.xml:12:13-72
+193            android:exported="false"
+193-->[com.google.firebase:firebase-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/21a4d9726d4cbd5353797b4273bf8e89/firebase-common-16.0.1/AndroidManifest.xml:13:13-37
+194            android:initOrder="100" />
+194-->[com.google.firebase:firebase-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/21a4d9726d4cbd5353797b4273bf8e89/firebase-common-16.0.1/AndroidManifest.xml:14:13-36
+195
+196        <meta-data
+196-->[com.google.android.gms:play-services-basement:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/cfcc3a83da2152591bcfa40ffebdc04c/play-services-basement-15.0.1/AndroidManifest.xml:23:9-25:69
+197            android:name="com.google.android.gms.version"
+197-->[com.google.android.gms:play-services-basement:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/cfcc3a83da2152591bcfa40ffebdc04c/play-services-basement-15.0.1/AndroidManifest.xml:24:13-58
+198            android:value="@integer/google_play_services_version" />
+198-->[com.google.android.gms:play-services-basement:15.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/cfcc3a83da2152591bcfa40ffebdc04c/play-services-basement-15.0.1/AndroidManifest.xml:25:13-66
+199
+200        <service android:name="com.sinch.android.rtc.internal.client.fcm.InstanceIDTokenService" >
+200-->[:sinch-android-rtc-3.12.9] /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/sinch-android-rtc-3.12.9/build/.transforms/8ca79e13c92781346a35db095b294721/sinch-android-rtc-3.12.9/AndroidManifest.xml:12:9-16:19
+200-->[:sinch-android-rtc-3.12.9] /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/sinch-android-rtc-3.12.9/build/.transforms/8ca79e13c92781346a35db095b294721/sinch-android-rtc-3.12.9/AndroidManifest.xml:12:18-97
+201            <intent-filter>
+201-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:13-60:29
+202                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+202-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:17-80
+202-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:25-77
+203            </intent-filter>
+204        </service>
+205        <!--
+206         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+207         with the application context. This config is merged in with the host app's manifest,
+208         but there can only be one provider with the same authority activated at any given
+209         point; so if the end user has two or more different apps that use Facebook SDK, only the
+210         first one will be able to use the provider. To work around this problem, we use the
+211         following placeholder in the authority to identify each host application as if it was
+212         a completely different provider.
+213        -->
+214        <provider
+214-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:39:9-42:40
+215            android:name="com.facebook.internal.FacebookInitProvider"
+215-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:40:13-70
+216            android:authorities="com.example.datvtd.chatting.FacebookInitProvider"
+216-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:41:13-72
+217            android:exported="false" />
+217-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:42:13-37
+218
+219        <receiver
+219-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:44:9-50:20
+220            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+220-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:45:13-86
+221            android:exported="false" >
+221-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:46:13-37
+222            <intent-filter>
+222-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:47:13-49:29
+223                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+223-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:48:17-95
+223-->[com.facebook.android:facebook-core:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/73f6a722f5d94c8971ea6ed4c88787c6/facebook-core-4.42.0/AndroidManifest.xml:48:25-92
+224            </intent-filter>
+225        </receiver>
+226    </application>
+227
+228</manifest>
