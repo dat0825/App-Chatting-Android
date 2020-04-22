@@ -1,10 +1,10 @@
-#Wed Apr 15 16:01:43 ICT 2020
-base.2=C\:\\Users\\dat.vt160978\\Desktop\\App Android Chat\\App-Chatting-Android\\App android Chat\\Chatting\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_0.dex
+#Wed Apr 22 19:16:14 ICT 2020
 path.2=classes_0.dex
-base.1=C\:\\Users\\dat.vt160978\\Desktop\\App Android Chat\\App-Chatting-Android\\App android Chat\\Chatting\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
 path.1=classes.dex
-base.0=C\:\\Users\\dat.vt160978\\Desktop\\App Android Chat\\App-Chatting-Android\\App android Chat\\Chatting\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-path.0=classes.dex
+base.2=/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_0.dex
+base.1=/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.0=/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex

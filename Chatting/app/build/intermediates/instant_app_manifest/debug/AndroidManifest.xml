@@ -30,6 +30,7 @@
         android:label="Chat"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.datvtd.chatting.SplashScreenActivity"
@@ -42,7 +43,6 @@
         </activity>
         <activity android:name="com.example.datvtd.chatting.InfoGroupActivity" />
         <activity android:name="com.example.datvtd.chatting.LoginActivity" />
-        <activity android:name="com.example.datvtd.chatting.StartActivity" />
         <activity android:name="com.example.datvtd.chatting.MainActivity" />
         <activity android:name="com.example.datvtd.chatting.RegisterActivity" />
         <activity

@@ -294,31 +294,31 @@ public final class R {
         public static final int dim_foreground_material_light = 0x7f05005d;
         public static final int highlighted_text_material_dark = 0x7f050062;
         public static final int highlighted_text_material_light = 0x7f050063;
-        public static final int material_blue_grey_800 = 0x7f050064;
-        public static final int material_blue_grey_900 = 0x7f050065;
-        public static final int material_blue_grey_950 = 0x7f050066;
-        public static final int material_deep_teal_200 = 0x7f050067;
-        public static final int material_deep_teal_500 = 0x7f050068;
-        public static final int primary_dark_material_dark = 0x7f05008d;
-        public static final int primary_dark_material_light = 0x7f05008e;
-        public static final int primary_material_dark = 0x7f05008f;
-        public static final int primary_material_light = 0x7f050090;
-        public static final int primary_text_default_material_dark = 0x7f050091;
-        public static final int primary_text_default_material_light = 0x7f050092;
-        public static final int primary_text_disabled_material_dark = 0x7f050093;
-        public static final int primary_text_disabled_material_light = 0x7f050094;
-        public static final int ripple_material_dark = 0x7f050095;
-        public static final int ripple_material_light = 0x7f050096;
-        public static final int secondary_text_default_material_dark = 0x7f050097;
-        public static final int secondary_text_default_material_light = 0x7f050098;
-        public static final int secondary_text_disabled_material_dark = 0x7f050099;
-        public static final int secondary_text_disabled_material_light = 0x7f05009a;
-        public static final int switch_thumb_disabled_material_dark = 0x7f05009b;
-        public static final int switch_thumb_disabled_material_light = 0x7f05009c;
-        public static final int switch_thumb_material_dark = 0x7f05009d;
-        public static final int switch_thumb_material_light = 0x7f05009e;
-        public static final int switch_thumb_normal_material_dark = 0x7f05009f;
-        public static final int switch_thumb_normal_material_light = 0x7f0500a0;
+        public static final int material_blue_grey_800 = 0x7f050065;
+        public static final int material_blue_grey_900 = 0x7f050066;
+        public static final int material_blue_grey_950 = 0x7f050067;
+        public static final int material_deep_teal_200 = 0x7f050068;
+        public static final int material_deep_teal_500 = 0x7f050069;
+        public static final int primary_dark_material_dark = 0x7f05008e;
+        public static final int primary_dark_material_light = 0x7f05008f;
+        public static final int primary_material_dark = 0x7f050090;
+        public static final int primary_material_light = 0x7f050091;
+        public static final int primary_text_default_material_dark = 0x7f050092;
+        public static final int primary_text_default_material_light = 0x7f050093;
+        public static final int primary_text_disabled_material_dark = 0x7f050094;
+        public static final int primary_text_disabled_material_light = 0x7f050095;
+        public static final int ripple_material_dark = 0x7f050096;
+        public static final int ripple_material_light = 0x7f050097;
+        public static final int secondary_text_default_material_dark = 0x7f050098;
+        public static final int secondary_text_default_material_light = 0x7f050099;
+        public static final int secondary_text_disabled_material_dark = 0x7f05009a;
+        public static final int secondary_text_disabled_material_light = 0x7f05009b;
+        public static final int switch_thumb_disabled_material_dark = 0x7f05009c;
+        public static final int switch_thumb_disabled_material_light = 0x7f05009d;
+        public static final int switch_thumb_material_dark = 0x7f05009e;
+        public static final int switch_thumb_material_light = 0x7f05009f;
+        public static final int switch_thumb_normal_material_dark = 0x7f0500a0;
+        public static final int switch_thumb_normal_material_light = 0x7f0500a1;
     }
     public static final class dimen {
         private dimen() {}
@@ -574,17 +574,17 @@ public final class R {
         public static final int abc_search_dropdown_item_icons_2line = 0x7f0b0018;
         public static final int abc_search_view = 0x7f0b0019;
         public static final int abc_select_dialog_material = 0x7f0b001a;
-        public static final int notification_media_action = 0x7f0b0049;
-        public static final int notification_media_cancel_action = 0x7f0b004a;
-        public static final int notification_template_big_media = 0x7f0b004b;
-        public static final int notification_template_big_media_narrow = 0x7f0b004d;
-        public static final int notification_template_media = 0x7f0b0052;
-        public static final int notification_template_part_chronometer = 0x7f0b0054;
-        public static final int notification_template_part_time = 0x7f0b0055;
-        public static final int select_dialog_item_material = 0x7f0b0057;
-        public static final int select_dialog_multichoice_material = 0x7f0b0058;
-        public static final int select_dialog_singlechoice_material = 0x7f0b0059;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0b005a;
+        public static final int notification_media_action = 0x7f0b0048;
+        public static final int notification_media_cancel_action = 0x7f0b0049;
+        public static final int notification_template_big_media = 0x7f0b004a;
+        public static final int notification_template_big_media_narrow = 0x7f0b004c;
+        public static final int notification_template_media = 0x7f0b0051;
+        public static final int notification_template_part_chronometer = 0x7f0b0053;
+        public static final int notification_template_part_time = 0x7f0b0054;
+        public static final int select_dialog_item_material = 0x7f0b0056;
+        public static final int select_dialog_multichoice_material = 0x7f0b0057;
+        public static final int select_dialog_singlechoice_material = 0x7f0b0058;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0b0059;
     }
     public static final class string {
         private string() {}

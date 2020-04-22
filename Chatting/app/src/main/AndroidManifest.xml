@@ -30,7 +30,6 @@
         <activity android:name=".InfoGroupActivity" />
         <activity android:name=".LoginActivity" />
 
-        <activity android:name=".StartActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
         <activity

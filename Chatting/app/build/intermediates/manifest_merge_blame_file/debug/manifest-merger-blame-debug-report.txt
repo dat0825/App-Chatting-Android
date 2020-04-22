@@ -48,7 +48,7 @@
 22-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:26:22-79
 23
 24    <application
-24-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:15:5-94:19
+24-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:15:5-93:19
 25        android:allowBackup="true"
 25-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:16:9-35
 26        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
@@ -62,156 +62,154 @@
 30-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:19:9-54
 31        android:supportsRtl="true"
 31-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:20:9-35
-32        android:theme="@style/AppTheme" >
-32-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:21:9-40
-33        <activity
-33-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:9-29:20
-34            android:name="com.example.datvtd.chatting.SplashScreenActivity"
-34-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:19-55
-35            android:theme="@style/SplashTheme" >
-35-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:23:13-47
-36            <intent-filter>
-36-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:24:13-28:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:17-69
-37-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:27:17-77
-39-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:27:27-74
-40            </intent-filter>
-41        </activity>
-42        <activity android:name="com.example.datvtd.chatting.InfoGroupActivity" />
-42-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:30:9-55
-42-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:30:19-52
-43        <activity android:name="com.example.datvtd.chatting.LoginActivity" />
-43-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:9-51
-43-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:19-48
-44        <activity android:name="com.example.datvtd.chatting.StartActivity" />
-44-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:33:9-51
-44-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:33:19-48
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:21:9-40
+34        <activity
+34-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:9-29:20
+35            android:name="com.example.datvtd.chatting.SplashScreenActivity"
+35-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:19-55
+36            android:theme="@style/SplashTheme" >
+36-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:23:13-47
+37            <intent-filter>
+37-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:24:13-28:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:17-69
+38-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:27:17-77
+40-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:27:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity android:name="com.example.datvtd.chatting.InfoGroupActivity" />
+43-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:30:9-55
+43-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:30:19-52
+44        <activity android:name="com.example.datvtd.chatting.LoginActivity" />
+44-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:9-51
+44-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:19-48
 45        <activity android:name="com.example.datvtd.chatting.MainActivity" />
-45-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:34:9-50
-45-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:34:19-47
+45-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:33:9-50
+45-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:33:19-47
 46        <activity android:name="com.example.datvtd.chatting.RegisterActivity" />
-46-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:35:9-54
-46-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:35:19-51
+46-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:34:9-54
+46-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:34:19-51
 47        <activity
-47-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:36:9-38:58
+47-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:35:9-37:58
 48            android:name="com.example.datvtd.chatting.MessageActivity"
-48-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:37:13-44
+48-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:36:13-44
 49            android:parentActivityName="com.example.datvtd.chatting.MainActivity" />
-49-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:38:13-55
+49-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:37:13-55
 50        <activity
-50-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:39:9-41:59
+50-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:38:9-40:59
 51            android:name="com.example.datvtd.chatting.ResetPassActivity"
-51-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:40:13-46
+51-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:39:13-46
 52            android:parentActivityName="com.example.datvtd.chatting.LoginActivity" />
-52-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:41:13-56
+52-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:40:13-56
 53        <activity android:name="com.example.datvtd.chatting.Adapter.ChatImageActivity" />
-53-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:42:9-63
-53-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:42:19-60
+53-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:41:9-63
+53-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:41:19-60
 54        <activity android:name="com.example.datvtd.chatting.ProfileActivity" />
-54-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:43:9-53
-54-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:43:19-50
+54-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:42:9-53
+54-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:42:19-50
 55        <activity
-55-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:44:9-46:53
+55-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:43:9-45:53
 56            android:name="com.example.datvtd.chatting.UserGroupActivity"
-56-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:45:13-46
+56-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:44:13-46
 57            android:theme="@style/Theme.MyDialog" />
-57-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:46:13-50
+57-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:45:13-50
 58        <activity
-58-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:47:9-49:53
+58-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:46:9-48:53
 59            android:name="com.example.datvtd.chatting.DialogConfirmActivity"
-59-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:48:13-50
+59-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:47:13-50
 60            android:theme="@style/Theme.MyDialog" />
-60-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:49:13-50
+60-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:48:13-50
 61        <activity
-61-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:50:9-52:53
+61-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:49:9-51:53
 62            android:name="com.example.datvtd.chatting.DialogColorActivity"
-62-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:51:13-48
+62-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:50:13-48
 63            android:theme="@style/Theme.MyDialog" />
-63-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:52:13-50
+63-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:51:13-50
 64
 65        <service
-65-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:54:9-61:19
+65-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:53:9-60:19
 66            android:name="com.example.datvtd.chatting.Notifications.MyFirebaseService"
-66-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:55:13-60
+66-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:54:13-60
 67            android:enabled="true"
-67-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:56:13-35
+67-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:55:13-35
 68            android:exported="true" >
-68-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:57:13-36
+68-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:56:13-36
 69            <intent-filter>
-69-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:13-60:29
+69-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:57:13-59:29
 70                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-70-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:17-80
-70-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:25-77
+70-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:17-80
+70-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:25-77
 71            </intent-filter>
 72        </service>
 73        <service
-73-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:62:9-69:19
+73-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:61:9-68:19
 74            android:name="com.example.datvtd.chatting.Notifications.MyFirebaseMessaging"
-74-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:63:13-62
+74-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:62:13-62
 75            android:enabled="true"
-75-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:64:13-35
+75-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:63:13-35
 76            android:exported="true" >
-76-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:65:13-36
+76-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:64:13-36
 77            <intent-filter>
-77-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:13-68:29
+77-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:65:13-67:29
 78                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-78-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:17-78
-78-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:25-75
+78-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:17-78
+78-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:25-75
 79            </intent-filter>
 80        </service>
 81
 82        <receiver android:name="com.example.datvtd.chatting.Notifications.ActionCall" />
-82-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:71:9-62
-82-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:71:19-59
+82-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:70:9-62
+82-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:70:19-59
 83
 84        <meta-data
-84-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:73:9-75:55
+84-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:72:9-74:55
 85            android:name="com.facebook.sdk.ApplicationId"
-85-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:74:13-58
+85-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:73:13-58
 86            android:value="@string/facebook_app_id" />
-86-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:75:13-52
+86-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:74:13-52
 87
 88        <activity
-88-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:77:9-80:48
+88-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:76:9-79:48
 89            android:name="com.facebook.FacebookActivity"
-89-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:78:13-57
+89-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:77:13-57
 90            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-90-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:79:13-96
+90-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:78:13-96
 91            android:label="@string/app_name"
-91-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:80:13-45
+91-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:79:13-45
 92            android:theme="@style/com_facebook_activity_theme" />
 92-->[com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:32:13-63
 93        <activity
-93-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:81:9-92:20
+93-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:80:9-91:20
 94            android:name="com.facebook.CustomTabActivity"
-94-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:82:13-58
+94-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:81:13-58
 95            android:exported="true" >
-95-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:83:13-36
+95-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:82:13-36
 96            <intent-filter>
-96-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:84:13-91:29
+96-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:83:13-90:29
 97                <action android:name="android.intent.action.VIEW" />
-97-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:85:17-69
-97-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:85:25-66
+97-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:84:17-69
+97-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:84:25-66
 98
 99                <category android:name="android.intent.category.DEFAULT" />
-99-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:87:17-76
-99-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:87:27-73
+99-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:86:17-76
+99-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:86:27-73
 100                <category android:name="android.intent.category.BROWSABLE" />
-100-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:88:17-78
-100-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:88:27-75
+100-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:87:17-78
+100-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:87:27-75
 101
 102                <data android:scheme="@string/fb_login_protocol_scheme" />
-102-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:90:17-75
-102-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:90:23-72
+102-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:89:17-75
+102-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:89:23-72
 103            </intent-filter>
 104        </activity>
 105        <activity android:name="com.example.datvtd.chatting.CallActivity" />
-105-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:93:9-50
-105-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:93:19-47
+105-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:92:9-50
+105-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:92:19-47
 106        <activity android:name="com.facebook.CustomTabMainActivity" />
 106-->[com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:33:9-71
 106-->[com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:33:19-68
@@ -266,10 +264,10 @@
 134            android:exported="true" >
 134-->[com.google.firebase:firebase-messaging:17.3.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/dc3c19f6062353cfd0bd59eaa88e1de9/firebase-messaging-17.3.1/AndroidManifest.xml:30:13-36
 135            <intent-filter android:priority="-500" >
-135-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:13-68:29
+135-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:65:13-67:29
 136                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-136-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:17-78
-136-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:25-75
+136-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:17-78
+136-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:25-75
 137            </intent-filter>
 138        </service>
 139
@@ -345,10 +343,10 @@
 179            android:exported="true" >
 179-->[com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b76784c290c4b722457ea2b555262758/firebase-iid-17.0.1/AndroidManifest.xml:52:13-36
 180            <intent-filter android:priority="-500" >
-180-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:13-60:29
+180-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:57:13-59:29
 181                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-181-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:17-80
-181-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:25-77
+181-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:17-80
+181-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:25-77
 182            </intent-filter>
 183        </service>
 184
@@ -383,10 +381,10 @@
 200-->[:sinch-android-rtc-3.12.9] /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/sinch-android-rtc-3.12.9/build/.transforms/8ca79e13c92781346a35db095b294721/sinch-android-rtc-3.12.9/AndroidManifest.xml:12:9-16:19
 200-->[:sinch-android-rtc-3.12.9] /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/sinch-android-rtc-3.12.9/build/.transforms/8ca79e13c92781346a35db095b294721/sinch-android-rtc-3.12.9/AndroidManifest.xml:12:18-97
 201            <intent-filter>
-201-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:13-60:29
+201-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:57:13-59:29
 202                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-202-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:17-80
-202-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:25-77
+202-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:17-80
+202-->/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:25-77
 203            </intent-filter>
 204        </service>
 205        <!--

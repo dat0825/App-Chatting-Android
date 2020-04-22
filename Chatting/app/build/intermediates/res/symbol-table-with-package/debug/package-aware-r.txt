@@ -728,6 +728,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1575,7 +1576,6 @@ layout activity_profile
 layout activity_register
 layout activity_reset_pass
 layout activity_show_chat_image
-layout activity_start
 layout com_facebook_activity_layout
 layout com_facebook_device_auth_dialog_fragment
 layout com_facebook_login_fragment
@@ -1631,6 +1631,7 @@ layout support_simple_spinner_dropdown_item
 mipmap colordialog
 mipmap ic_chat_in_tab
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap openimage
 string abc_action_bar_home_description
