@@ -51,7 +51,7 @@ public class UserGroupActivity extends AppCompatActivity {
         }
 
         if (this.checkAddPerson.equals("true")) {
-            this.nameGroupText.setVisibility(View.INVISIBLE);
+            this.nameGroupText.setVisibility(View.GONE);
             this.createGroupButton.setText("Add");
             readUserAddGroup();
             createGroupButton.setOnClickListener(new View.OnClickListener() {
@@ -89,7 +89,6 @@ public class UserGroupActivity extends AppCompatActivity {
     }
 
     public void readUser() {
-
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
 
@@ -122,7 +121,6 @@ public class UserGroupActivity extends AppCompatActivity {
         mUsers.clear();
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
-
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -137,18 +135,21 @@ public class UserGroupActivity extends AppCompatActivity {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                             if (user.getId() != null && !dataSnapshot.child(user.getId()).exists()) {
+                                if(user.getUser() != null){
+                                }
                                 mUsers.add(user);
                             }
+                            mAdapter = new UserGroupAdapter(getApplicationContext(), mUsers);
+                            recyclerView.setAdapter(mAdapter);
                         }
-
                         @Override
                         public void onCancelled(@NonNull DatabaseError databaseError) {
 
                         }
                     });
                 }
-                mAdapter = new UserGroupAdapter(getApplicationContext(), mUsers);
-                recyclerView.setAdapter(mAdapter);
+//                mAdapter = new UserGroupAdapter(getApplicationContext(), mUsers);
+//                recyclerView.setAdapter(mAdapter);
             }
 
             @Override
@@ -198,7 +199,7 @@ public class UserGroupActivity extends AppCompatActivity {
             hashMap.put("nameGroup", nameGroupText.getText().toString());
             hashMap.put("admin", firebaseUser.getUid());
             hashMap.put("imageGroupURL", "default");
-            hashMap.put("color","default");
+            hashMap.put("color", "default");
             reference.child(idGroup).setValue(hashMap);
 
             hashMap = new HashMap<>();
@@ -216,14 +217,14 @@ public class UserGroupActivity extends AppCompatActivity {
             intent.putExtra("idGroup", idGroup);
             intent.putExtra("nameGroup", nameGroupText.getText().toString());
             intent.putExtra("checkGroup", "true");
-            intent.putExtra("adminGroup",firebaseUser.getUid());
+            intent.putExtra("adminGroup", firebaseUser.getUid());
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             finish();
         }
     }
 
-    public void addUserGroup(){
+    public void addUserGroup() {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("ChatGroup")
                 .child(this.idGroupAddPerson).child("members");
 
@@ -235,8 +236,8 @@ public class UserGroupActivity extends AppCompatActivity {
             reference.child(mAdapter.mCheckBoxes.get(i).getId()).updateChildren(hashMap);
         }
 
-        Intent intent = new Intent(UserGroupActivity.this,InfoGroupActivity.class);
-        intent.putExtra("idGroup",idGroupAddPerson);
+        Intent intent = new Intent(UserGroupActivity.this, InfoGroupActivity.class);
+        intent.putExtra("idGroup", idGroupAddPerson);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
         finish();

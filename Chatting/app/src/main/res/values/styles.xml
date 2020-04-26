@@ -8,6 +8,16 @@
         <item name="android:windowLightStatusBar">@color/color_black</item>
     </style>
 
+    <style name="ThemeLogin" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
+<!--        <item name="android:statusBarColor">@color/colorAccent</item>-->
+        <item name="android:textColorHint">@color/color_white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="MenuStyle" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -15,23 +25,27 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:background">@android:color/white</item>
     </style>
+
     <style name="Theme.MyDialog" parent="@style/Theme.AppCompat.Light.Dialog">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowBackground">@drawable/edit_text_background</item>
     </style>
 
-    <style name = "DarkMode" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="DarkMode" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Other values-->
         <item name="colorPrimary">@color/color_black</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/color_black</item>
         <item name="actionBarTheme">@color/color_white</item>
-        <item name="customBgColor">@color/color_black</item>  // phải khai báo thêm trong file attrs.xml. chỉ dùng những màu đã khai báo trong colors.xml. Không dùng giá trị màu trực tiếp
+        <item name="customBgColor">@color/color_black</item>
+        // phải khai báo thêm trong file attrs.xml. chỉ dùng những màu đã khai báo trong colors.xml.
+        Không dùng giá trị màu trực tiếp
     </style>
 
     <!-- Splash Screen theme. -->
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/splashbackground</item>
     </style>
+
 </resources>

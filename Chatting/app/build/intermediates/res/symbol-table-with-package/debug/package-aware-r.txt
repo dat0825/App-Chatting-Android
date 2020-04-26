@@ -1121,8 +1121,10 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_login
 drawable button_background
 drawable button_background_green
+drawable button_loginfb
 drawable com_facebook_auth_dialog_background
 drawable com_facebook_auth_dialog_cancel_background
 drawable com_facebook_auth_dialog_header_background
@@ -1185,6 +1187,8 @@ drawable ic_extend
 drawable ic_info_blue_20dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_lock_white_24dp
+drawable ic_mail_white_24dp
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
@@ -1195,6 +1199,7 @@ drawable ic_send_image_15dp
 drawable ic_user_in_tab
 drawable icon_call
 drawable icon_group_chat_in_tab
+drawable logo
 drawable message_receive_background
 drawable message_send_background
 drawable met_ic_clear
@@ -1360,6 +1365,7 @@ id image
 id image_color_dialog
 id info
 id inline
+id inputEmail
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1377,6 +1383,7 @@ id line1
 id line3
 id listMode
 id list_item
+id logo
 id masked
 id media_actions
 id message
@@ -1407,6 +1414,7 @@ id percent
 id pin
 id profile_image
 id profile_image_receiver
+id progressBar
 id progress_bar
 id progress_circular
 id progress_horizontal
@@ -2107,6 +2115,7 @@ style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_MyDialog
+style ThemeLogin
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

@@ -1,107 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/background_login"
+    tools:context=".RegisterActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/header_creat_account"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Sign in"
-            android:textSize="40dp"
-            android:textColor="@color/color_black"/>
-
-        <EditText
-            android:id="@+id/txt_email"
-            android:layout_width="350dp"
-            android:layout_height="70dp"
-            android:layout_below="@id/header_creat_account"
-            android:layout_marginTop="30dp"
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="450px"
+            android:layout_height="450px"
+            android:layout_above="@id/inputEmail"
             android:layout_centerHorizontal="true"
-            android:hint="Email"
-            android:textSize="25dp"
-            android:maxLines="1"
-            android:inputType="text"
-            android:background="@drawable/edit_text_background_radius"
-            android:paddingLeft="10dp"
-            android:gravity="center_vertical"/>
+            android:layout_marginBottom="100px"
+            android:background="@drawable/logo" />
 
-
-        <EditText
-            android:id="@+id/txt_password"
-            android:layout_width="350dp"
-            android:layout_height="70dp"
-            android:layout_below="@id/txt_email"
-            android:hint="Password"
-            android:layout_centerHorizontal="true"
-            android:password="true"
-            android:textSize="25dp"
-            android:maxLines="1"
-            android:scrollHorizontally="true"
-            android:inputType="text"
-            android:background="@drawable/edit_text_background_radius"
-            android:paddingLeft="10dp"
-            android:layout_marginTop="25dp"
-            android:gravity="center_vertical"/>
-
-        <Button
-            android:id="@+id/b_Login"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txt_password"
-            android:paddingHorizontal="20dp"
-            android:text="Login"
-            android:textSize="20dp"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/color_black"
-            android:background="@drawable/button_background"
-            android:layout_centerHorizontal="true"/>
-
-        <Button
-            android:id="@+id/b_register"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_below="@id/b_Login"
-            android:paddingHorizontal="20dp"
-            android:text="REGISTER"
-            android:textSize="20dp"
-            android:textColor="@color/color_black"
-            android:background="@drawable/button_background"
-            android:layout_centerHorizontal="true"/>
-
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/b_Login_facebook"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/b_register"
-            android:paddingHorizontal="20dp"
-            android:textSize="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_centerHorizontal="true"/>
-
-        <TextView
-            android:id="@+id/text_forgot_pass"
+        <RelativeLayout
+            android:id="@+id/inputEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forgot Password ?"
-            android:textSize="20dp"
-            android:textColor="@color/color_black"
-            android:layout_below="@id/b_Login_facebook"
-            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
-            android:paddingLeft="150dp"/>
+            android:layout_centerVertical="true">
 
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text_background_radius"
+                android:drawableStart="@drawable/ic_mail_white_24dp"
+                android:drawableLeft="@drawable/ic_mail_white_24dp"
+                android:drawablePadding="15px"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_white"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/txt_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/edit_text_background_radius"
+                android:drawableStart="@drawable/ic_lock_white_24dp"
+                android:drawableLeft="@drawable/ic_mail_white_24dp"
+                android:drawablePadding="15px"
+                android:gravity="center_vertical"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/color_white"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80px">
+
+            <Button
+                android:id="@+id/b_Login"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_background"
+                android:paddingHorizontal="20dp"
+                android:text="Login"
+                android:textColor="@color/color_white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text_forgot_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b_Login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Forgot Password ?"
+                android:textColor="@color/color_gray"
+                android:textSize="18dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_forgot_pass"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="350px"
+                    android:layout_height="5px"
+                    android:layout_gravity="center"
+                    android:background="@color/color_gray"
+                    android:layout_marginRight="50px"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/color_gray"
+                    android:textSize="18dp"
+                    android:text="Hoặc"></TextView>
+
+                <View
+                    android:layout_width="350px"
+                    android:layout_height="5px"
+                    android:layout_gravity="center"
+                    android:background="@color/color_gray"
+                    android:layout_marginLeft="50px"></View>
+            </TableRow>
+
+            <Button
+                android:id="@+id/b_register"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/text_forgot_pass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_background"
+                android:paddingHorizontal="20dp"
+                android:text="REGISTER"
+                android:textColor="@color/color_white"
+                android:textSize="20dp" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/b_Login_facebook"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b_register"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_loginfb"
+                android:paddingHorizontal="20dp"
+                android:textSize="20dp" />
+        </RelativeLayout>
     </RelativeLayout>
-
 </RelativeLayout>

@@ -823,6 +823,7 @@ public class MessageActivity extends AppCompatActivity {
         this.iconInforGroup.setColorFilter(Color.parseColor(colorValue)); // muốn set được màu thì trong file .xml cần phải để là src: "tên ảnh". K được để là setbackgound vì sẽ k set được màu
         this.sendButton.setColorFilter(Color.parseColor(colorValue));
         this.sendImageButton.setColorFilter(Color.parseColor(colorValue));
+        this.callButton.setColorFilter(Color.parseColor(colorValue));
         this.extendIconsButton.setColorFilter(Color.parseColor(colorValue));
     }
 

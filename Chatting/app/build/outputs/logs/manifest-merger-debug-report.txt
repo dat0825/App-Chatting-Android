@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-95:12
-INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-95:12
-INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-95:12
-INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-95:12
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-99:12
 MERGED from [com.android.support:design:28.0.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/dbbcfb8bea94203c5b12cf40b3a7c059/design-28.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.rengwuxian.materialedittext:library:2.1.4] /home/datvtd/.gradle/caches/transforms-2/files-2.1/b353d46fab9531b553b722bc70beec65/library-2.1.4/AndroidManifest.xml:2:1-10:12
 MERGED from [com.facebook.android:facebook-login:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/7c794755863fe1625e31426477bb604c/facebook-login-4.42.0/AndroidManifest.xml:21:1-31:12
@@ -70,20 +70,20 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/datvtd/.gradle/caches/
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/4401da3d4a68fadf8d451928678fdf0f/livedata-core-1.1.1/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/5b66ca3239b84b6dfa19f09cbd4bddde/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/917cde958fe5748af5c88d314ddecffa/play-services-measurement-base-16.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-95:12
-INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-95:12
-INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-95:12
+INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-99:12
 	package
 		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml
 		INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-95:12
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-99:12
 		INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-95:12
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:1-99:12
 		INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:2:11-69
@@ -116,7 +116,7 @@ ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/m
 	android:name
 		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:8:22-77
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:10:5-79
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:9:5-79
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/ec2aabb865606b53f276a65bbcce96ee/firebase-measurement-connector-impl-16.0.1/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/ec2aabb865606b53f276a65bbcce96ee/firebase-measurement-connector-impl-16.0.1/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/654e2405aead9fd2ab81d399671dc273/firebase-analytics-16.0.1/AndroidManifest.xml:24:5-79
@@ -128,21 +128,25 @@ MERGED from [com.google.firebase:firebase-iid:17.0.1] /home/datvtd/.gradle/cache
 MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/9c155a83992db7a83eba3be5274735de/firebase-storage-common-16.0.1/AndroidManifest.xml:7:5-79
 MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/datvtd/.gradle/caches/transforms-2/files-2.1/9c155a83992db7a83eba3be5274735de/firebase-storage-common-16.0.1/AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:10:22-76
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:11:5-71
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:10:5-71
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:11:22-68
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:10:22-68
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:12:5-75
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:11:5-75
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:12:22-72
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:11:22-72
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:13:5-80
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:13:22-77
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:12:22-77
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:13:5-70
+	android:name
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:13:22-67
 application
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:15:5-93:19
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:15:5-97:19
 MERGED from [com.android.support:design:28.0.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/dbbcfb8bea94203c5b12cf40b3a7c059/design-28.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/dbbcfb8bea94203c5b12cf40b3a7c059/design-28.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.android:facebook-login:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/7c794755863fe1625e31426477bb604c/facebook-login-4.42.0/AndroidManifest.xml:28:5-29:19
@@ -214,155 +218,159 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home
 	android:theme
 		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:21:9-40
 activity#com.example.datvtd.chatting.SplashScreenActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:9-29:20
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:9-30:20
 	android:theme
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:23:13-47
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:24:13-47
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:22:19-55
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:23:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:24:13-28:29
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:17-69
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:25:25-66
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:27:17-77
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:27:27-74
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:28:27-74
 activity#com.example.datvtd.chatting.InfoGroupActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:30:9-55
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:9-55
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:30:19-52
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:19-52
 activity#com.example.datvtd.chatting.LoginActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:9-51
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:32:9-34:49
+	android:theme
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:34:13-46
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:31:19-48
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:33:13-42
 activity#com.example.datvtd.chatting.MainActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:33:9-50
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:36:9-50
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:33:19-47
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:36:19-47
 activity#com.example.datvtd.chatting.RegisterActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:34:9-54
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:37:9-54
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:34:19-51
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:37:19-51
 activity#com.example.datvtd.chatting.MessageActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:35:9-37:58
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:38:9-40:58
 	android:parentActivityName
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:37:13-55
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:40:13-55
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:36:13-44
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:39:13-44
 activity#com.example.datvtd.chatting.ResetPassActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:38:9-40:59
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:41:9-44:48
 	android:parentActivityName
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:40:13-56
-	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:39:13-46
-activity#com.example.datvtd.chatting.Adapter.ChatImageActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:41:9-63
-	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:41:19-60
-activity#com.example.datvtd.chatting.ProfileActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:42:9-53
-	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:42:19-50
-activity#com.example.datvtd.chatting.UserGroupActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:43:9-45:53
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:43:13-56
 	android:theme
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:45:13-50
-	android:name
 		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:44:13-46
+	android:name
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:42:13-46
+activity#com.example.datvtd.chatting.Adapter.ChatImageActivity
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:45:9-63
+	android:name
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:45:19-60
+activity#com.example.datvtd.chatting.ProfileActivity
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:46:9-53
+	android:name
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:46:19-50
+activity#com.example.datvtd.chatting.UserGroupActivity
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:47:9-49:53
+	android:theme
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:49:13-50
+	android:name
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:48:13-46
 activity#com.example.datvtd.chatting.DialogConfirmActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:46:9-48:53
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:50:9-52:53
 	android:theme
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:48:13-50
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:52:13-50
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:47:13-50
-activity#com.example.datvtd.chatting.DialogColorActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:49:9-51:53
-	android:theme
 		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:51:13-50
+activity#com.example.datvtd.chatting.DialogColorActivity
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:53:9-55:53
+	android:theme
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:55:13-50
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:50:13-48
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:54:13-48
 service#com.example.datvtd.chatting.Notifications.MyFirebaseService
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:53:9-60:19
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:57:9-64:19
 	android:enabled
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:55:13-35
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:59:13-35
 	android:exported
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:56:13-36
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:60:13-36
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:54:13-60
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:13-60
 intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:57:13-59:29
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:61:13-63:29
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:17-80
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:62:17-80
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:58:25-77
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:62:25-77
 service#com.example.datvtd.chatting.Notifications.MyFirebaseMessaging
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:61:9-68:19
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:65:9-72:19
 	android:enabled
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:63:13-35
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:67:13-35
 	android:exported
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:64:13-36
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:68:13-36
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:62:13-62
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:13-62
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:65:13-67:29
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:69:13-71:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:17-78
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:70:17-78
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:66:25-75
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:70:25-75
 receiver#com.example.datvtd.chatting.Notifications.ActionCall
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:70:9-62
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:74:9-62
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:70:19-59
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:74:19-59
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:72:9-74:55
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:76:9-78:55
 	android:value
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:74:13-52
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:78:13-52
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:73:13-58
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:77:13-58
 activity#com.facebook.FacebookActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:76:9-79:48
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:80:9-83:48
 MERGED from [com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:29:9-32:66
 MERGED from [com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:79:13-45
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:83:13-45
 	android:configChanges
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:78:13-96
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:82:13-96
 	android:theme
 		ADDED from [com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:77:13-57
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:81:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:80:9-91:20
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:84:9-95:20
 MERGED from [com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:34:9-67
 MERGED from [com.facebook.android:facebook-common:4.42.0] /home/datvtd/.gradle/caches/transforms-2/files-2.1/8aa91f0d9c08bd83f6164737dff58325/facebook-common-4.42.0/AndroidManifest.xml:34:9-67
 	android:exported
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:82:13-36
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:86:13-36
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:81:13-58
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:85:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:83:13-90:29
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:87:13-94:29
 action#android.intent.action.VIEW
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:84:17-69
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:88:17-69
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:84:25-66
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:88:25-66
 category#android.intent.category.DEFAULT
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:86:17-76
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:90:17-76
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:86:27-73
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:90:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:87:17-78
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:91:17-78
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:87:27-75
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:91:27-75
 data
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:89:17-75
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:93:17-75
 	android:scheme
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:89:23-72
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:93:23-72
 activity#com.example.datvtd.chatting.CallActivity
-ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:92:9-50
+ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:96:9-50
 	android:name
-		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:92:19-47
+		ADDED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml:96:19-47
 uses-sdk
 INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/AndroidManifest.xml

@@ -124,6 +124,10 @@
         "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/a6452b9bc356cb362917489f6f442729/appcompat-v7-28.0.0/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/drawable_ic_lock_white_24dp.xml.flat",
+        "source": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/res/drawable/ic_lock_white_24dp.xml"
+    },
+    {
         "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_top_material.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/a6452b9bc356cb362917489f6f442729/appcompat-v7-28.0.0/res/drawable/abc_cab_background_top_material.xml"
     },
@@ -1084,6 +1088,10 @@
         "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/d539f672eb0b958b2353c98de9eedfaa/play-services-base-15.0.1/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
     {
+        "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/drawable_background_login.jpg.flat",
+        "source": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/res/drawable/background_login.jpg"
+    },
+    {
         "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
@@ -1532,6 +1540,10 @@
         "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/a6452b9bc356cb362917489f6f442729/appcompat-v7-28.0.0/res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/drawable_button_loginfb.xml.flat",
+        "source": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/res/drawable/button_loginfb.xml"
+    },
+    {
         "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/a6452b9bc356cb362917489f6f442729/appcompat-v7-28.0.0/res/drawable-xxhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
@@ -1638,6 +1650,10 @@
     {
         "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/a6452b9bc356cb362917489f6f442729/appcompat-v7-28.0.0/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/drawable_logo.png.flat",
+        "source": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/res/drawable/logo.png"
     },
     {
         "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility.png.flat",
@@ -2214,6 +2230,10 @@
     {
         "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/color_mtrl_chip_ripple_color.xml.flat",
         "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/dbbcfb8bea94203c5b12cf40b3a7c059/design-28.0.0/res/color/mtrl_chip_ripple_color.xml"
+    },
+    {
+        "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/drawable_ic_mail_white_24dp.xml.flat",
+        "source": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/src/main/res/drawable/ic_mail_white_24dp.xml"
     },
     {
         "merged": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/res/merged/debug/layout_activity_register.xml.flat",

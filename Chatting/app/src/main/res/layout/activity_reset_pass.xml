@@ -1,27 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_login"
     tools:context=".ResetPassActivity">
 
-    <EditText
-        android:id="@+id/text_email_reset_pass"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:hint="Email"
-        android:textSize="20dp"/>
-    <Button
-        android:id="@+id/b_reset_pass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Reset"
-        android:textSize="20dp"
-        android:layout_below="@id/text_email_reset_pass"/>
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/text_email_reset_pass"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_text_background_radius"
+            android:drawableStart="@drawable/ic_mail_white_24dp"
+            android:drawableLeft="@drawable/ic_mail_white_24dp"
+            android:drawablePadding="15px"
+            android:gravity="center_vertical"
+            android:hint="Email"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/b_reset_pass"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="80px"
+            android:layout_below="@id/text_email_reset_pass"
+            android:background="@drawable/button_background"
+            android:paddingHorizontal="20dp"
+            android:text="Reset"
+            android:textColor="@color/color_white"
+            android:textSize="20dp" />
+    </RelativeLayout>
 
 </RelativeLayout>

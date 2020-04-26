@@ -1,14 +1,17 @@
 package com.example.datvtd.chatting.Fragment;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import com.bumptech.glide.Glide;
 import com.example.datvtd.chatting.Adapter.UserAdapter;
@@ -40,9 +43,11 @@ public class ChatsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_chats, container, false);
         this.profileImage = view.findViewById(R.id.profile_image);
         this.recyclerView = view.findViewById(R.id.recycler_view);
+        this.progressBar = view.findViewById(R.id.progressBar);
         this.recyclerView.setHasFixedSize(true);
         this.recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         this.firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        progressBar.setVisibility(View.VISIBLE);
         setImageProfile();
 
         userChat();
@@ -71,6 +76,7 @@ public class ChatsFragment extends Fragment {
                     userList.add(chatlist);
                 }
                 chatList();
+                progressBar.setVisibility(View.INVISIBLE);
             }
 
             @Override
@@ -148,4 +154,5 @@ public class ChatsFragment extends Fragment {
     private FirebaseUser firebaseUser;
     private DatabaseReference reference;
     private CircleImageView profileImage;
+    private ProgressBar progressBar;
 }

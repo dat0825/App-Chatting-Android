@@ -1,9 +1,11 @@
 package com.example.datvtd.chatting;
 
+import android.Manifest;
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
 import android.content.ComponentName;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v4.app.FragmentManager;
@@ -70,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"sinch client connected",Toast.LENGTH_LONG).show();
             Log.d("sinchConnect","connected");
         }
+
+        ActivityCompat.requestPermissions(MainActivity.this,
+                new String[]{Manifest.permission.RECEIVE_SMS}, 100);
     }
 
     //set trang thai online hay offline
