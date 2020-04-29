@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.datvtd.chatting.Adapter.UserGroupAdapter;
 import com.example.datvtd.chatting.Fragment.GroupChatFragment;
@@ -135,13 +136,14 @@ public class UserGroupActivity extends AppCompatActivity {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                             if (user.getId() != null && !dataSnapshot.child(user.getId()).exists()) {
-                                if(user.getUser() != null){
+                                if (user.getUser() != null) {
                                 }
                                 mUsers.add(user);
                             }
                             mAdapter = new UserGroupAdapter(getApplicationContext(), mUsers);
                             recyclerView.setAdapter(mAdapter);
                         }
+
                         @Override
                         public void onCancelled(@NonNull DatabaseError databaseError) {
 
@@ -190,7 +192,7 @@ public class UserGroupActivity extends AppCompatActivity {
     }
 
     public void creatGroup() {
-        if (mAdapter.countBoxChecked >= 2) {
+        if (mAdapter.countBoxChecked >= 2 && !nameGroupText.getText().toString().matches("")) {
             DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("ChatGroup");
             String idGroup = reference.push().getKey();
             HashMap<String, Object> hashMap = new HashMap<>();
@@ -221,6 +223,8 @@ public class UserGroupActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             finish();
+        } else {
+            Toast.makeText(UserGroupActivity.this, "Invalid name group or under two people", Toast.LENGTH_LONG).show();
         }
     }
 
