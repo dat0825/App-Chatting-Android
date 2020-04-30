@@ -89,8 +89,8 @@ public class LoginActivity extends AppCompatActivity {
                 progressDialog.setCancelable(false);
                 progressDialog.show();
                 progressDialog.setContentView(R.layout.progress_bar);
-                String email = emailEditText.getText().toString();
-                String password = passwordEditText.getText().toString();
+                final String email = emailEditText.getText().toString();
+                final String password = passwordEditText.getText().toString();
 
                 if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
                     Toast.makeText(LoginActivity.this, "Fill all field", Toast.LENGTH_LONG).show();

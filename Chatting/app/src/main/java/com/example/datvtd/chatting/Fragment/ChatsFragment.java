@@ -8,6 +8,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -97,8 +98,9 @@ public class ChatsFragment extends Fragment {
                     User user = snapshot.getValue(User.class);
                     for (Chatlist chatlist : userList) {
                         if (user.getId() != null
-                                && user.getId().equals(chatlist.getId())) {
+                                && !user.getId().equals(chatlist.getId())) {
                             mUsers.add(user);
+                            break;
                         }
                     }
                 }

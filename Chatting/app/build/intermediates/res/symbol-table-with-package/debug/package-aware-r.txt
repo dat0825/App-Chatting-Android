@@ -1199,6 +1199,7 @@ drawable ic_send_image_15dp
 drawable ic_user_in_tab
 drawable icon_call
 drawable icon_group_chat_in_tab
+drawable icon_notification
 drawable logo
 drawable message_receive_background
 drawable message_send_background

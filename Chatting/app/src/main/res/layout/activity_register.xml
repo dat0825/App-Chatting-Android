@@ -5,11 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_login"
     tools:context=".RegisterActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
 
         <TextView
             android:id="@+id/header_creat_account"
@@ -19,50 +21,68 @@
             android:paddingTop="20dp"
             android:text="Creat a new account"
             android:textSize="30dp"
-            android:textColor="@color/color_black"/>
+            android:textColor="@color/color_white"/>
 
         <EditText
             android:id="@+id/txt_user"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:paddingStart="25px"
             android:layout_below="@id/header_creat_account"
-            android:paddingTop="30dp"
+            android:background="@drawable/edit_text_background_radius"
+            android:layout_marginTop="30px"
+            android:layout_centerHorizontal="true"
             android:hint="Username"
-            android:textSize="25dp"
-            android:maxLines="1"/>
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:textColor="@color/color_white"/>
 
         <EditText
             android:id="@+id/txt_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_background_radius"
+            android:drawableStart="@drawable/ic_mail_white_24dp"
+            android:drawableLeft="@drawable/ic_mail_white_24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:drawablePadding="15px"
+            android:paddingLeft="10dp"
             android:layout_below="@id/txt_user"
             android:hint="Email"
-            android:paddingTop="30dp"
-            android:textColorLink="@color/colorAccent"
-            android:textSize="25dp"
-            android:maxLines="1"/>
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:textColor="@color/color_white"/>
 
         <EditText
             android:id="@+id/txt_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background_radius"
+            android:drawableStart="@drawable/ic_lock_white_24dp"
+            android:drawableLeft="@drawable/ic_mail_white_24dp"
+            android:drawablePadding="15px"
+            android:paddingLeft="10dp"
             android:layout_below="@id/txt_email"
             android:hint="Password"
-            android:paddingTop="30dp"
             android:password="true"
-            android:textSize="25dp"
-            android:maxLines="1"/>
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:textColor="@color/color_white"/>
 
         <Button
             android:id="@+id/b_Regiser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_background"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50px"
             android:layout_below="@id/txt_password"
-            android:paddingHorizontal="20dp"
             android:text="Register"
             android:textSize="20dp"
-            android:textColor="@color/color_black"
-            android:background="@color/colorAccent"/>
+            android:textColor="@color/color_white"/>
 
     </RelativeLayout>
 

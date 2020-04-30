@@ -351,11 +351,26 @@ public class MessageActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if (!dataSnapshot.exists()) {
-                        chatRef.child("id").setValue(receiver);
+                        chatRef.child("id").setValue(sender);
                         chatRef.child("color").setValue("default");
                     }
                 }
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
 
+                }
+            });
+
+            final DatabaseReference chatRefReceiver = FirebaseDatabase.getInstance().getReference("Chatlist")
+                    .child(receiver).child(sender);
+            chatRefReceiver.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    if (!dataSnapshot.exists()) {
+                        chatRefReceiver.child("id").setValue(receiver);
+                        chatRefReceiver.child("color").setValue("default");
+                    }
+                }
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
 
@@ -666,6 +681,7 @@ public class MessageActivity extends AppCompatActivity {
                                 @Override
                                 public void onResponse(Call<MyResponse> call, Response<MyResponse> response) {
                                     if (response.code() == 200) {
+                                        Log.d("notifiaction_success", String.valueOf(response.body().success));
                                         if (response.body().success != 1) {
                                             Toast.makeText(MessageActivity.this, "Failed", Toast.LENGTH_SHORT).show();
                                         }

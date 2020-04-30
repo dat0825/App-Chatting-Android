@@ -212,15 +212,15 @@ public class UserGroupActivity extends AppCompatActivity {
             hashMap.put("id", firebaseUser.getUid());
             reference.child(idGroup).child("members").child(firebaseUser.getUid()).updateChildren(hashMap);
 
-            Intent intent = new Intent(this, MainActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
+//            Intent intent = new Intent(this, MainActivity.class);
+//            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//            startActivity(intent);
             intent = new Intent(this, MessageActivity.class);
             intent.putExtra("idGroup", idGroup);
             intent.putExtra("nameGroup", nameGroupText.getText().toString());
             intent.putExtra("checkGroup", "true");
             intent.putExtra("adminGroup", firebaseUser.getUid());
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             finish();
         } else {

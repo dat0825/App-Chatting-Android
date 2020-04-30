@@ -9,6 +9,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
@@ -44,10 +45,10 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
 
         // phải dùng biến "user" để lấy id của người gửi. nếu dùng firebaseuser.getUid thì sẽ ra id của người nhận.
         // Vì Lớp này xử lý trên máy của người nhận.
+
+//        if (firebaseUser != null && sented.equals(firebaseUser.getUid())) {
         try {
             sendNotification(remoteMessage);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -63,7 +64,7 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         getUrlAvatar();
 
         //get nameCaller
-        if(typeNotification.equals("Call")){
+        if (typeNotification.equals("Call")) {
             String caller[] = body.split(" Calling");
             nameCaller = caller[0];
         }
@@ -75,7 +76,7 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
                 intent.putExtra("checkGroup", "false");
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             } else {
-                if(!typeNotification.equals("Call")){       // dùng cho gửi tin nhắn text và ảnh cho group
+                if (!typeNotification.equals("Call")) {       // dùng cho gửi tin nhắn text và ảnh cho group
                     intent.putExtra("idGroup", idGroup);
                     intent.putExtra("nameGroup", nameGroup);
                     intent.putExtra("adminGroup", adminGroup);
@@ -91,26 +92,25 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         PendingIntent pendingIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(), intent, PendingIntent.FLAG_ONE_SHOT);
 
         if (this.urlAvatarSender.equals("default")) {
-            largeIcon = BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher);
+            largeIcon = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
         } else {
             URL urlImage = new URL(this.urlAvatarSender);
             largeIcon = BitmapFactory.decodeStream((InputStream) urlImage.getContent());
         }
 
         // chuyển từ thông báo sang lớp CallActivity
-        Intent buttonIntent = new Intent(this,CallActivity.class);
-        buttonIntent.putExtra("nameCaller",nameCaller);
-        buttonIntent.putExtra("avatarCaller",urlAvatarSender);
-        buttonIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        PendingIntent buttonPendingIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(),buttonIntent,PendingIntent.FLAG_ONE_SHOT);
-
+        Intent buttonIntent = new Intent(this, CallActivity.class);
+        buttonIntent.putExtra("nameCaller", nameCaller);
+        buttonIntent.putExtra("avatarCaller", urlAvatarSender);
+        buttonIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        PendingIntent buttonPendingIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(), buttonIntent, PendingIntent.FLAG_ONE_SHOT);
         Uri defaultSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
         Notification notification;
-
+        NotificationManager noti = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         //set view thông báo cho 2 loại ( tin nhắn và cuộc gọi)
-        if(typeNotification.equals("Call")){
-             notification = new NotificationCompat.Builder(this)
+        if (typeNotification.equals("Call")) {
+            notification = new NotificationCompat.Builder(this)
                     .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
                     .setLargeIcon(largeIcon)
                     .setPriority(NotificationCompat.PRIORITY_HIGH)
@@ -118,27 +118,34 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
                     .setContentText(body)
                     .setAutoCancel(true)
                     .setSound(defaultSound)
-                     .setContentIntent(buttonPendingIntent)
+                    .setContentIntent(buttonPendingIntent)
 //                    .setContentIntent(pendingIntent)  // thực hiện lệnh pendingIntent (chuyển sang lớp khác) khi click vào chính giữa thông báo
 //                    .addAction(R.drawable.ic_add_person,getString(R.string.project_id),buttonPendingIntent)  // thực hiện lệnh buttonpendingIntent (chuyển sang lớp khác) khi click vào nút dưới thông báo
                     .build();
+            //hien thong bao tat ca cac tin nhan cua cac nguoi dung
+            noti.notify((int) System.currentTimeMillis(), notification);
         } else {
-             notification = new NotificationCompat.Builder(this)
-                    .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
-                    .setLargeIcon(largeIcon)
-                    .setPriority(NotificationCompat.PRIORITY_HIGH)
-                    .setContentTitle(title)
-                    .setContentText(body)
-                    .setAutoCancel(true)
-                    .setSound(defaultSound)
-                    .setContentIntent(pendingIntent)  // thực hiện lệnh pendingIntent (chuyển sang lớp khác) click vào thông báo
-                    .build();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                AndroidPieNotification androidPieNotification = new AndroidPieNotification(this);
+                notification = androidPieNotification.getAndroidPieNotification(title, body, pendingIntent, defaultSound).build();
+                //hien thong bao tat ca cac tin nhan cua cac nguoi dung
+                androidPieNotification.getManager().notify((int) System.currentTimeMillis(), notification);
+            } else {
+                notification = new NotificationCompat.Builder(this)
+                        .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
+                        .setLargeIcon(largeIcon)
+                        .setPriority(NotificationCompat.PRIORITY_HIGH)
+                        .setContentTitle(title)
+                        .setContentText(body)
+                        .setAutoCancel(true)
+                        .setSound(defaultSound)
+                        .setContentIntent(pendingIntent)  // thực hiện lệnh pendingIntent (chuyển sang lớp khác) click vào thông báo
+                        .build();
+
+                //hien thong bao tat ca cac tin nhan cua cac nguoi dung
+                noti.notify((int) System.currentTimeMillis(), notification);
+            }
         }
-
-        NotificationManager noti = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
-        //hien thong bao tat ca cac tin nhan cua cac nguoi dung
-        noti.notify((int) System.currentTimeMillis(), notification);
 
 //        int i =0;
 //
