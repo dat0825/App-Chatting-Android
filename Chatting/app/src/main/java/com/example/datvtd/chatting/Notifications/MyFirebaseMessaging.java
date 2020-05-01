@@ -110,20 +110,27 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         NotificationManager noti = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         //set view thông báo cho 2 loại ( tin nhắn và cuộc gọi)
         if (typeNotification.equals("Call")) {
-            notification = new NotificationCompat.Builder(this)
-                    .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
-                    .setLargeIcon(largeIcon)
-                    .setPriority(NotificationCompat.PRIORITY_HIGH)
-                    .setContentTitle(title)
-                    .setContentText(body)
-                    .setAutoCancel(true)
-                    .setSound(defaultSound)
-                    .setContentIntent(buttonPendingIntent)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                AndroidPieNotification androidPieNotification = new AndroidPieNotification(this);
+                notification = androidPieNotification.getAndroidPieNotificationCalling(title, body, pendingIntent, defaultSound,buttonPendingIntent).build();
+                //hien thong bao tat ca cac tin nhan cua cac nguoi dung
+                androidPieNotification.getManager().notify((int) System.currentTimeMillis(), notification);
+            } else {
+                notification = new NotificationCompat.Builder(this)
+                        .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
+                        .setLargeIcon(largeIcon)
+                        .setPriority(NotificationCompat.PRIORITY_HIGH)
+                        .setContentTitle(title)
+                        .setContentText(body)
+                        .setAutoCancel(true)
+                        .setSound(defaultSound)
+                        .setContentIntent(buttonPendingIntent)
 //                    .setContentIntent(pendingIntent)  // thực hiện lệnh pendingIntent (chuyển sang lớp khác) khi click vào chính giữa thông báo
 //                    .addAction(R.drawable.ic_add_person,getString(R.string.project_id),buttonPendingIntent)  // thực hiện lệnh buttonpendingIntent (chuyển sang lớp khác) khi click vào nút dưới thông báo
-                    .build();
-            //hien thong bao tat ca cac tin nhan cua cac nguoi dung
-            noti.notify((int) System.currentTimeMillis(), notification);
+                        .build();
+                //hien thong bao tat ca cac tin nhan cua cac nguoi dung
+                noti.notify((int) System.currentTimeMillis(), notification);
+            }
         } else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 AndroidPieNotification androidPieNotification = new AndroidPieNotification(this);

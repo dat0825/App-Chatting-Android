@@ -1,7 +1,5 @@
 package com.example.datvtd.chatting;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -11,16 +9,13 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.transition.Fade;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.sinch.android.rtc.PushPair;
 import com.sinch.android.rtc.SinchClient;
 import com.sinch.android.rtc.calling.CallClient;
@@ -62,7 +57,7 @@ public class CallActivity extends AppCompatActivity {
             setViewReceiver();
         } else {
             //set background cho người gọi điện
-            setViewCaler();
+            setViewCaller();
             callUser();
         }
 
@@ -71,6 +66,9 @@ public class CallActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (call != null) {
                     call.answer();
+                    acceptButton.setVisibility(View.INVISIBLE);
+                    declineButton.setVisibility(View.INVISIBLE);
+                    hangupButton.setVisibility(View.VISIBLE);
                     Toast.makeText(getApplicationContext(), "Call is started", Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "nulll", Toast.LENGTH_LONG).show();
@@ -86,6 +84,7 @@ public class CallActivity extends AppCompatActivity {
                     sinchClient.stopListeningOnActiveConnection();
                     sinchClient.terminate();
                 }
+                onBackPressed();
             }
         });
 
@@ -96,6 +95,7 @@ public class CallActivity extends AppCompatActivity {
                     call.hangup();
                     sinchClient.stopListeningOnActiveConnection();
                 }
+                onBackPressed();
             }
         });
     }
@@ -108,7 +108,7 @@ public class CallActivity extends AppCompatActivity {
         }
     }
 
-    public void setViewCaler() {
+    public void setViewCaller() {
         // set view cho người gọi
         declineButton.setVisibility(View.INVISIBLE);
         acceptButton.setVisibility(View.INVISIBLE);
@@ -147,6 +147,8 @@ public class CallActivity extends AppCompatActivity {
 
         @Override
         public void onCallProgressing(com.sinch.android.rtc.calling.Call call) {
+            MessageActivity messageActivity = new MessageActivity();
+            messageActivity.sendNotification(receiver, nameCaller,"Calling...",true);
             Toast.makeText(getApplicationContext(), "Calling....", Toast.LENGTH_LONG).show();
         }
 

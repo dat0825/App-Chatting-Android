@@ -11,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
@@ -143,7 +145,7 @@ public class MessageActivity extends AppCompatActivity {
             this.color = "default";
         }
 
-        if(this.color != null){
+        if (this.color != null) {
             if (this.color.equals("default")) {
                 updateColor("#008577");
             } else {
@@ -213,25 +215,45 @@ public class MessageActivity extends AppCompatActivity {
             }
         });
 
-        contentSendEditText.setOnClickListener(new View.OnClickListener() {
+        contentSendEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
-            public void onClick(View v) {
-                contentSendEditText.setFocusableInTouchMode(true);  // thêm " android:focusableInTouchMode="false" -- phải double click mới gõ text được
+            public void onFocusChange(View v, boolean hasFocus) {
                 iconsLayout.setVisibility(View.GONE);
                 extendIconsButton.setVisibility(View.VISIBLE);
+            }
+        });
+
+        contentSendEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (extendIconsButton.getVisibility() != View.INVISIBLE) {
+                    iconsLayout.setVisibility(View.GONE);
+                    extendIconsButton.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
             }
         });
 
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendNotification(idReceiver, nameCurrentUser, "Calling...", true);
+//                sendNotification(idReceiver, nameCurrentUser, "Calling...", true);
                 Intent intent = new Intent(MessageActivity.this, CallActivity.class);
                 intent.putExtra("caller", firebaseUser.getUid());
+                intent.putExtra("nameCaller", nameCurrentUser);
                 intent.putExtra("receiver", idReceiver);
                 intent.putExtra("action", "call");
                 intent.putExtra("avatarReceiver", avatarReceiver);
-                intent.putExtra("nameReceiver",nameReceiver);
+                intent.putExtra("nameReceiver", nameReceiver);
                 startActivity(intent);
             }
         });
@@ -355,6 +377,7 @@ public class MessageActivity extends AppCompatActivity {
                         chatRef.child("color").setValue("default");
                     }
                 }
+
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
 
@@ -371,6 +394,7 @@ public class MessageActivity extends AppCompatActivity {
                         chatRefReceiver.child("color").setValue("default");
                     }
                 }
+
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
 
@@ -647,7 +671,7 @@ public class MessageActivity extends AppCompatActivity {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Token token = snapshot.getValue(Token.class);
                     String title = "";
-                    if (checkGroup.equals("false")) {
+                    if (checkGroup != null && checkGroup.equals("false")) {
                         title = "New Message";
                     } else {
                         title = "New Message " + nameGroup;
@@ -671,11 +695,17 @@ public class MessageActivity extends AppCompatActivity {
                         }
                     }
 
+                    if (firebaseUser == null) {
+                        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+                    }
                     if (checkCall) { // dùng cho cuộc gọi
                         data = new Data(firebaseUser.getUid(), "Call", username + " " + message, title, receiver);
                     }
 
                     Sender sender = new Sender(data, token.getToken());
+                    if (apiService == null) {
+                        apiService = Client.getClient("https://fcm.googleapis.com/").create(APIService.class);
+                    }
                     apiService.sendNotification(sender)
                             .enqueue(new Callback<MyResponse>() {
                                 @Override
@@ -853,8 +883,8 @@ public class MessageActivity extends AppCompatActivity {
     private String checkChangeAvatar = "false";
     private String checkSendImage = "false";
     private String color;
-    private String avatarReceiver ="";
-    private String nameReceiver="";
+    private String avatarReceiver = "";
+    private String nameReceiver = "";
     private boolean allowSeenMessage = false;
     private ImageView profileImage;
     private ImageView iconInforGroup;

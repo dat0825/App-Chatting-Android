@@ -64,6 +64,21 @@ public class AndroidPieNotification extends ContextWrapper {
                 .setAutoCancel(true);
     }
 
+    @SuppressLint("WrongConstant")
+    @TargetApi(Build.VERSION_CODES.O)
+    public Notification.Builder getAndroidPieNotificationCalling
+            (String title, String body, PendingIntent pendingIntent, Uri soundUri,PendingIntent buttonPendingIntent) {
+        return new Notification.Builder(getApplicationContext(), CHANNEL_ID)
+                .setContentIntent(pendingIntent)
+                .setContentTitle(title)
+                .setContentText(body)
+                .setSmallIcon(R.drawable.icon_notification)
+                .setSound(soundUri)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setContentIntent(buttonPendingIntent)
+                .setAutoCancel(true);
+    }
+
     public NotificationManager notificationManager;
     public static final String CHANNEL_ID = "com.example.datvtd.chatting";
     public static final String CHANNEL_NAME = "Chatting";

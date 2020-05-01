@@ -78,7 +78,7 @@
             android:layout_marginLeft="5dp"
             android:background="@drawable/edit_text_background_radius"
             android:hint="Type a message"
-            android:focusableInTouchMode="false"/> -- phải double click mới gõ text được
+           />
 
         <ImageView
             android:id="@+id/b_send"
