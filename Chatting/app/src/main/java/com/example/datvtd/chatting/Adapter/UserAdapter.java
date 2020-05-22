@@ -248,10 +248,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                     Chat chat = snapshot.getValue(Chat.class);
 
                     if (isGroup == false && chat.isTypeImage() == false) {
-                        if (chat.getReceiver().equals(firebaseUser.getUid())
-                                && chat.getSender().equals(userID)
-                                || chat.getReceiver().equals(userID)
-                                && chat.getSender().equals(firebaseUser.getUid())) {
+                        if ((chat.getReceiver().equals(firebaseUser.getUid())
+                                && chat.getSender().equals(userID))
+                                || (chat.getReceiver().equals(userID)
+                                && chat.getSender().equals(firebaseUser.getUid()))) {
                             UserAdapter.this.lastMessage = chat.getMessage();
                         }
                         if (chat.getReceiver().equals(firebaseUser.getUid())

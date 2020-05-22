@@ -373,7 +373,7 @@ public class MessageActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if (!dataSnapshot.exists()) {
-                        chatRef.child("id").setValue(sender);
+                        chatRef.child("id").setValue(receiver);
                         chatRef.child("color").setValue("default");
                     }
                 }
@@ -390,7 +390,7 @@ public class MessageActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if (!dataSnapshot.exists()) {
-                        chatRefReceiver.child("id").setValue(receiver);
+                        chatRefReceiver.child("id").setValue(sender);
                         chatRefReceiver.child("color").setValue("default");
                     }
                 }

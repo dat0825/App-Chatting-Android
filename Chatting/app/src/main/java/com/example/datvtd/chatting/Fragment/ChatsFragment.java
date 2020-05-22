@@ -88,6 +88,8 @@ public class ChatsFragment extends Fragment {
     }
 
     public void chatList() {
+        Log.d("xasdas",userList.get(0).getId());
+        Log.d("xasdas",userList.get(1).getId());
         this.mUsers = new ArrayList<>();
         this.reference = FirebaseDatabase.getInstance().getReference("Users");
         this.reference.addValueEventListener(new ValueEventListener() {
@@ -98,7 +100,7 @@ public class ChatsFragment extends Fragment {
                     User user = snapshot.getValue(User.class);
                     for (Chatlist chatlist : userList) {
                         if (user.getId() != null
-                                && !user.getId().equals(chatlist.getId())) {
+                                && user.getId().equals(chatlist.getId())) {
                             mUsers.add(user);
                             break;
                         }

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_login"
     tools:context=".RegisterActivity">
 
     <RelativeLayout
@@ -18,7 +17,8 @@
             android:layout_above="@id/inputEmail"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="100px"
-            android:background="@drawable/logo" />
+            android:background="@drawable/logo"
+            />
 
         <RelativeLayout
             android:id="@+id/inputEmail"

@@ -1,7 +1,6 @@
 package com.example.datvtd.chatting;
 
 import android.content.Intent;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -15,9 +14,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.daimajia.swipe.SwipeLayout;
 import com.example.datvtd.chatting.Adapter.UserAdapter;
-import com.example.datvtd.chatting.Animation.SwipeController;
-import com.example.datvtd.chatting.Animation.SwipeControllerActions;
+//import com.example.datvtd.chatting.Animation.SwipeController;
 import com.example.datvtd.chatting.Model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -53,7 +52,6 @@ public class InfoGroupActivity extends AppCompatActivity {
 
         if (this.idGroup != null) { // khong dung duoc .equal(null)
             showMember();
-            setupSwipe();
         } else {
             this.addPersonButton.setVisibility(View.GONE);
             this.headerText.setVisibility(View.GONE);
@@ -88,6 +86,43 @@ public class InfoGroupActivity extends AppCompatActivity {
                 onBackPressed();
                 intent = new Intent(InfoGroupActivity.this, DialogColorActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        SwipeLayout swipeLayout = findViewById(R.id.sample1);
+
+        swipeLayout.setShowMode(SwipeLayout.ShowMode.LayDown);
+        swipeLayout.addDrag(SwipeLayout.DragEdge.Right, findViewById(R.id.bottom_wrapper));
+
+        swipeLayout.addSwipeListener(new SwipeLayout.SwipeListener() {
+            @Override
+            public void onStartOpen(SwipeLayout layout) {
+
+            }
+
+            @Override
+            public void onOpen(SwipeLayout layout) {
+
+            }
+
+            @Override
+            public void onStartClose(SwipeLayout layout) {
+
+            }
+
+            @Override
+            public void onClose(SwipeLayout layout) {
+
+            }
+
+            @Override
+            public void onUpdate(SwipeLayout layout, int leftOffset, int topOffset) {
+
+            }
+
+            @Override
+            public void onHandRelease(SwipeLayout layout, float xvel, float yvel) {
+
             }
         });
     }
@@ -128,36 +163,6 @@ public class InfoGroupActivity extends AppCompatActivity {
         });
     }
 
-    private void setupSwipe() {
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(mUserAdapter);
-
-        swipeController = new SwipeController(new SwipeControllerActions() {
-            @Override
-            public void onDeleteButtonClicked(int position) {
-                User user = mUserAdapter.mUsers.get(position);
-                removeUserGroup(user.getId());
-            }
-
-            @Override
-            public void onPromoteButtonClicked(int position) {
-                User user = mUserAdapter.mUsers.get(position);
-                changeAdmin(user.getId());
-            }
-        });
-
-        ItemTouchHelper itemTouchhelper = new ItemTouchHelper(swipeController);
-        itemTouchhelper.attachToRecyclerView(recyclerView);
-
-        recyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
-            @Override
-            public void onDraw(@NonNull Canvas c, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
-                super.onDraw(c, parent, state);
-                swipeController.onDraw(c);
-            }
-        });
-    }
-
     public void removeUserGroup(String idUserRemove) {
         Intent intent = new Intent(InfoGroupActivity.this, DialogConfirmActivity.class);
         intent.putExtra("idUserRemove", idUserRemove);
@@ -191,5 +196,5 @@ public class InfoGroupActivity extends AppCompatActivity {
     private String color;
     private int countUser = 0;
     private FirebaseUser firebaseUser;
-    private SwipeController swipeController = null;
+//    private SwipeController swipeController = null;
 }
