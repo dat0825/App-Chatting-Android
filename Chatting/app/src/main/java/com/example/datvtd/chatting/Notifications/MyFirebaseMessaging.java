@@ -111,7 +111,8 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
                 notification = androidPieNotification.getAndroidPieNotificationCalling(title, body, pendingIntent, defaultSound, buttonPendingIntent).build();
                 //hien thong bao tat ca cac tin nhan cua cac nguoi dung
                 androidPieNotification.getManager().notify((int) System.currentTimeMillis(), notification);
-            } else if (Build.VERSION.SDK_INT == Build.VERSION_CODES.O) {
+            } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ||
+                    Build.VERSION.SDK_INT < Build.VERSION_CODES.P) {
                 OreoNotification oreoNotification = new OreoNotification(this);
                 notification = oreoNotification.getOreoNotificationCalling(title, body, pendingIntent, defaultSound, buttonPendingIntent).build();
                 //hien thong bao tat ca cac tin nhan cua cac nguoi dung
@@ -138,7 +139,8 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
                 notification = androidPieNotification.getAndroidPieNotification(title, body, pendingIntent, defaultSound).build();
                 //hien thong bao tat ca cac tin nhan cua cac nguoi dung
                 androidPieNotification.getManager().notify((int) System.currentTimeMillis(), notification);
-            } else if (Build.VERSION.SDK_INT == Build.VERSION_CODES.O) {
+            } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ||
+                    Build.VERSION.SDK_INT < Build.VERSION_CODES.P) {
                 OreoNotification oreoNotification = new OreoNotification(this);
                 notification = oreoNotification.getOreoNotification(title, body, pendingIntent, defaultSound).build();
                 //hien thong bao tat ca cac tin nhan cua cac nguoi dung

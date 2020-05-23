@@ -18,7 +18,8 @@ public class OreoNotification extends ContextWrapper {
     public OreoNotification(Context base) {
         super(base);
 
-        if(Build.VERSION.SDK_INT == Build.VERSION_CODES.O){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ||
+                Build.VERSION.SDK_INT < Build.VERSION_CODES.P){
             createChannel();
         }
     }
@@ -27,7 +28,7 @@ public class OreoNotification extends ContextWrapper {
     public void createChannel(){
 
         NotificationChannel channel = new NotificationChannel(CHANNEL_ID,CHANNEL_NAME,NotificationManager.IMPORTANCE_HIGH);
-        channel.enableLights(false);
+        channel.enableLights(true);
         channel.enableVibration(true);
         channel.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
         getManager().createNotificationChannel(channel);
