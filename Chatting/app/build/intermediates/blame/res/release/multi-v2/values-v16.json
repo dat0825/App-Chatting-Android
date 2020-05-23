@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/1e36b7d6945066d1c851e58f8db853ea/support-compat-28.0.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/a6452b9bc356cb362917489f6f442729/appcompat-v7-28.0.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}
