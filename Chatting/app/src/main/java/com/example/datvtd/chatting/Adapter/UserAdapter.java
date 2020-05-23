@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.daimajia.swipe.SwipeLayout;
 import com.example.datvtd.chatting.DialogConfirmActivity;
 import com.example.datvtd.chatting.InfoGroupActivity;
 import com.example.datvtd.chatting.MainActivity;

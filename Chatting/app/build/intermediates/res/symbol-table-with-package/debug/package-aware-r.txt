@@ -1283,7 +1283,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id bottom_wrapper
 id box_count
 id buton_createGroup
 id button
@@ -1426,7 +1425,6 @@ id recycler_view
 id right
 id right_icon
 id right_side
-id sample1
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
