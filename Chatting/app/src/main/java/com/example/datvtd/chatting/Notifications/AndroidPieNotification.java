@@ -17,6 +17,8 @@ import android.support.v4.app.NotificationCompat;
 
 import com.example.datvtd.chatting.R;
 
+import java.util.Calendar;
+
 public class AndroidPieNotification extends ContextWrapper {
 
     public AndroidPieNotification(Context base) {
@@ -38,6 +40,7 @@ public class AndroidPieNotification extends ContextWrapper {
                 .build();
         Uri defaultSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         channel.setSound(defaultSound, audioAttributes);
+        channel.setShowBadge(true);
 
         notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         getManager().createNotificationChannel(channel);
@@ -61,6 +64,8 @@ public class AndroidPieNotification extends ContextWrapper {
                 .setSmallIcon(R.drawable.icon_notification)
                 .setSound(soundUri)
                 .setPriority(NotificationCompat.PRIORITY_MAX)
+                .setWhen(Calendar.getInstance().getTimeInMillis())
+                .setShowWhen(true)
                 .setAutoCancel(true);
     }
 

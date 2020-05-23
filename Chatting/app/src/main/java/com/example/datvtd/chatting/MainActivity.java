@@ -4,9 +4,11 @@ import android.Manifest;
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
 import android.content.ComponentName;
+import android.content.pm.PackageManager;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(viewPager));
 
-        while(new CallActivity().sinchClient == null){
+        while (new CallActivity().sinchClient == null) {
             setupSinch();
             try {
                 Thread.sleep(500);
@@ -68,13 +70,13 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        if(new CallActivity().sinchClient != null){
-            Toast.makeText(getApplicationContext(),"sinch client connected",Toast.LENGTH_LONG).show();
-            Log.d("sinchConnect","connected");
+        if (new CallActivity().sinchClient != null) {
+            Toast.makeText(getApplicationContext(), "sinch client connected", Toast.LENGTH_LONG).show();
+            Log.d("sinchConnect", "connected");
         }
 
         ActivityCompat.requestPermissions(MainActivity.this,
-                new String[]{Manifest.permission.RECEIVE_SMS}, 100);
+                new String[]{Manifest.permission.RECEIVE_SMS, Manifest.permission.RECORD_AUDIO}, 100);
     }
 
     //set trang thai online hay offline
