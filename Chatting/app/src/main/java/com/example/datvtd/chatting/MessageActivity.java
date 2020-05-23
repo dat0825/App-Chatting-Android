@@ -672,9 +672,9 @@ public class MessageActivity extends AppCompatActivity {
                     Token token = snapshot.getValue(Token.class);
                     String title = "";
                     if (checkGroup != null && checkGroup.equals("false")) {
-                        title = "New Message";
+                        title = "New message";
                     } else {
-                        title = "New Message " + nameGroup;
+                        title = "New message from group" + nameGroup;
                     }
 
                     Data data = null;

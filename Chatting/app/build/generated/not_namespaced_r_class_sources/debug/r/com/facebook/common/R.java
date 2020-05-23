@@ -637,20 +637,20 @@ public final class R {
         public static final int com_facebook_button_like_icon_selected = 0x7f070069;
         public static final int com_facebook_close = 0x7f07006d;
         public static final int com_facebook_favicon_blue = 0x7f07006e;
-        public static final int notification_action_background = 0x7f0700b3;
-        public static final int notification_bg = 0x7f0700b4;
-        public static final int notification_bg_low = 0x7f0700b5;
-        public static final int notification_bg_low_normal = 0x7f0700b6;
-        public static final int notification_bg_low_pressed = 0x7f0700b7;
-        public static final int notification_bg_normal = 0x7f0700b8;
-        public static final int notification_bg_normal_pressed = 0x7f0700b9;
-        public static final int notification_icon_background = 0x7f0700ba;
-        public static final int notification_template_icon_bg = 0x7f0700bb;
-        public static final int notification_template_icon_low_bg = 0x7f0700bc;
-        public static final int notification_tile_bg = 0x7f0700bd;
-        public static final int notify_panel_notification_icon_bg = 0x7f0700be;
-        public static final int tooltip_frame_dark = 0x7f0700c2;
-        public static final int tooltip_frame_light = 0x7f0700c3;
+        public static final int notification_action_background = 0x7f0700b4;
+        public static final int notification_bg = 0x7f0700b5;
+        public static final int notification_bg_low = 0x7f0700b6;
+        public static final int notification_bg_low_normal = 0x7f0700b7;
+        public static final int notification_bg_low_pressed = 0x7f0700b8;
+        public static final int notification_bg_normal = 0x7f0700b9;
+        public static final int notification_bg_normal_pressed = 0x7f0700ba;
+        public static final int notification_icon_background = 0x7f0700bb;
+        public static final int notification_template_icon_bg = 0x7f0700bc;
+        public static final int notification_template_icon_low_bg = 0x7f0700bd;
+        public static final int notification_tile_bg = 0x7f0700be;
+        public static final int notify_panel_notification_icon_bg = 0x7f0700bf;
+        public static final int tooltip_frame_dark = 0x7f0700c3;
+        public static final int tooltip_frame_light = 0x7f0700c4;
     }
     public static final class id {
         private id() {}

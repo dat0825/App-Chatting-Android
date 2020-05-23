@@ -1200,6 +1200,7 @@ drawable ic_user_in_tab
 drawable icon_call
 drawable icon_group_chat_in_tab
 drawable icon_notification
+drawable login_background
 drawable logo
 drawable message_receive_background
 drawable message_send_background

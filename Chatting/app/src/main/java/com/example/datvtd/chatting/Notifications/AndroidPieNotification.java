@@ -26,9 +26,9 @@ public class AndroidPieNotification extends ContextWrapper {
         }
     }
 
-    @TargetApi(Build.VERSION_CODES.O)
+    @TargetApi(Build.VERSION_CODES.P)
     public void createChannel() {
-        NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
+        NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_HIGH);
         channel.enableLights(true);
         channel.enableVibration(true);
         channel.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
@@ -51,7 +51,7 @@ public class AndroidPieNotification extends ContextWrapper {
     }
 
     @SuppressLint("WrongConstant")
-    @TargetApi(Build.VERSION_CODES.O)
+    @TargetApi(Build.VERSION_CODES.P)
     public Notification.Builder getAndroidPieNotification
             (String title, String body, PendingIntent pendingIntent, Uri soundUri) {
         return new Notification.Builder(getApplicationContext(), CHANNEL_ID)
@@ -60,12 +60,12 @@ public class AndroidPieNotification extends ContextWrapper {
                 .setContentText(body)
                 .setSmallIcon(R.drawable.icon_notification)
                 .setSound(soundUri)
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setPriority(NotificationCompat.PRIORITY_MAX)
                 .setAutoCancel(true);
     }
 
     @SuppressLint("WrongConstant")
-    @TargetApi(Build.VERSION_CODES.O)
+    @TargetApi(Build.VERSION_CODES.P)
     public Notification.Builder getAndroidPieNotificationCalling
             (String title, String body, PendingIntent pendingIntent, Uri soundUri,PendingIntent buttonPendingIntent) {
         return new Notification.Builder(getApplicationContext(), CHANNEL_ID)
@@ -74,12 +74,12 @@ public class AndroidPieNotification extends ContextWrapper {
                 .setContentText(body)
                 .setSmallIcon(R.drawable.icon_notification)
                 .setSound(soundUri)
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setPriority(NotificationCompat.PRIORITY_MAX)
                 .setContentIntent(buttonPendingIntent)
                 .setAutoCancel(true);
     }
 
-    public NotificationManager notificationManager;
-    public static final String CHANNEL_ID = "com.example.datvtd.chatting";
-    public static final String CHANNEL_NAME = "Chatting";
+    private static final String CHANNEL_ID = "com.example.datvtd.chatting";
+    private static final String CHANNEL_NAME = "Chatting";
+    private NotificationManager notificationManager;
 }

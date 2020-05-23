@@ -88,8 +88,6 @@ public class ChatsFragment extends Fragment {
     }
 
     public void chatList() {
-        Log.d("xasdas",userList.get(0).getId());
-        Log.d("xasdas",userList.get(1).getId());
         this.mUsers = new ArrayList<>();
         this.reference = FirebaseDatabase.getInstance().getReference("Users");
         this.reference.addValueEventListener(new ValueEventListener() {

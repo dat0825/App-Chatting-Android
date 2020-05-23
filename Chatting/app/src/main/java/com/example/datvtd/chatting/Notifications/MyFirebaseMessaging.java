@@ -12,14 +12,11 @@ import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v4.app.NotificationCompat;
-import android.util.Log;
 
 import com.example.datvtd.chatting.Adapter.UserAdapter;
 import com.example.datvtd.chatting.CallActivity;
-import com.example.datvtd.chatting.LoginActivity;
 import com.example.datvtd.chatting.MessageActivity;
 import com.example.datvtd.chatting.Model.GroupChat;
-import com.example.datvtd.chatting.Model.User;
 import com.example.datvtd.chatting.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -33,7 +30,6 @@ import com.google.firebase.messaging.RemoteMessage;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class MyFirebaseMessaging extends FirebaseMessagingService {
@@ -110,16 +106,21 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         NotificationManager noti = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         //set view thông báo cho 2 loại ( tin nhắn và cuộc gọi)
         if (typeNotification.equals("Call")) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
                 AndroidPieNotification androidPieNotification = new AndroidPieNotification(this);
-                notification = androidPieNotification.getAndroidPieNotificationCalling(title, body, pendingIntent, defaultSound,buttonPendingIntent).build();
+                notification = androidPieNotification.getAndroidPieNotificationCalling(title, body, pendingIntent, defaultSound, buttonPendingIntent).build();
                 //hien thong bao tat ca cac tin nhan cua cac nguoi dung
                 androidPieNotification.getManager().notify((int) System.currentTimeMillis(), notification);
+            } else if (Build.VERSION.SDK_INT == Build.VERSION_CODES.O) {
+                OreoNotification oreoNotification = new OreoNotification(this);
+                notification = oreoNotification.getOreoNotificationCalling(title, body, pendingIntent, defaultSound, buttonPendingIntent).build();
+                //hien thong bao tat ca cac tin nhan cua cac nguoi dung
+                oreoNotification.getManager().notify((int) System.currentTimeMillis(), notification);
             } else {
                 notification = new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
                         .setLargeIcon(largeIcon)
-                        .setPriority(NotificationCompat.PRIORITY_HIGH)
+                        .setPriority(NotificationCompat.PRIORITY_MAX)
                         .setContentTitle(title)
                         .setContentText(body)
                         .setAutoCancel(true)
@@ -132,16 +133,21 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
                 noti.notify((int) System.currentTimeMillis(), notification);
             }
         } else {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
                 AndroidPieNotification androidPieNotification = new AndroidPieNotification(this);
                 notification = androidPieNotification.getAndroidPieNotification(title, body, pendingIntent, defaultSound).build();
                 //hien thong bao tat ca cac tin nhan cua cac nguoi dung
                 androidPieNotification.getManager().notify((int) System.currentTimeMillis(), notification);
+            } else if (Build.VERSION.SDK_INT == Build.VERSION_CODES.O) {
+                OreoNotification oreoNotification = new OreoNotification(this);
+                notification = oreoNotification.getOreoNotification(title, body, pendingIntent, defaultSound).build();
+                //hien thong bao tat ca cac tin nhan cua cac nguoi dung
+                oreoNotification.getManager().notify((int) System.currentTimeMillis(), notification);
             } else {
                 notification = new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
                         .setLargeIcon(largeIcon)
-                        .setPriority(NotificationCompat.PRIORITY_HIGH)
+                        .setPriority(NotificationCompat.PRIORITY_MAX)
                         .setContentTitle(title)
                         .setContentText(body)
                         .setAutoCancel(true)
