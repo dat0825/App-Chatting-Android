@@ -14,6 +14,7 @@ import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.webkit.MimeTypeMap;
@@ -226,20 +227,25 @@ public class MessageActivity extends AppCompatActivity {
         contentSendEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (extendIconsButton.getVisibility() != View.INVISIBLE) {
-                    iconsLayout.setVisibility(View.GONE);
-                    extendIconsButton.setVisibility(View.VISIBLE);
-                }
             }
 
             @Override
             public void afterTextChanged(Editable s) {
+            }
+        });
 
+        contentSendEditText.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (extendIconsButton.getVisibility() != View.INVISIBLE) {
+                    iconsLayout.setVisibility(View.GONE);
+                    extendIconsButton.setVisibility(View.VISIBLE);
+                }
+                return false;
             }
         });
 

@@ -31,7 +31,7 @@
             android:layout_toRightOf="@id/profile_image"
             android:text="username"
             android:textColor="@color/color_black"
-            android:textSize="30dp" />
+            android:textSize="25dp" />
 
         <ImageView
             android:id="@+id/icon_info"
@@ -99,14 +99,15 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_send_image_15dp"
                 android:layout_centerVertical="true" />
+
             <ImageView
                 android:id="@+id/ic_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon_call"
+                android:layout_centerVertical="true"
                 android:layout_toRightOf="@id/b_send_image"
                 android:paddingLeft="10dp"
-                android:layout_centerVertical="true" />
+                android:src="@drawable/icon_call" />
         </RelativeLayout>
         <ImageView
             android:id="@+id/ic_extend"

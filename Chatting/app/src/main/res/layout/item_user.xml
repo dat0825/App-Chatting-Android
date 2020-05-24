@@ -19,8 +19,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/avatar_users"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:src="@mipmap/ic_launcher" />
 
         <TextView
@@ -28,11 +28,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/avatar_users"
-            android:layout_centerVertical="true"
             android:paddingLeft="10dp"
             android:text="username"
             android:textColor="@color/color_black"
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/text_last_message"
@@ -40,17 +39,17 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/text_username"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="8dp"
             android:layout_toRightOf="@id/avatar_users"
             android:maxLines="1"
-            android:text="" />
+            android:text=""
+            android:textSize="12dp"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/status_on"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="40dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
             android:src="@color/color_green"
             android:visibility="visible"
             app:civ_border_color="@color/color_white"
@@ -58,10 +57,10 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/status_off"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="40dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
             android:src="@color/color_gray"
             android:visibility="gone"
             app:civ_border_color="@color/color_white"
