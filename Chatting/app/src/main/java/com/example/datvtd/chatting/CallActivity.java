@@ -42,6 +42,7 @@ public class CallActivity extends AppCompatActivity {
         acceptButton = findViewById(R.id.b_accept);
         hangupButton = findViewById(R.id.b_hangup);
         backgroundLayout = findViewById(R.id.backgoundLayout);
+        backgroundCall = findViewById(R.id.backgroundCall);
         nameCallerTextView = findViewById(R.id.nameCaller);
 
         Intent intent = getIntent();
@@ -115,7 +116,8 @@ public class CallActivity extends AppCompatActivity {
         if (avatarReceiver.equals("default")) {
             Resources res = getResources();
             Drawable drawable = res.getDrawable(R.drawable.ic_launcher_background);
-            backgroundLayout.setBackground(drawable);
+            backgroundCall.setImageDrawable(drawable);
+//            backgroundLayout.setBackground(drawable);
         } else {
             new MyDownloader().execute(avatarReceiver);
         }
@@ -128,7 +130,8 @@ public class CallActivity extends AppCompatActivity {
         if (avatarCaller.equals("default")) {
             Resources res = getResources();
             Drawable drawable = res.getDrawable(R.drawable.ic_launcher_background);
-            backgroundLayout.setBackground(drawable);
+            backgroundCall.setImageDrawable(drawable);
+//            backgroundLayout.setBackground(drawable);
         } else {
             new MyDownloader().execute(avatarCaller);
         }
@@ -183,7 +186,8 @@ public class CallActivity extends AppCompatActivity {
         protected void onPostExecute(Bitmap bitmap) {
             super.onPostExecute(bitmap);
             Drawable drawable = new BitmapDrawable(bitmap);
-            backgroundLayout.setBackground(drawable);
+            backgroundCall.setImageDrawable(drawable);
+//            backgroundLayout.setBackground(drawable);
         }
 
         @Override
@@ -206,6 +210,7 @@ public class CallActivity extends AppCompatActivity {
     }
 
     private RelativeLayout backgroundLayout;
+    private ImageView backgroundCall;
     private ImageView declineButton;
     private ImageView acceptButton;
     private ImageView hangupButton;

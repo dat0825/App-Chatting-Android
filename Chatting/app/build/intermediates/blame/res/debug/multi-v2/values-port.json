@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "/home/datvtd/Downloads/App-Chatting-Android/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {
                     "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/a6452b9bc356cb362917489f6f442729/appcompat-v7-28.0.0/res/values-port/values-port.xml",

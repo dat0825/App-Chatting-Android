@@ -1280,6 +1280,7 @@ id b_send
 id b_send_image
 id b_yes
 id backgoundLayout
+id backgroundCall
 id barrier
 id beginning
 id blocking

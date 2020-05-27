@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/datvtd/Desktop/App Chat/App-Chatting-Android/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
+            "outputFile": "/home/datvtd/Downloads/App-Chatting-Android/Chatting/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
             "map": [
                 {
                     "source": "/home/datvtd/.gradle/caches/transforms-2/files-2.1/7c794755863fe1625e31426477bb604c/facebook-login-4.42.0/res/values-sv/values-sv.xml",
