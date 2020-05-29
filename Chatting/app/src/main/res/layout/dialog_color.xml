@@ -35,5 +35,6 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:text="Ok"
-        android:background="@drawable/button_background_green"/>
+        android:background="@drawable/button_background"
+        android:textColor="@color/color_white"/>
 </RelativeLayout>

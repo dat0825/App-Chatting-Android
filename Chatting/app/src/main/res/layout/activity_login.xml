@@ -115,9 +115,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:text="Or"
                     android:textColor="@color/color_gray"
-                    android:textSize="18dp"
-                    android:text="Hoặc"></TextView>
+                    android:textSize="18dp"></TextView>
 
                 <View
                     android:layout_width="350px"
