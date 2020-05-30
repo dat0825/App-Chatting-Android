@@ -5,10 +5,17 @@ import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.ShapeDrawable;
 import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.content.res.AppCompatResources;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
@@ -148,7 +155,7 @@ public class MessageActivity extends AppCompatActivity {
 
         if (this.color != null) {
             if (this.color.equals("default")) {
-                updateColor("#008577");
+                updateColor("#ff008577");
             } else {
                 updateColor(this.color);
             }
@@ -877,6 +884,15 @@ public class MessageActivity extends AppCompatActivity {
         this.sendImageButton.setColorFilter(Color.parseColor(colorValue));
         this.callButton.setColorFilter(Color.parseColor(colorValue));
         this.extendIconsButton.setColorFilter(Color.parseColor(colorValue));
+
+        Drawable drawable_send = getDrawable(R.drawable.message_send_background);
+        GradientDrawable gradientDrawable = (GradientDrawable) drawable_send;
+        String valueHexColor = Integer.toHexString(Color.parseColor(colorValue));
+//        int cd = (int) Long.parseLong(hex);
+        gradientDrawable.setColor(Color.argb(Integer.parseInt(valueHexColor.substring(0,2),16),
+                Integer.parseInt(valueHexColor.substring(2,4),16),
+                Integer.parseInt(valueHexColor.substring(4,6),16),
+                Integer.parseInt(valueHexColor.substring(6,8),16)));
     }
 
     private EditText contentSendEditText;
