@@ -44,7 +44,7 @@ public class OreoNotification extends ContextWrapper {
     @SuppressLint("WrongConstant")
     @TargetApi(Build.VERSION_CODES.O)
     public Notification.Builder getOreoNotification
-            (String title, String body, PendingIntent pendingIntent, Uri soundUri) {
+            (String title, String body, PendingIntent pendingIntent, Uri soundUri, String typeNotification) {
         return new Notification.Builder(getApplicationContext(), CHANNEL_ID)
                 .setContentIntent(pendingIntent)
                 .setContentTitle(title)
@@ -52,7 +52,8 @@ public class OreoNotification extends ContextWrapper {
                 .setSmallIcon(R.drawable.icon_notification)
                 .setSound(soundUri)
                 .setPriority(NotificationCompat.PRIORITY_MAX)
-                .setAutoCancel(true);
+                .setAutoCancel(true)
+                .setGroup(typeNotification);
     }
 
     @TargetApi(Build.VERSION_CODES.O)

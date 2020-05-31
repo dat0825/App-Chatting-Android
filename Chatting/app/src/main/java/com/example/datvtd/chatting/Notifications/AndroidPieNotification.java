@@ -56,7 +56,7 @@ public class AndroidPieNotification extends ContextWrapper {
     @SuppressLint("WrongConstant")
     @TargetApi(Build.VERSION_CODES.P)
     public Notification.Builder getAndroidPieNotification
-            (String title, String body, PendingIntent pendingIntent, Uri soundUri) {
+            (String title, String body, PendingIntent pendingIntent, Uri soundUri, String typeNotification) {
         return new Notification.Builder(getApplicationContext(), CHANNEL_ID)
                 .setContentIntent(pendingIntent)
                 .setContentTitle(title)
@@ -66,7 +66,8 @@ public class AndroidPieNotification extends ContextWrapper {
                 .setPriority(NotificationCompat.PRIORITY_MAX)
                 .setWhen(Calendar.getInstance().getTimeInMillis())
                 .setShowWhen(true)
-                .setAutoCancel(true);
+                .setAutoCancel(true)
+                .setGroup(typeNotification);
     }
 
     @SuppressLint("WrongConstant")

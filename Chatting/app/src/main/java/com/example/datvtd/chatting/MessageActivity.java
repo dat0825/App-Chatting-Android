@@ -687,7 +687,7 @@ public class MessageActivity extends AppCompatActivity {
                     if (checkGroup != null && checkGroup.equals("false")) {
                         title = "New message";
                     } else {
-                        title = "New message from group" + nameGroup;
+                        title = "New message from group " + nameGroup;
                     }
 
                     Data data = null;

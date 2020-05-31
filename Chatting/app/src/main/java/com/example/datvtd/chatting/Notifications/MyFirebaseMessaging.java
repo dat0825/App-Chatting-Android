@@ -103,6 +103,7 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         Uri defaultSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
         Notification notification;
+        Notification notificationGroup;
         NotificationManager noti = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         //set view thông báo cho 2 loại ( tin nhắn và cuộc gọi)
         if (typeNotification.equals("Call")) {
@@ -136,15 +137,27 @@ public class MyFirebaseMessaging extends FirebaseMessagingService {
         } else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
                 AndroidPieNotification androidPieNotification = new AndroidPieNotification(this);
-                notification = androidPieNotification.getAndroidPieNotification(title, body, pendingIntent, defaultSound).build();
+                notification = androidPieNotification.getAndroidPieNotification(title, body, pendingIntent, defaultSound, typeNotification).build();
+                notificationGroup = androidPieNotification.getAndroidPieNotification(title, body, pendingIntent, defaultSound, typeNotification).setGroupSummary(true).build();
                 //hien thong bao tat ca cac tin nhan cua cac nguoi dung
-                androidPieNotification.getManager().notify((int) System.currentTimeMillis(), notification);
+                if (typeNotification.equals("noneGroup")) {
+                    androidPieNotification.getManager().notify((int) System.currentTimeMillis(), notification);
+                } else {
+                    androidPieNotification.getManager().notify(8, notificationGroup);
+                    androidPieNotification.getManager().notify((int) System.currentTimeMillis(), notification);
+                }
             } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O
                     && Build.VERSION.SDK_INT < Build.VERSION_CODES.P) {
                 OreoNotification oreoNotification = new OreoNotification(this);
-                notification = oreoNotification.getOreoNotification(title, body, pendingIntent, defaultSound).build();
+                notification = oreoNotification.getOreoNotification(title, body, pendingIntent, defaultSound,typeNotification).build();
+                notificationGroup = oreoNotification.getOreoNotification(title, body, pendingIntent, defaultSound,typeNotification).build();
                 //hien thong bao tat ca cac tin nhan cua cac nguoi dung
-                oreoNotification.getManager().notify((int) System.currentTimeMillis(), notification);
+                if (typeNotification.equals("noneGroup")) {
+                    oreoNotification.getManager().notify((int) System.currentTimeMillis(), notification);
+                } else {
+                    oreoNotification.getManager().notify(8, notificationGroup);
+                    oreoNotification.getManager().notify((int) System.currentTimeMillis(), notification);
+                }
             } else {
                 notification = new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.small_icon)  // dùng để xóa small icon trong thanh thông báo.
